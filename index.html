@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manual de usuario · FLK Encomiendas</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Manual de usuario</h1>
+  <p>Sistema POS FLK Encomiendas · Lo que se hace todos los días, paso a paso</p>
+</header>
+<main>
+
+<section id="leer">
+  <div class="tag">Antes de empezar</div>
+  <h2 class="t">Cómo leer este manual</h2>
+  <p>Cada tarea es una sección aparte. Siga los pasos en orden, del 1 en adelante.</p>
+  <ul>
+    <li>Las palabras en <b class="ui">azul y negrita</b> son las que verá escritas en la pantalla (botones, casillas, menús).</li>
+    <li>Los cuadros <b>amarillos</b> son avisos importantes, los <b>verdes</b> son consejos y los <b>azules</b> son datos útiles.</li>
+    <li>Si ve un signo <b class="ui">?</b> junto a un botón, presiónelo: explica qué hace. El botón <b class="ui">Guía</b> (arriba a la derecha) explica la pantalla completa.</li>
+  </ul>
+</section>
+
+<nav class="toc" aria-label="Contenido">
+  <h2>Contenido</h2>
+  <ol>
+    <li><a href="#entrar">Entrar al sistema</a></li>
+    <li><a href="#abrir">Abrir la caja</a></li>
+    <li><a href="#recibir">Recibir una encomienda</a></li>
+    <li><a href="#especiales">Opciones especiales de la guía</a></li>
+    <li><a href="#imprimir">Imprimir etiqueta y recibo</a></li>
+    <li><a href="#buscar">Buscar una encomienda</a></li>
+    <li><a href="#entregar">Entregar una encomienda</a></li>
+    <li><a href="#cobrar">Cobrar lo pendiente</a></li>
+    <li><a href="#movimiento">Entrada o salida de dinero</a></li>
+    <li><a href="#cerrar">Cerrar la caja</a></li>
+    <li><a href="#arqueo">¿Qué es el arqueo?</a></li>
+    <li><a href="#reporte">Interpretar el reporte de cierre (PDF)</a></li>
+    <li><a href="#usuario">Crear un usuario nuevo</a></li>
+    <li><a href="#rol">Cambiar el rol de un usuario</a></li>
+    <li><a href="#otros">Otras tareas (cotizaciones, clientes, crédito, Hacienda, rutas)</a></li>
+    <li><a href="#problemas">Si algo sale mal</a></li>
+    <li><a href="#glosario">Glosario</a></li>
+  </ol>
+</nav>
+
+<!-- 1 -->
+<section id="entrar">
+  <div class="tag">Tarea 1</div>
+  <h2 class="t">Entrar al sistema</h2>
+  <p class="sub">Lo primero de cada día.</p>
+  <ol class="pasos">
+    <li>Abra el navegador de internet (Chrome) en la computadora.</li>
+    <li>En la barra de direcciones escriba <b class="ui">encomiendas.flkdevelopment.com</b> y presione <b>Enter</b>.</li>
+    <li>En <b class="ui">Correo o usuario</b> escriba su usuario y en <b class="ui">Contraseña</b> su clave. Presione el botón azul <b class="ui">Entrar</b>.</li>
+    <li>Ya adentro, a la izquierda está el <b>menú</b>: desde ahí se llega a todo lo demás. Arriba a la derecha verá su nombre, su sucursal y su rol.</li>
+  </ol>
+  <div class="nota"><strong>¡Importante!</strong>Su usuario y su clave son solo suyos. No se los preste a nadie: todo lo que se haga con ellos queda a su nombre.</div>
+  <div class="nota ok"><strong>Un consejo</strong>Guarde la página en favoritos (la estrellita de arriba a la derecha del navegador). Si le cansa la luz blanca, use la luna (<b class="ui">Modo oscuro</b>). El ojito junto a la clave le deja ver lo que escribió.</div>
+  <details>
+    <summary>¿Olvidé mi contraseña?</summary>
+    <ol>
+      <li>En la pantalla de entrada presione <b class="ui">¿Olvidaste tu contraseña?</b></li>
+      <li>Escriba su correo y presione <b class="ui">Enviar enlace</b>.</li>
+      <li>Le llegará un correo con los pasos para crear una clave nueva. Si no le llega, pídale ayuda al administrador.</li>
+    </ol>
+  </details>
+  <a class="top" href="#leer">↑ Volver arriba</a>
+</section>
+
+<!-- 2 -->
+<section id="abrir">
+  <div class="tag">Tarea 2</div>
+  <h2 class="t">¿Cómo abrir una caja?</h2>
+  <p class="sub">Al empezar el turno, antes de cobrar. Sin la caja abierta el sistema no deja cobrar en efectivo.</p>
+  <ol class="pasos">
+    <li>En el menú de la izquierda, presione <b class="ui">Caja</b>.</li>
+    <li>Arriba a la derecha, elija la caja en la que va a trabajar (por ejemplo <b class="ui">Caja principal</b>).</li>
+    <li>En <b class="ui">Fondo inicial (₡)</b> escriba cuánto dinero hay en la gaveta para empezar (el sencillo para dar vuelto).</li>
+    <li>Presione el botón azul <b class="ui">Abrir caja</b>.</li>
+  </ol>
+  <div class="nota"><strong>¡Importante!</strong>La caja que usted abre es <b>suya</b>. No cobre en la caja de un compañero: el dinero se sumaría a la cuenta de él. Si dos cajeros cobran a la vez en la misma sucursal, cada uno usa una caja distinta.</div>
+  <div class="acciones-tarea">
+    <a class="top" href="#leer">↑ Volver arriba</a>
+    <button type="button" class="boton-video" data-video="videos/Video Caja.mp4" data-titulo="Cómo abrir una caja">▶ Ver video</button>
+  </div>
+</section>
+
+<!-- 3 -->
+<section id="recibir">
+  <div class="tag">Tarea 3</div>
+  <h2 class="t">Recibir una encomienda</h2>
+  <p class="sub">Cuando un cliente viene a enviar un paquete. El sistema le llama «guía». Si pide algo especial (domicilio, seguro, factura…), vea también la Tarea 4.</p>
+  <ol class="pasos">
+    <li>En el menú presione <b class="ui">Facturas / Encomiendas</b> y luego el botón azul <b class="ui">+ Nueva guía</b>.</li>
+    <li>En <b class="ui">Ruta predefinida</b> elija hacia dónde va el paquete. La <b class="ui">Sucursal de recogida</b> y la <b class="ui">Sucursal de entrega</b> se llenan solas.</li>
+    <li>Escriba el nombre y teléfono de quien envía (<b class="ui">Remitente</b>) y de quien recibe (<b class="ui">Receptor</b>). Si el cliente ya está registrado, búsquelo en <b class="ui">Cliente registrado</b> y los datos se llenan solos.</li>
+    <li>En <b class="ui">Paquetes</b> elija el <b class="ui">Tipo de bulto</b>, el <b class="ui">Tamaño</b> (Pequeño, Mediano o Grande), el <b class="ui">Peso (kg)</b> y una breve <b class="ui">Descripción</b>. Presione <b class="ui">Calcular con el tarifario</b>: el precio aparece solo. Si son varios paquetes, presione <b class="ui">Agregar paquete</b> por cada uno.</li>
+    <li>En <b class="ui">¿Cómo se paga esta guía?</b> elija:
+      <ul>
+        <li><b class="ui">Pagado</b>: paga ahora. Elija también el <b class="ui">Medio de pago</b> (Efectivo, Tarjeta, SINPE Móvil o Transferencia).</li>
+        <li><b class="ui">Por cobrar</b>: paga quien lo recoge, al llegar.</li>
+        <li><b class="ui">A crédito</b>: solo para clientes que tienen crédito.</li>
+      </ul>
+    </li>
+    <li>Abajo aparece el total. Revíselo con calma y presione <b class="ui">Guardar factura</b>.</li>
+  </ol>
+  <div class="nota info"><strong>Dato útil</strong>El precio que sugiere el sistema es solo una sugerencia: puede ajustarlo antes de guardar. Si no hay tarifa para esa ruta y peso, escriba el precio a mano.</div>
+  <div class="acciones-tarea">
+    <a class="top" href="#leer">↑ Volver arriba</a>
+    <button type="button" class="boton-video" data-video="videos/Video Caja.mp4" data-titulo="Cómo abrir una caja">▶ Ver video</button>
+  </div>
+</section>
+
+<!-- 4 -->
+<section id="especiales">
+  <div class="tag">Tarea 4</div>
+  <h2 class="t">Opciones especiales de la guía</h2>
+  <p class="sub">Todo esto está en la misma pantalla de <b class="ui">Nueva guía</b>. Úselo solo si el cliente lo pide; si no, déjelo como está.</p>
+  <table>
+    <tr><th style="width:34%">Si el cliente…</th><th>Haga esto</th></tr>
+    <tr><td>Envía un sobre o un documento</td><td>En <b class="ui">Tipo de envío</b> elija <b class="ui">Sobre</b> o <b class="ui">Documento</b> en vez de Paquete. El precio cambia según el tipo.</td></tr>
+    <tr><td>Quiere asegurar el envío</td><td>En <b class="ui">Valor declarado (₡)</b> escriba cuánto vale lo que envía. El sistema cobra un porcentaje como seguro y lo suma solo. Si no quiere seguro, déjelo en cero.</td></tr>
+    <tr><td>Quiere entrega en la casa</td><td>Marque <b class="ui">Entrega a domicilio</b>. Escriba la <b class="ui">Dirección exacta</b> (provincia, cantón, distrito y señas) y el <b class="ui">Cargo por domicilio (₡)</b>.</td></tr>
+    <tr><td>Pide factura electrónica</td><td>Marque <b class="ui">Emitir Factura Electrónica</b> y en <b class="ui">Facturar a</b> elija Destinatario, Remitente u Otra persona. Esa persona necesita su identificación (cédula <b>sin guiones ni espacios</b>) y su correo. Si no la pide, no marque nada: sale un <b>Tiquete Electrónico</b>.</td></tr>
+    <tr><td>Trae un paquete grande pero liviano</td><td>Además del peso, escriba las medidas en <b class="ui">L × A × H (cm)</b>. El sistema cobra por lo que pesa o por el espacio que ocupa, lo que sea mayor (peso volumétrico).</td></tr>
+    <tr><td>Merece un descuento</td><td>Escríbalo en <b class="ui">Descuento (₡)</b>. Si el sistema pide una <b class="ui">Clave de autorización</b>, la tiene que poner el administrador.</td></tr>
+    <tr><td>Va a una ruta que no aparece</td><td>En <b class="ui">Ruta predefinida</b> elija <b class="ui">Sin ruta: elegir las sucursales a mano</b> y escoja la sucursal de recogida y la de entrega.</td></tr>
+    <tr><td>Hay algo que avisar</td><td>Escríbalo en <b class="ui">Notas</b>: «frágil, no voltear», «llamar antes de entregar»…</td></tr>
+  </table>
+  <a class="top" href="#leer">↑ Volver arriba</a>
+</section>
+
+<!-- 5 -->
+<section id="imprimir">
+  <div class="tag">Tarea 5</div>
+  <h2 class="t">Imprimir la etiqueta y el recibo</h2>
+  <p class="sub">Después de guardar, el sistema le muestra la guía con sus botones.</p>
+  <ol class="pasos">
+    <li>Presione <b class="ui">Etiqueta del paquete</b>. Sale una etiqueta por cada paquete: péguela en la caja, donde se vea bien.</li>
+    <li>Presione <b class="ui">Recibo del cliente</b> y entréguele el recibo. Trae un código QR para que el cliente vea desde su celular por dónde va su paquete.</li>
+    <li>Si el cliente pidió factura, use <b class="ui">Imprimir factura</b> o <b class="ui">Descargar factura</b>.</li>
+    <li>Si la impresora no imprime, revise que esté encendida y con papel, y vuelva a presionar el botón.</li>
+  </ol>
+  <div class="nota"><strong>¡Importante!</strong>Si se equivocó en la guía, no haga otra encima: avísele al administrador. Solo él puede anularla.</div>
+  <a class="top" href="#leer">↑ Volver arriba</a>
+</section>
+
+<!-- 6 -->
+<section id="buscar">
+  <div class="tag">Tarea 6</div>
+  <h2 class="t">Buscar una encomienda</h2>
+  <p class="sub">Cuando un cliente pregunta por su paquete.</p>
+  <ol class="pasos">
+    <li>En el menú presione <b class="ui">Facturas / Encomiendas</b>.</li>
+    <li>La lista empieza en <b class="ui">Hoy</b>. Si el paquete es de otro día, presione <b class="ui">Esta semana</b>, <b class="ui">Este mes</b>, <b class="ui">Rango</b> o <b class="ui">Todas</b>.</li>
+    <li>En <b class="ui">Buscar</b> escriba el número de la guía, o el nombre de quien envía o recibe. También puede escanear el código de barras de la etiqueta con el lector o la cámara.</li>
+    <li>La columna <b class="ui">Estado</b> dice dónde está el paquete (Recibido, Enviado, Llegó al destino, Entregado…). Para ver todo sobre esa guía, presione su <b>número en azul</b>.</li>
+  </ol>
+  <a class="top" href="#leer">↑ Volver arriba</a>
+</section>
+
+<!-- 7 -->
+<section id="entregar">
+  <div class="tag">Tarea 7</div>
+  <h2 class="t">Entregar una encomienda</h2>
+  <p class="sub">Cuando alguien viene a retirar un paquete que ya llegó.</p>
+  <ol class="pasos">
+    <li>Busque la guía (Tarea 6) y presione su número en azul.</li>
+    <li>Presione el botón verde <b class="ui">Entregado</b>. El sistema le pregunta si está seguro: acepte.</li>
+    <li>Escriba el <b class="ui">Nombre de quien retira</b> y su <b class="ui">Identificación</b> (pídale la cédula y revísela).</li>
+    <li>Pídale que firme en el cuadro <b class="ui">Firma</b>, con el dedo o con el ratón. Presione <b class="ui">Confirmar entrega</b> y entréguele el paquete.</li>
+  </ol>
+  <div class="nota"><strong>¡Importante!</strong>Si la guía es <b>Por cobrar</b>, el cobro entra a su caja al confirmar la entrega. Para eso necesita tener su caja abierta. Reciba el dinero antes de entregar.</div>
+  <a class="top" href="#leer">↑ Volver arriba</a>
+</section>
+
+<!-- 8 -->
+<section id="cobrar">
+  <div class="tag">Tarea 8</div>
+  <h2 class="t">Cobrar lo pendiente</h2>
+  <p class="sub">Las guías que esperan pago aparecen solas en la pantalla de Caja.</p>
+  <ol class="pasos">
+    <li>En el menú presione <b class="ui">Caja</b> y busque la guía en la lista <b class="ui">Por cobrar en caja</b> (o escanee la etiqueta).</li>
+    <li>Al lado, elija cómo paga el cliente (<b class="ui">Efectivo</b>, <b class="ui">Tarjeta</b>, <b class="ui">SINPE Móvil</b>…) y presione <b class="ui">Cobrar</b>.</li>
+    <li>Si el cliente quiere comprobante, presione <b class="ui">Recibo</b> o <b class="ui">Factura</b>.</li>
+  </ol>
+  <a class="top" href="#leer">↑ Volver arriba</a>
+</section>
+
+<!-- 9 -->
+<section id="movimiento">
+  <div class="tag">Tarea 9</div>
+  <h2 class="t">¿Cómo reportar entrada o salida de dinero en la caja?</h2>
+  <p class="sub">Cualquier dinero que entra o sale de la gaveta y que no es un cobro: sencillo que trajeron, una compra de la oficina, un pago a un proveedor.</p>
+  <ol class="pasos">
+    <li>En <b class="ui">Caja</b>, busque el cuadro <b class="ui">Entrada o salida de efectivo</b>.</li>
+    <li>En <b class="ui">Tipo</b> elija <b class="ui">Entrada</b> si mete dinero (por ejemplo, reposición de sencillo) o <b class="ui">Salida</b> si lo saca (por ejemplo, pago de limpieza).</li>
+    <li>Escriba el <b class="ui">Monto (₡)</b> en colones.</li>
+    <li>En <b class="ui">Motivo</b> escriba para qué fue: «Compra de agua para la oficina», «Ingreso de cambio»…</li>
+    <li>Presione <b class="ui">Registrar</b>. El movimiento queda en la tabla de movimientos del turno.</li>
+  </ol>
+  <div class="nota"><strong>¡Importante!</strong>Siempre escriba el motivo. Si al cerrar la caja falta o sobra dinero, ese motivo es lo que lo explica.</div>
+  <a class="top" href="#leer">↑ Volver arriba</a>
+</section>
+
+<!-- 10 -->
+<section id="cerrar">
+  <div class="tag">Tarea 10</div>
+  <h2 class="t">¿Cómo cerrar una caja?</h2>
+  <p class="sub">Al terminar el turno, antes de irse.</p>
+  <ol class="pasos">
+    <li>En <b class="ui">Caja</b>, presione el botón azul <b class="ui">Cerrar turno y hacer arqueo</b>.</li>
+    <li>Cuente el dinero de la gaveta. En cada casilla escriba <b>cuántos</b> billetes y monedas hay de cada valor, desde ₡20,000 hasta ₡5 (por ejemplo: 3 billetes de ₡10,000 → escriba 3 en la casilla ₡10,000).</li>
+    <li>El sistema suma solo y le muestra <b class="ui">Esperado</b>, <b class="ui">Contado</b> y <b class="ui">Diferencia</b>. Si la diferencia es ₡0.00, la caja cuadra.</li>
+    <li>Si pasó algo fuera de lo normal o hay diferencia, explíquelo en <b class="ui">Nota de cierre</b>.</li>
+    <li>Presione <b class="ui">Confirmar cierre</b> y acepte la pregunta.</li>
+    <li>Si le piden el comprobante, presione <b class="ui">Reporte del turno</b> para imprimirlo (cómo leerlo: <a href="#reporte">ver aquí</a>).</li>
+  </ol>
+  <div class="nota"><strong>¡Importante!</strong>Una caja cerrada no se puede volver a abrir. Revise bien el conteo antes de confirmar.</div>
+  <div class="nota ok"><strong>Un consejo</strong>Si un día se le olvidó cerrar, avísele al administrador: él puede cerrarla.</div>
+  <a class="top" href="#leer">↑ Volver arriba</a>
+</section>
+
+<!-- Arqueo -->
+<section id="arqueo">
+  <div class="tag">Concepto</div>
+  <h2 class="t">¿Qué es el arqueo?</h2>
+  <p class="sub">Es el conteo físico de todo el dinero en efectivo (billetes y monedas) que hay en el cajón, para compararlo contra lo que el sistema registró.</p>
+  <p>Sirve para detectar a tiempo si <b>sobra</b> o <b>falta</b> dinero antes de cerrar el turno. Se hace siempre al cerrar la caja, usando el botón <b class="ui">Cerrar turno y hacer arqueo</b>.</p>
+  <h3>¿Cómo se ve el resultado?</h3>
+  <table>
+    <tr><th>Resultado</th><th>Qué significa</th><th>Qué hacer</th></tr>
+    <tr><td><b>Diferencia ₡0.00</b></td><td>El dinero contado coincide con lo esperado.</td><td>Confirme el cierre.</td></tr>
+    <tr><td><b>Faltante</b> (diferencia negativa)</td><td>Hay menos dinero del que el sistema espera.</td><td>Vuelva a contar. Revise que no falte registrar una salida. Si persiste, explíquelo en la <b class="ui">Nota de cierre</b>.</td></tr>
+    <tr><td><b>Sobrante</b> (diferencia positiva)</td><td>Hay más dinero del esperado.</td><td>Vuelva a contar. Revise que no falte registrar una entrada. Si persiste, explíquelo en la nota.</td></tr>
+  </table>
+  <a class="top" href="#leer">↑ Volver arriba</a>
+</section>
+
+<!-- Reporte -->
+<section id="reporte">
+  <div class="tag">Concepto</div>
+  <h2 class="t">¿Cómo interpretar el reporte de cierre de caja (PDF)?</h2>
+  <p class="sub">El reporte resume el dinero de su turno. Se imprime con <b class="ui">Reporte del turno</b>, o se descarga desde la lista <b class="ui">Últimos turnos cerrados</b> (botón <b class="ui">PDF</b>).</p>
+  <table>
+    <tr><th style="width:30%">Línea del reporte</th><th>Qué significa</th></tr>
+    <tr><td><b>Fondo inicial</b></td><td>El dinero con el que abrió la caja (sencillo para dar vuelto).</td></tr>
+    <tr><td><b>Efectivo esperado</b></td><td>Lo que debería haber en la gaveta según el sistema.</td></tr>
+    <tr><td><b>Total contado</b></td><td>Lo que usted contó de verdad en el arqueo.</td></tr>
+    <tr><td><b>Diferencia</b></td><td>Contado menos esperado. Negativa = faltante; positiva = sobrante; cero = cuadra.</td></tr>
+    <tr><td><b>Desglose por medio de pago</b></td><td>Lo cobrado por Efectivo, Tarjeta, SINPE Móvil y Transferencia. Solo el efectivo entra al arqueo; los otros medios no están en la gaveta.</td></tr>
+  </table>
+  <div class="formula">Efectivo esperado = Fondo inicial + cobros en efectivo + entradas − salidas</div>
+  <div class="nota info"><strong>Dato útil</strong>Las salidas y entradas que usted registró con su motivo (Tarea 9) son parte de este cálculo. Por eso es importante anotarlas siempre.</div>
+  <a class="top" href="#leer">↑ Volver arriba</a>
+</section>
+
+<!-- Usuario -->
+<section id="usuario">
+  <div class="tag">Administración</div>
+  <h2 class="t">¿Cómo crear un usuario nuevo?</h2>
+  <p class="sub">Para dar acceso a un cajero, repartidor u otro colaborador. Normalmente lo hace el administrador.</p>
+  <ol class="pasos">
+    <li>En el menú de la izquierda, seleccione <b class="ui">Usuarios</b>.</li>
+    <li>Presione el botón azul <b class="ui">+ Nuevo usuario</b> (arriba a la derecha).</li>
+    <li>Llene los datos: <b class="ui">Nombre completo</b>, <b class="ui">Usuario</b> (para iniciar sesión, debe ser único), <b class="ui">Correo electrónico</b> y <b class="ui">Contraseña</b>.</li>
+    <li>Elija el <b class="ui">Rol</b> y la <b class="ui">Sucursal base</b> donde trabaja. Puede agregar su <b class="ui">Teléfono</b>.</li>
+    <li>Verifique que la casilla <b class="ui">Activo</b> esté marcada y presione <b class="ui">Guardar</b>.</li>
+  </ol>
+  <h3>Roles disponibles</h3>
+  <table>
+    <tr><th>Rol</th><th>Para quién es</th></tr>
+    <tr><td><b>Administrador</b></td><td>Configura el sistema, usuarios, tarifas, y puede anular guías o cerrar cajas olvidadas.</td></tr>
+    <tr><td><b>Cajero</b></td><td>Abre y cierra caja, recibe y cobra encomiendas.</td></tr>
+    <tr><td><b>Dependiente</b></td><td>Atiende al cliente en la sucursal.</td></tr>
+    <tr><td><b>Repartidor</b></td><td>Lleva los paquetes en ruta y los ve en <b class="ui">Mi ruta</b>.</td></tr>
+    <tr><td><b>Despachador</b></td><td>Prepara los cierres de envío (manifiestos) de la sucursal.</td></tr>
+  </table>
+  <div class="nota"><strong>¡Importante!</strong>Entréguele al colaborador su usuario y clave en privado, y recuérdele que son personales e intransferibles.</div>
+  <a class="top" href="#leer">↑ Volver arriba</a>
+</section>
+
+<!-- Rol -->
+<section id="rol">
+  <div class="tag">Administración</div>
+  <h2 class="t">¿Cómo cambiar el rol a un usuario existente?</h2>
+  <ol class="pasos">
+    <li>Ingrese al módulo <b class="ui">Usuarios</b>.</li>
+    <li>En la lista, busque a la persona y en la columna <b class="ui">Acciones</b> presione <b class="ui">Editar</b>.</li>
+    <li>En la lista desplegable <b class="ui">Rol</b>, elija el nuevo perfil.</li>
+    <li>Si no desea cambiar su contraseña, deje esa casilla <b>en blanco</b>.</li>
+    <li>Presione <b class="ui">Guardar</b>.</li>
+  </ol>
+  <div class="nota ok"><strong>Un consejo</strong>Con <b class="ui">Editar</b> también puede cambiar la sucursal base, el teléfono o desmarcar <b class="ui">Activo</b> para que alguien deje de entrar sin borrarlo. Para quitar a alguien del todo, use <b class="ui">Eliminar</b> y confirme.</div>
+  <a class="top" href="#leer">↑ Volver arriba</a>
+</section>
+
+<!-- Otros -->
+<section id="otros">
+  <div class="tag">Otras tareas</div>
+  <h2 class="t">Otras pantallas del menú</h2>
+  <p class="sub">Menos frecuentes, pero conviene saber para qué sirven.</p>
+  <details><summary>Cotizaciones: darle un precio por escrito al cliente</summary>
+    <ol>
+      <li>Menú <b class="ui">Cotizaciones</b> → <b class="ui">+ Nueva cotización</b>.</li>
+      <li>Elija <b class="ui">Sede origen</b>, <b class="ui">Sede destino</b> y hasta qué fecha es <b class="ui">Válida hasta</b>.</li>
+      <li>Escriba el nombre, correo y teléfono del cliente, y agregue los bultos con su peso, medidas y precio.</li>
+      <li>Presione <b class="ui">Guardar cotización</b>. Luego puede descargarla en PDF o enviarla por correo.</li>
+    </ol>
+    <p>Una cotización <b>no es una venta</b>: no se factura ni gasta número de guía.</p>
+  </details>
+  <details><summary>Clientes: registrar y editar</summary>
+    <ol>
+      <li>Menú <b class="ui">Clientes</b> → <b class="ui">+ Nuevo cliente</b>.</li>
+      <li>Escriba nombre, identificación (sin guiones), contacto y elija la condición de pago: <b class="ui">Contado</b> o <b class="ui">Crédito</b> (con su límite en colones).</li>
+      <li>Presione <b class="ui">Guardar</b>. Para muchos clientes a la vez use <b class="ui">Importar CSV</b>: descargue la plantilla, llénela y súbala.</li>
+    </ol>
+    <p>Sin identificación, el comprobante sale como Tiquete Electrónico; con identificación, como Factura Electrónica.</p>
+  </details>
+  <details><summary>Crédito: cobrarle a clientes con crédito</summary>
+    <ol>
+      <li>Menú <b class="ui">Crédito</b> y elija al cliente en <b class="ui">Cliente de crédito</b>.</li>
+      <li>Para cobrar de una vez lo acumulado, escriba el <b class="ui">Plazo de crédito (días)</b> y presione <b class="ui">Emitir estado de cuenta</b>.</li>
+      <li>Cuando el cliente pague, en <b class="ui">Registrar abono</b> escriba el monto, el medio y la referencia (n.º de depósito) y presione <b class="ui">Registrar abono</b>.</li>
+    </ol>
+  </details>
+  <details><summary>Cierres de envío y Mi ruta: el viaje del camión</summary>
+    <p><b>Cierres de envío:</b> menú <b class="ui">Cierres de envío</b> → <b class="ui">+ Nuevo cierre</b>. Elija la ruta, el chofer y la placa, y presione <b class="ui">Crear cierre</b>. Con <b class="ui">PDF</b> se imprime el manifiesto que viaja con el camión.</p>
+    <p><b>Mi ruta:</b> el chofer o repartidor ve aquí los viajes que tiene asignados, desde su celular.</p>
+  </details>
+  <details><summary>Pendientes de envío a Hacienda: enviar facturas electrónicas</summary>
+    <ol>
+      <li>Menú <b class="ui">Pendientes de envío a Hacienda</b>, pestaña <b class="ui">Pendientes / con error</b>.</li>
+      <li>Marque los comprobantes (o <b class="ui">Seleccionar todos en esta página</b>).</li>
+      <li>Presione <b class="ui">Enviar seleccionadas a Hacienda</b>.</li>
+    </ol>
+    <p>Después los verá pasar por <b class="ui">Enviados</b> y <b class="ui">Aceptados</b>. Si aparece en <b class="ui">Rechazados</b>, avise al administrador.</p>
+  </details>
+  <details><summary>Reportes</summary>
+    <p>Menú <b class="ui">Reportes</b>: elija el reporte, el rango de fechas (<b class="ui">Desde</b> / <b class="ui">Hasta</b>) y la sede. <b class="ui">Guías por estado</b> muestra cuántas guías hay en cada etapa, su monto y lo que está por cobrar.</p>
+  </details>
+  <details><summary>Configuración (solo administrador): sucursales, cajas, tarifario, rutas, tipos de bulto, impuestos</summary>
+    <p>En todas estas pantallas el proceso es el mismo: botón azul <b class="ui">+ Nueva/Nuevo</b> arriba a la derecha → llenar el formulario → <b class="ui">Guardar</b>. Para cambiar algo use <b class="ui">Editar</b> en la columna <b class="ui">Acciones</b>; para quitarlo, <b class="ui">Eliminar</b> y confirmar.</p>
+    <ul>
+      <li><b>Sucursales:</b> nombre, prefijo del código de guía, códigos de Hacienda, dirección y horarios.</li>
+      <li><b>Cajas:</b> sede, nombre, tipo de impresora y ancho del rollo.</li>
+      <li><b>Tarifario:</b> precios por origen, destino, tipo de envío y rango de peso. Use <b class="ui">Cotizar</b> para probar un precio.</li>
+      <li><b>Rutas:</b> pares de sedes que se eligen al crear una guía.</li>
+      <li><b>Tipos de bulto:</b> Paquete, Sobre, Caja… (se pueden marcar como frágil).</li>
+      <li><b>Impuestos:</b> por ejemplo IVA 13%, con su código de tarifa de Hacienda.</li>
+      <li><b>Actividad de usuarios:</b> bitácora de lo que hizo cada persona, con filtros por usuario y fechas.</li>
+    </ul>
+  </details>
+  <a class="top" href="#leer">↑ Volver arriba</a>
+</section>
+
+<!-- Problemas -->
+<section id="problemas">
+  <div class="tag">Si algo sale mal</div>
+  <h2 class="t">Tranquilo: casi todo tiene arreglo</h2>
+  <ol class="pasos">
+    <li><b>Presione cada botón una sola vez</b> y espere. Después lea el mensaje de colores que aparece arriba: casi siempre dice qué falta. Si el sistema le hace una pregunta, léala con calma antes de aceptar: muchos cambios no se pueden deshacer.</li>
+    <li><b>Pida ayuda a la pantalla.</b> El signo <b class="ui">?</b> junto a un botón explica qué hace, y el botón <b class="ui">Guía</b> de arriba explica la pantalla completa.</li>
+    <li><b>Si se equivocó en una guía</b> (precio, nombre, destino), no haga otra encima: avísele al administrador. Solo él puede anularla.</li>
+    <li><b>Al irse</b>, cierre la caja y presione <b class="ui">Salir</b> (arriba a la derecha).</li>
+  </ol>
+  <h3>Problemas comunes</h3>
+  <details><summary>No puedo ingresar (error de clave o usuario)</summary>
+    <p>Presione el ojito para ver lo que escribió. Si olvidó la clave, use <b class="ui">¿Olvidaste tu contraseña?</b> con su correo registrado, o pídale ayuda al administrador.</p>
+  </details>
+  <details><summary>Al cerrar la caja hay faltante o sobrante</summary>
+    <p>Cuente de nuevo billete por billete y moneda por moneda. Revise que no haya omitido registrar una entrada o salida de efectivo. Si la diferencia sigue, explíquela en <b class="ui">Nota de cierre</b> antes de confirmar.</p>
+  </details>
+  <details><summary>El cliente necesita factura electrónica pero salió tiquete</summary>
+    <p>Pasa cuando no se indicó la identificación. En <b class="ui">Clientes</b> edite o cree el cliente con su cédula sin guiones ni espacios, y en la guía marque <b class="ui">Emitir Factura Electrónica</b>.</p>
+  </details>
+  <details><summary>Una factura no llega a Hacienda o marca error</summary>
+    <p>Entre a <b class="ui">Pendientes de envío a Hacienda</b>, pestaña <b class="ui">Pendientes / con error</b>, seleccione los documentos y presione <b class="ui">Enviar seleccionadas a Hacienda</b> para reintentar. Si vuelve a fallar, revise los datos del cliente.</p>
+  </details>
+  <details><summary>El precio es distinto al que esperaba</summary>
+    <p>El sistema cobra por el mayor entre el <b>peso real</b> y el <b>peso volumétrico</b> (largo × ancho × alto). Revise las medidas y el <b class="ui">Tarifario</b>.</p>
+  </details>
+  <div class="nota info"><strong>¿Necesita ayuda con el sistema?</strong>Llame al <b>7262-7896</b> o escriba a <b>info@flkdevelopment.com</b></div>
+</section>
+
+<!-- Glosario -->
+<section id="glosario">
+  <div class="tag">Referencia</div>
+  <h2 class="t">Glosario</h2>
+  <table>
+    <tr><th style="width:30%">Término</th><th>Significado</th></tr>
+    <tr><td>Guía / Encomienda</td><td>Documento y número de rastreo único de un paquete enviado de una sucursal a otra.</td></tr>
+    <tr><td>Arqueo de caja</td><td>Conteo físico del dinero para comprobar que coincide con el sistema.</td></tr>
+    <tr><td>Fondo inicial</td><td>Efectivo con el que el cajero empieza el turno para dar vuelto.</td></tr>
+    <tr><td>Por cobrar</td><td>El flete lo paga quien retira el paquete, no quien lo envía.</td></tr>
+    <tr><td>A crédito</td><td>Envío que se cobra después, a un cliente con crédito autorizado.</td></tr>
+    <tr><td>Peso volumétrico</td><td>Cálculo del espacio que ocupa un paquete (largo × ancho × alto); se cobra el mayor entre éste y el peso real.</td></tr>
+    <tr><td>Cierre de envío / Manifiesto</td><td>Lista de todas las encomiendas que viajan juntas en un vehículo hacia otra sede.</td></tr>
+    <tr><td>Corte de período</td><td>Agrupar lo acumulado de un cliente de crédito para emitirle un solo estado de cuenta.</td></tr>
+    <tr><td>Sucursal de origen / destino</td><td>Donde se recibe el paquete / donde se retira.</td></tr>
+    <tr><td>Tiquete vs. Factura Electrónica</td><td>Tiquete: sin cédula del cliente. Factura: con nombre y cédula, ante Hacienda.</td></tr>
+  </table>
+</section>
+
+</main>
+<dialog id="modal-video" class="modal-video" aria-labelledby="titulo-video">
+  <div class="modal-encabezado">
+    <h2 id="titulo-video">Videotutorial</h2>
+    <button type="button" class="cerrar-video" aria-label="Cerrar video">✕</button>
+  </div>
+  <video id="reproductor-video" controls playsinline preload="metadata"></video>
+  <p class="ayuda-video" id="ayuda-video" hidden>El tutorial aún no se ha agregado. Guarde el archivo en <strong>videos/abrir-caja.mp4</strong> para activarlo.</p>
+</dialog>
+<footer>FLK Encomiendas · Manual de usuario · Versión 1 · 07/10/2026</footer>
+<script>
+const modalVideo = document.getElementById('modal-video');
+const reproductor = document.getElementById('reproductor-video');
+const ayudaVideo = document.getElementById('ayuda-video');
+
+document.querySelectorAll('[data-video]').forEach(boton => {
+  boton.addEventListener('click', () => {
+    document.getElementById('titulo-video').textContent = 'Videotutorial: ' + boton.dataset.titulo;
+    ayudaVideo.hidden = true;
+    reproductor.hidden = false;
+    reproductor.src = boton.dataset.video;
+    modalVideo.showModal();
+    reproductor.play().catch(() => {}); // Algunos navegadores exigen pulsar Play.
+  });
+});
+
+reproductor.addEventListener('error', () => {
+  reproductor.hidden = true;
+  ayudaVideo.hidden = false;
+});
+
+function cerrarVideo() { modalVideo.close(); }
+document.querySelector('.cerrar-video').addEventListener('click', cerrarVideo);
+modalVideo.addEventListener('click', event => { if (event.target === modalVideo) cerrarVideo(); });
+modalVideo.addEventListener('close', () => {
+  reproductor.pause();
+  reproductor.removeAttribute('src');
+  reproductor.load();
+});
+</script>
+</body>
+</html>
