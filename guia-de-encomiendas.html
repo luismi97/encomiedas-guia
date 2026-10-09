@@ -1,0 +1,2327 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="Manual de usuario interactivo del sistema POS de encomiendas" name="description"/>
+  <title>
+   Manual de usuario | FLK Encomiendas
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <a class="saltar" href="#contenido-principal">
+   Saltar al contenido principal
+  </a>
+  <!-- EDITAR LOGO: reemplace imagenes/logo.png con el archivo del logo de la empresa. -->
+  <header class="banner" id="arriba">
+   <div class="banner-inner">
+    <div class="identity">
+     <div class="logo-slot">
+      <img alt="Logo de la empresa" onerror="this.hidden=true;this.nextElementSibling.hidden=false" src="imagenes/logo.png"/>
+      <span class="logo-fallback" hidden="">
+       FLK
+      </span>
+     </div>
+     <div>
+      <span class="brand-small">
+       FLK DEVELOPMENTS &middot; ENCOMIENDAS
+      </span>
+      <h1>
+       Manual de usuario
+      </h1>
+      <p>
+       Aprenda a utilizar cada m&oacute;dulo, paso a paso
+      </p>
+     </div>
+    </div>
+    <div class="version">
+     POS ENCOMIENDAS
+     <span>
+      Versi&oacute;n 1 &middot; Octubre 2026
+     </span>
+    </div>
+   </div>
+  </header>
+  <div class="page-layout">
+   <aside aria-label="&Iacute;ndice del manual" class="sidebar" id="contenido">
+    <div class="sidebar-sticky">
+     <div class="sidebar-top">
+      <h2>
+       Contenido del manual
+      </h2>
+      <span>
+       18 m&oacute;dulos
+      </span>
+     </div>
+     <label class="search-label" for="buscador">
+      Buscar un m&oacute;dulo
+     </label>
+     <input autocomplete="off" id="buscador" placeholder="Ej. caja, clientes, rutas&hellip;" type="search"/>
+     <nav id="module-nav">
+      <a class="nav-link" href="#mod-inicio">
+       <span class="nav-dot">
+       </span>
+       Inicio
+      </a>
+      <a class="nav-link" href="#mod-facturas">
+       <span class="nav-dot">
+       </span>
+       Facturas / Encomiendas
+      </a>
+      <a class="nav-link" href="#mod-mi-ruta">
+       <span class="nav-dot">
+       </span>
+       Mi ruta
+      </a>
+      <a class="nav-link" href="#mod-cierres-envio">
+       <span class="nav-dot">
+       </span>
+       Cierres de env&iacute;o
+      </a>
+      <a class="nav-link" href="#mod-caja">
+       <span class="nav-dot">
+       </span>
+       Caja
+      </a>
+      <a class="nav-link" href="#mod-cotizaciones">
+       <span class="nav-dot">
+       </span>
+       Cotizaciones
+      </a>
+      <a class="nav-link" href="#mod-clientes">
+       <span class="nav-dot">
+       </span>
+       Clientes
+      </a>
+      <a class="nav-link" href="#mod-credito">
+       <span class="nav-dot">
+       </span>
+       Cr&eacute;dito y cuentas por cobrar
+      </a>
+      <a class="nav-link" href="#mod-reportes">
+       <span class="nav-dot">
+       </span>
+       Reportes
+      </a>
+      <a class="nav-link" href="#mod-hacienda">
+       <span class="nav-dot">
+       </span>
+       Pendientes de env&iacute;o a Hacienda
+      </a>
+      <a class="nav-link" href="#mod-sucursales">
+       <span class="nav-dot">
+       </span>
+       Sucursales
+      </a>
+      <a class="nav-link" href="#mod-cajas">
+       <span class="nav-dot">
+       </span>
+       Cajas
+      </a>
+      <a class="nav-link" href="#mod-tarifario">
+       <span class="nav-dot">
+       </span>
+       Tarifario
+      </a>
+      <a class="nav-link" href="#mod-rutas">
+       <span class="nav-dot">
+       </span>
+       Rutas
+      </a>
+      <a class="nav-link" href="#mod-bultos">
+       <span class="nav-dot">
+       </span>
+       Tipos de bulto
+      </a>
+      <a class="nav-link" href="#mod-impuestos">
+       <span class="nav-dot">
+       </span>
+       Impuestos
+      </a>
+      <a class="nav-link" href="#mod-usuarios">
+       <span class="nav-dot">
+       </span>
+       Usuarios
+      </a>
+      <a class="nav-link" href="#mod-actividad">
+       <span class="nav-dot">
+       </span>
+       Actividad de usuarios
+      </a>
+     </nav>
+     <div class="sidebar-links">
+      <a href="#acceso">
+       Acceso al sistema
+      </a>
+      <a href="#problemas">
+       Soluci&oacute;n de problemas
+      </a>
+      <a href="#faq">
+       Preguntas frecuentes
+      </a>
+      <a href="#glosario">
+       Glosario
+      </a>
+     </div>
+    </div>
+   </aside>
+   <main id="contenido-principal">
+    <section class="welcome" id="acceso">
+     <span class="eyebrow">
+      GU&Iacute;A PR&Aacute;CTICA
+     </span>
+     <h2>
+      C&oacute;mo utilizar este manual
+     </h2>
+     <p>
+      Este manual est&aacute; organizado por m&oacute;dulos, igual que el sistema. Elija un m&oacute;dulo en el &iacute;ndice y lea sus tareas en orden. Cada paso indica qu&eacute; opci&oacute;n debe buscar y qu&eacute; hacer despu&eacute;s. Puede consultar un video por m&oacute;dulo cuando est&eacute; disponible.
+     </p>
+     <div class="intro-grid">
+      <div>
+       <b>
+        01
+       </b>
+       <span>
+        Elija un m&oacute;dulo.
+       </span>
+      </div>
+      <div>
+       <b>
+        02
+       </b>
+       <span>
+        Siga los pasos de cada tarjeta.
+       </span>
+      </div>
+      <div>
+       <b>
+        03
+       </b>
+       <span>
+        Consulte el video si necesita una demostraci&oacute;n.
+       </span>
+      </div>
+     </div>
+     <article class="task intro-card">
+      <div class="task-head">
+       <span class="task-number">
+        A
+       </span>
+       
+       <h3>
+        Ingresar al sistema
+       </h3>
+      </div>
+        <button class="video-btn" data-title="Facturas / Encomiendas" data-video="videos/iniciodesesion.mp4" type="button" style="margin-left: 75%; margin-bottom: 1rem;">
+       ▶ Ver video del m&oacute;dulo
+      </button>
+      <p class="instruccion">
+       Siga estos pasos:
+      </p>
+      <ol class="pasos">
+       <li>
+        Abra su navegador e ingrese a
+        <strong>
+         encomiendas.flkdevelopment.com
+        </strong>
+        .
+       </li>
+       <li>
+        Escriba Correo o usuario y Contrase&ntilde;a.
+       </li>
+       <li>
+        Opcionalmente marque Recordarme en un equipo personal.
+       </li>
+       <li>
+        Presione Entrar. Utilice el men&uacute; lateral para acceder a los m&oacute;dulos que permita su rol.
+       </li>
+       <li>
+        Si olvid&oacute; su contrase&ntilde;a, presione &iquest;Olvidaste tu contrase&ntilde;a?, escriba el correo y solicite Enviar enlace.
+       </li>
+      </ol>
+      <p class="tip">
+       Su contrase&ntilde;a es personal. No la comparta ni deje su sesi&oacute;n abierta en una computadora compartida.
+      </p>
+      
+     </article>
+     
+    </section>
+    <!-- MÓDULOS: cada section class="module" contiene tareas article class="task". data-video indica un único video para todo el módulo. -->
+    <div class="modules-heading">
+     <div>
+      <span class="eyebrow">
+       DOCUMENTACI&Oacute;N POR M&Oacute;DULOS
+      </span>
+      <h2>
+       Tareas del sistema
+      </h2>
+     </div>
+     <span class="count">
+      18 m&oacute;dulos &middot; 43 tarjetas
+     </span>
+    </div>
+    <section class="module" data-search="inicio resumen diario y navegaci&oacute;n conocer el panel de inicio usar la barra superior" id="mod-inicio">
+     <div class="module-header">
+      <div>
+       <div class="eyebrow">
+        M&Oacute;DULO 01 / 18
+       </div>
+       <h2>
+        Inicio
+       </h2>
+       <p>
+        Resumen diario y navegaci&oacute;n
+       </p>
+      </div>
+      <button class="video-btn" data-title="Inicio" data-video="videos/inicio.mp4" type="button">
+       ▶ Ver video del m&oacute;dulo
+      </button>
+     </div>
+     <div class="task-grid">
+      <article class="task" id="inicio-t1">
+       <div class="task-head">
+        <span class="task-number">
+         01.01
+        </span>
+        <h3>
+         Conocer el panel de inicio
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         En el men&uacute; izquierdo, seleccione Inicio desde el men&uacute; lateral.
+        </li>
+        <li>
+         Revise Hoy, Pendientes, En camino y Entregadas hoy.
+        </li>
+        <li>
+         Consulte los comprobantes pendientes de Hacienda.
+        </li>
+        <li>
+         Use + Nueva factura para registrar un env&iacute;o o Ver todas las facturas para consultar registros.
+        </li>
+        <li>
+         En &Uacute;ltimas facturas puede revisar c&oacute;digo, receptor, ruta, estado y Ver detalle.
+        </li>
+       </ol>
+      </article>
+      <article class="task" id="inicio-t2">
+       <div class="task-head">
+        <span class="task-number">
+         01.02
+        </span>
+        <h3>
+         Usar la barra superior
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Presione Gu&iacute;a para ver ayuda de la pantalla actual.
+        </li>
+        <li>
+         Utilice el icono de luna para alternar modo oscuro.
+        </li>
+        <li>
+         Confirme su usuario, rol y sucursal en el &aacute;rea superior.
+        </li>
+        <li>
+         Al terminar, presione Salir para cerrar su sesi&oacute;n.
+        </li>
+       </ol>
+      </article>
+     </div>
+     <a class="back-link" href="#contenido">
+      &uarr; Ir al &iacute;ndice
+     </a>
+    </section>
+    <section class="module" data-search="facturas / encomiendas registro, consulta e impresi&oacute;n de gu&iacute;as consultar y localizar una encomienda crear una nueva gu&iacute;a imprimir los documentos" id="mod-facturas">
+     <div class="module-header">
+      <div>
+       <div class="eyebrow">
+        M&Oacute;DULO 02 / 18
+       </div>
+       <h2>
+        Facturas / Encomiendas
+       </h2>
+       <p>
+        Registro, consulta e impresi&oacute;n de gu&iacute;as
+       </p>
+      </div>
+      <button class="video-btn" data-title="Facturas / Encomiendas" data-video="videos/facturas.mp4" type="button">
+       ▶ Ver video del m&oacute;dulo
+      </button>
+     </div>
+     <div class="task-grid">
+      <article class="task" id="facturas-t1">
+       <div class="task-head">
+        <span class="task-number">
+         02.01
+        </span>
+        <h3>
+         Consultar y localizar una encomienda
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Abra Facturas / Encomiendas.
+        </li>
+        <li>
+         Elija el per&iacute;odo: Hoy, Semana, Mes o Rango.
+        </li>
+        <li>
+         Filtre por estado, sucursal o medio de pago y busque por c&oacute;digo o con el lector de barras.
+        </li>
+        <li>
+         Revise la tabla y seleccione el n&uacute;mero de gu&iacute;a para consultar el detalle.
+        </li>
+        <li>
+         Si lo necesita, use Exportar PDF.
+        </li>
+       </ol>
+      </article>
+      <article class="task" id="facturas-t2">
+       <div class="task-head">
+        <span class="task-number">
+         02.02
+        </span>
+        <h3>
+         Crear una nueva gu&iacute;a
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         En la parte superior, haga clic en el bot&oacute;n &laquo;+ Nueva gu&iacute;a&raquo;.
+        </li>
+        <li>
+         Indique la ruta o las sucursales de recogida y entrega.
+        </li>
+        <li>
+         Complete nombre, tel&eacute;fono, correo y c&eacute;dula de remitente y receptor; tambi&eacute;n puede usar Cliente registrado.
+        </li>
+        <li>
+         En Paquetes, elija tipo de env&iacute;o, tama&ntilde;o, cantidad de bultos y descripci&oacute;n; complete peso y dimensiones cuando corresponda.
+        </li>
+        <li>
+         Seleccione Pagado, Por cobrar o A cr&eacute;dito. Si se paga ahora, elija el medio de pago.
+        </li>
+        <li>
+         Antes de terminar, confirme con el cliente que los datos y el importe sean correctos. Despu&eacute;s, presione &laquo;Guardar factura&raquo;.
+        </li>
+       </ol>
+      </article>
+      <article class="task" id="facturas-t3">
+       <div class="task-head">
+        <span class="task-number">
+         02.03
+        </span>
+        <h3>
+         Imprimir los documentos
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Localice la gu&iacute;a guardada en la lista.
+        </li>
+        <li>
+         Use las acciones para imprimir la etiqueta del bulto, el recibo del cliente o la factura.
+        </li>
+        <li>
+         Compruebe que la impresora tenga papel y que la etiqueta quede visible en el paquete.
+        </li>
+       </ol>
+      </article>
+     </div>
+     <a class="back-link" href="#contenido">
+      &uarr; Ir al &iacute;ndice
+     </a>
+    </section>
+    <section class="module" data-search="mi ruta viajes asignados a repartidores consultar viajes asignados" id="mod-mi-ruta">
+     <div class="module-header">
+      <div>
+       <div class="eyebrow">
+        M&Oacute;DULO 03 / 18
+       </div>
+       <h2>
+        Mi ruta
+       </h2>
+       <p>
+        Viajes asignados a repartidores
+       </p>
+      </div>
+      <button class="video-btn" data-title="Mi ruta" data-video="videos/mi-ruta.mp4" type="button">
+       ▶ Ver video del m&oacute;dulo
+      </button>
+     </div>
+     <div class="task-grid">
+      <article class="task" id="mi-ruta-t1">
+       <div class="task-head">
+        <span class="task-number">
+         03.01
+        </span>
+        <h3>
+         Consultar viajes asignados
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         En el men&uacute; izquierdo, seleccione Mi ruta con el usuario del repartidor.
+        </li>
+        <li>
+         Revise los cierres de env&iacute;o y viajes que aparecen asignados.
+        </li>
+        <li>
+         Abra el viaje disponible y revise sus datos antes del traslado.
+        </li>
+        <li>
+         Si aparece &laquo;No ten&eacute;s cierres en ruta asignados en este momento&raquo;, significa que a&uacute;n no hay un viaje asignado.
+        </li>
+       </ol>
+      </article>
+     </div>
+     <a class="back-link" href="#contenido">
+      &uarr; Ir al &iacute;ndice
+     </a>
+    </section>
+    <section class="module" data-search="cierres de env&iacute;o manifiestos de los paquetes que viajan juntos consultar cierres existentes crear un cierre de env&iacute;o" id="mod-cierres-envio">
+     <div class="module-header">
+      <div>
+       <div class="eyebrow">
+        M&Oacute;DULO 04 / 18
+       </div>
+       <h2>
+        Cierres de env&iacute;o
+       </h2>
+       <p>
+        Manifiestos de los paquetes que viajan juntos
+       </p>
+      </div>
+      <button class="video-btn" data-title="Cierres de env&iacute;o" data-video="videos/cierres-envio.mp4" type="button">
+       ▶ Ver video del m&oacute;dulo
+      </button>
+     </div>
+     <div class="task-grid">
+      <article class="task" id="cierres-envio-t1">
+       <div class="task-head">
+        <span class="task-number">
+         04.01
+        </span>
+        <h3>
+         Consultar cierres existentes
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Abra Cierres de env&iacute;o.
+        </li>
+        <li>
+         Use Todos los estados para filtrar por En preparaci&oacute;n, En ruta o Recibido en destino.
+        </li>
+        <li>
+         Revise cierre, ruta, chofer, n&uacute;mero de gu&iacute;as y estado.
+        </li>
+        <li>
+         Utilice Abrir para consultar el registro y PDF para obtener el manifiesto.
+        </li>
+       </ol>
+      </article>
+      <article class="task" id="cierres-envio-t2">
+       <div class="task-head">
+        <span class="task-number">
+         04.02
+        </span>
+        <h3>
+         Crear un cierre de env&iacute;o
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Seleccione + Nuevo cierre.
+        </li>
+        <li>
+         Elija Ruta predefinida o indique Sede origen y Sede destino.
+        </li>
+        <li>
+         Seleccione al chofer o escriba Nombre en el manifiesto si es externo.
+        </li>
+        <li>
+         Digite la placa del veh&iacute;culo y agregue Notas si es necesario.
+        </li>
+        <li>
+         Presione Crear cierre para guardar.
+        </li>
+       </ol>
+      </article>
+     </div>
+     <a class="back-link" href="#contenido">
+      &uarr; Ir al &iacute;ndice
+     </a>
+    </section>
+    <section class="module" data-search="caja apertura, movimientos, cobros, arqueo y cierre abrir una caja revisar turno y registrar movimientos cobrar una gu&iacute;a pendiente cerrar turno y realizar el arqueo consultar cierres y reporte pdf" id="mod-caja">
+     <div class="module-header">
+      <div>
+       <div class="eyebrow">
+        M&Oacute;DULO 05 / 18
+       </div>
+       <h2>
+        Caja
+       </h2>
+       <p>
+        Apertura, movimientos, cobros, arqueo y cierre
+       </p>
+      </div>
+    <button class="video-btn" data-title="Caja" data-video="videos/caja.mp4" type="button">
+       ▶ Ver video del m&oacute;dulo
+      </button>
+     </div>
+     <div class="task-grid">
+      <article class="task" id="caja-t1">
+       <div class="task-head">
+        <span class="task-number">
+         05.01
+        </span>
+        <h3>
+         Abrir una caja
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Entre en Caja al iniciar la jornada.
+        </li>
+        <li>
+         Si no existe un turno activo, elija la caja que utilizar&aacute;.
+        </li>
+        <li>
+         Digite el Fondo inicial: efectivo disponible para dar vuelto.
+        </li>
+        <li>
+         Confirme la apertura del turno antes de realizar cobros en efectivo.
+        </li>
+       </ol>
+      </article>
+      <article class="task" id="caja-t2">
+       <div class="task-head">
+        <span class="task-number">
+         05.02
+        </span>
+        <h3>
+         Revisar turno y registrar movimientos
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         En Caja revise caja activa, hora de apertura, fondo inicial y efectivo esperado.
+        </li>
+        <li>
+         Busque Entrada o salida de efectivo.
+        </li>
+        <li>
+         Elija Tipo: Entrada para agregar dinero o Salida para retirarlo.
+        </li>
+        <li>
+         Indique Monto (₡) y explique el Motivo.
+        </li>
+        <li>
+         Presione Registrar y compruebe el movimiento en el historial del turno.
+        </li>
+       </ol>
+      </article>
+      <article class="task" id="caja-t3">
+       <div class="task-head">
+        <span class="task-number">
+         05.03
+        </span>
+        <h3>
+         Cobrar una gu&iacute;a pendiente
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Verifique primero que la gu&iacute;a est&eacute; actualizada al estado Lleg&oacute; a destino.
+        </li>
+        <li>
+         Busque la gu&iacute;a en Por cobrar en caja.
+        </li>
+        <li>
+         Confirme el monto y el medio de pago del cliente.
+        </li>
+        <li>
+         Registre el cobro y entregue el comprobante cuando corresponda.
+        </li>
+       </ol>
+      </article>
+      <article class="task" id="caja-t4">
+       <div class="task-head">
+        <span class="task-number">
+         05.04
+        </span>
+        <h3>
+         Cerrar turno y realizar el arqueo
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Presione Cerrar turno y hacer arqueo.
+        </li>
+        <li>
+         Cuente f&iacute;sicamente billetes y monedas e indique la cantidad de cada denominaci&oacute;n (de ₡20 000 a ₡5).
+        </li>
+        <li>
+         Revise Contado, Esperado y Diferencia.
+        </li>
+        <li>
+         Si hay un sobrante o faltante, vuelva a contar y explique la situaci&oacute;n en Nota de cierre.
+        </li>
+        <li>
+         Presione Confirmar cierre y conserve el reporte del turno.
+        </li>
+       </ol>
+      </article>
+      <article class="task" id="caja-t5">
+       <div class="task-head">
+        <span class="task-number">
+         05.05
+        </span>
+        <h3>
+         Consultar cierres y reporte PDF
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Revise Movimiento de turnos para conocer hora, tipo, referencia, medio de pago y monto.
+        </li>
+        <li>
+         En &Uacute;ltimos turnos cerrados consulte cajero, fecha, esperado, contado y diferencia.
+        </li>
+        <li>
+         Descargue el PDF correspondiente. El efectivo esperado es fondo inicial + cobros en efectivo + entradas &minus; salidas.
+        </li>
+       </ol>
+      </article>
+     </div>
+     <aside class="alert">
+      <strong>
+       ⚠ Nota importante
+      </strong>
+      <p>
+       IMPORTANTE: Las gu&iacute;as &laquo;Por cobrar&raquo; solo aparecen en &laquo;POR COBRAR EN CAJA&raquo; cuando su estado es &laquo;Lleg&oacute; a destino&raquo;. Si no se actualiza ese estado, el cobro pendiente no aparecer&aacute; en la lista. Cada cajero debe usar su propia caja.
+      </p>
+     </aside>
+     <a class="back-link" href="#contenido">
+      &uarr; Ir al &iacute;ndice
+     </a>
+    </section>
+    <section class="module" data-search="cotizaciones presupuestos que no generan factura consultar cotizaciones crear nueva cotizaci&oacute;n" id="mod-cotizaciones">
+     <div class="module-header">
+      <div>
+       <div class="eyebrow">
+        M&Oacute;DULO 06 / 18
+       </div>
+       <h2>
+        Cotizaciones
+       </h2>
+       <p>
+        Presupuestos que no generan factura
+       </p>
+      </div>
+      <button class="video-btn" data-title="Cotizaciones" data-video="videos/cotizaciones.mp4" type="button">
+       ▶ Ver video del m&oacute;dulo
+      </button>
+     </div>
+     <div class="task-grid">
+      <article class="task" id="cotizaciones-t1">
+       <div class="task-head">
+        <span class="task-number">
+         06.01
+        </span>
+        <h3>
+         Consultar cotizaciones
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Abra Cotizaciones.
+        </li>
+        <li>
+         Revise n&uacute;mero, cliente, ruta, estado, fecha de vencimiento y total.
+        </li>
+        <li>
+         Utilice las acciones para descargar PDF, enviar por correo, editar o eliminar.
+        </li>
+       </ol>
+      </article>
+      <article class="task" id="cotizaciones-t2">
+       <div class="task-head">
+        <span class="task-number">
+         06.02
+        </span>
+        <h3>
+         Crear nueva cotizaci&oacute;n
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Presione + Nueva cotizaci&oacute;n.
+        </li>
+        <li>
+         Indique sucursal de origen, sucursal de destino y fecha V&aacute;lida hasta.
+        </li>
+        <li>
+         Complete A nombre de, correo y tel&eacute;fono o seleccione Cliente registrado.
+        </li>
+        <li>
+         A&ntilde;ada los bultos con tipo, peso, dimensiones, descripci&oacute;n y precio; utilice + Agregar bulto si hay m&aacute;s.
+        </li>
+        <li>
+         Revise el total y presione Guardar cotizaci&oacute;n.
+        </li>
+       </ol>
+      </article>
+     </div>
+     <aside class="alert">
+      <strong>
+       ⚠ Nota importante
+      </strong>
+      <p>
+       Una cotizaci&oacute;n es informativa: no equivale a una venta, no genera factura y no consume n&uacute;meros de gu&iacute;a.
+      </p>
+     </aside>
+     <a class="back-link" href="#contenido">
+      &uarr; Ir al &iacute;ndice
+     </a>
+    </section>
+    <section class="module" data-search="clientes registro manual o masivo de clientes buscar y revisar clientes importar clientes desde csv registrar un nuevo cliente" id="mod-clientes">
+     <div class="module-header">
+      <div>
+       <div class="eyebrow">
+        M&Oacute;DULO 07 / 18
+       </div>
+       <h2>
+        Clientes
+       </h2>
+       <p>
+        Registro manual o masivo de clientes
+       </p>
+      </div>
+      <button class="video-btn" data-title="Clientes" data-video="videos/clientes.mp4" type="button">
+       ▶ Ver video del m&oacute;dulo
+      </button>
+     </div>
+     <div class="task-grid">
+      <article class="task" id="clientes-t1">
+       <div class="task-head">
+        <span class="task-number">
+         07.01
+        </span>
+        <h3>
+         Buscar y revisar clientes
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         En el men&uacute; izquierdo, seleccione Clientes.
+        </li>
+        <li>
+         Busque por nombre, identificaci&oacute;n, correo o tel&eacute;fono.
+        </li>
+        <li>
+         Filtre por Contado o Cr&eacute;dito.
+        </li>
+        <li>
+         Revise datos de contacto, estado, l&iacute;mite de cr&eacute;dito y acciones disponibles.
+        </li>
+       </ol>
+      </article>
+      <article class="task" id="clientes-t2">
+       <div class="task-head">
+        <span class="task-number">
+         07.02
+        </span>
+        <h3>
+         Importar clientes desde CSV
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Presione Importar CSV y luego Descargar plantilla.
+        </li>
+        <li>
+         Abra la plantilla y complete los clientes respetando los nombres de columna.
+        </li>
+        <li>
+         Guarde el archivo CSV en su computadora.
+        </li>
+        <li>
+         Presione Seleccionar archivo y luego Revisar el archivo para cargarlo.
+        </li>
+        <li>
+         Compruebe la informaci&oacute;n antes de terminar la importaci&oacute;n.
+        </li>
+       </ol>
+      </article>
+      <article class="task" id="clientes-t3">
+       <div class="task-head">
+        <span class="task-number">
+         07.03
+        </span>
+        <h3>
+         Registrar un nuevo cliente
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Presione + Nuevo cliente.
+        </li>
+        <li>
+         Ingrese Nombre o raz&oacute;n social y Nombre comercial si aplica.
+        </li>
+        <li>
+         Seleccione tipo de identificaci&oacute;n y digite la c&eacute;dula sin guiones; complete el c&oacute;digo de actividad cuando corresponda.
+        </li>
+        <li>
+         Escriba correo, tel&eacute;fono, sede habitual y direcci&oacute;n.
+        </li>
+        <li>
+         Seleccione Contado o Cr&eacute;dito y, si corresponde, indique el l&iacute;mite.
+        </li>
+        <li>
+         Si hay exoneraci&oacute;n autorizada, marque Cliente exonerado de IVA e indique su autorizaci&oacute;n.
+        </li>
+        <li>
+         Verifique Cliente activo y presione Guardar.
+        </li>
+       </ol>
+      </article>
+     </div>
+     <aside class="alert">
+      <strong>
+       ⚠ Nota importante
+      </strong>
+      <p>
+       Si registra un cliente sin identificaci&oacute;n, sus comprobantes pueden emitirse como Tiquete Electr&oacute;nico en vez de Factura Electr&oacute;nica.
+      </p>
+     </aside>
+     <a class="back-link" href="#contenido">
+      &uarr; Ir al &iacute;ndice
+     </a>
+    </section>
+    <section class="module" data-search="cr&eacute;dito y cuentas por cobrar saldos, cortes de per&iacute;odo y abonos revisar la antig&uuml;edad de saldos emitir estado de cuenta consultar estado de cuenta por fechas registrar un abono" id="mod-credito">
+     <div class="module-header">
+      <div>
+       <div class="eyebrow">
+        M&Oacute;DULO 08 / 18
+       </div>
+       <h2>
+        Cr&eacute;dito y cuentas por cobrar
+       </h2>
+       <p>
+        Saldos, cortes de per&iacute;odo y abonos
+       </p>
+      </div>
+      <button class="video-btn" data-title="Cr&eacute;dito y cuentas por cobrar" data-video="videos/credito.mp4" type="button">
+       ▶ Ver video del m&oacute;dulo
+      </button>
+     </div>
+     <div class="task-grid">
+      <article class="task" id="credito-t1">
+       <div class="task-head">
+        <span class="task-number">
+         08.01
+        </span>
+        <h3>
+         Revisar la antig&uuml;edad de saldos
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Abra Cr&eacute;dito.
+        </li>
+        <li>
+         Revise Al d&iacute;a, 1&ndash;30, 31&ndash;60, 61&ndash;90 y M&aacute;s de 90 d&iacute;as de atraso.
+        </li>
+        <li>
+         Seleccione un cliente para abrir su expediente y ver l&iacute;mite, saldos, deuda total y disponible.
+        </li>
+       </ol>
+      </article>
+      <article class="task" id="credito-t2">
+       <div class="task-head">
+        <span class="task-number">
+         08.02
+        </span>
+        <h3>
+         Emitir estado de cuenta
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Abra el expediente del cliente.
+        </li>
+        <li>
+         Indique Plazo de cr&eacute;dito (d&iacute;as).
+        </li>
+        <li>
+         Presione Emitir estado de cuenta para agrupar las gu&iacute;as del per&iacute;odo.
+        </li>
+        <li>
+         Revise el nuevo documento en el historial de estados de cuenta.
+        </li>
+       </ol>
+      </article>
+      <article class="task" id="credito-t3">
+       <div class="task-head">
+        <span class="task-number">
+         08.03
+        </span>
+        <h3>
+         Consultar estado de cuenta por fechas
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         En la consulta de estados de cuenta, complete Desde y Hasta.
+        </li>
+        <li>
+         Presione Generar PDF para descargar la consulta sin realizar un corte ni alterar saldos.
+        </li>
+       </ol>
+      </article>
+      <article class="task" id="credito-t4">
+       <div class="task-head">
+        <span class="task-number">
+         08.04
+        </span>
+        <h3>
+         Registrar un abono
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Abra el formulario de abonos del cliente.
+        </li>
+        <li>
+         Indique Monto (₡) y Medio de pago.
+        </li>
+        <li>
+         Seleccione Aplicar a (por ejemplo, de la deuda m&aacute;s antigua a la m&aacute;s nueva).
+        </li>
+        <li>
+         Digite la Referencia de la transferencia o dep&oacute;sito.
+        </li>
+        <li>
+         Presione Registrar abono y verifique la actualizaci&oacute;n del saldo.
+        </li>
+       </ol>
+      </article>
+     </div>
+     <a class="back-link" href="#contenido">
+      &uarr; Ir al &iacute;ndice
+     </a>
+    </section>
+    <section class="module" data-search="reportes estad&iacute;sticas y seguimiento operativo generar y leer un reporte" id="mod-reportes">
+     <div class="module-header">
+      <div>
+       <div class="eyebrow">
+        M&Oacute;DULO 09 / 18
+       </div>
+       <h2>
+        Reportes
+       </h2>
+       <p>
+        Estad&iacute;sticas y seguimiento operativo
+       </p>
+      </div>
+      <button class="video-btn" data-title="Reportes" data-video="videos/reportes.mp4" type="button">
+       ▶ Ver video del m&oacute;dulo
+      </button>
+     </div>
+     <div class="task-grid">
+      <article class="task" id="reportes-t1">
+       <div class="task-head">
+        <span class="task-number">
+         09.01
+        </span>
+        <h3>
+         Generar y leer un reporte
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Abra Reportes.
+        </li>
+        <li>
+         Seleccione el tipo de Reporte, por ejemplo Gu&iacute;as por estado.
+        </li>
+        <li>
+         Establezca Desde, Hasta y Sede (o Todas las sedes).
+        </li>
+        <li>
+         Revise filas por estado: Lleg&oacute; al destino, Anulado, Entregado, Enviado y Recibido.
+        </li>
+        <li>
+         Compare cantidad de Gu&iacute;as, Monto, Por cobrar y total general.
+        </li>
+       </ol>
+      </article>
+     </div>
+     <a class="back-link" href="#contenido">
+      &uarr; Ir al &iacute;ndice
+     </a>
+    </section>
+    <section class="module" data-search="pendientes de env&iacute;o a hacienda transmisi&oacute;n de comprobantes electr&oacute;nicos revisar los estados enviar comprobantes" id="mod-hacienda">
+     <div class="module-header">
+      <div>
+       <div class="eyebrow">
+        M&Oacute;DULO 10 / 18
+       </div>
+       <h2>
+        Pendientes de env&iacute;o a Hacienda
+       </h2>
+       <p>
+        Transmisi&oacute;n de comprobantes electr&oacute;nicos
+       </p>
+      </div>
+      <button class="video-btn" data-title="Pendientes de env&iacute;o a Hacienda" data-video="videos/hacienda.mp4" type="button">
+       ▶ Ver video del m&oacute;dulo
+      </button>
+     </div>
+     <div class="task-grid">
+      <article class="task" id="hacienda-t1">
+       <div class="task-head">
+        <span class="task-number">
+         10.01
+        </span>
+        <h3>
+         Revisar los estados
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Abra Pendientes de env&iacute;o a Hacienda.
+        </li>
+        <li>
+         Consulte las pesta&ntilde;as Pendientes / con error, Enviados (procesando), Aceptados y Rechazados.
+        </li>
+        <li>
+         En Aceptados puede descargar el PDF de comprobantes validados.
+        </li>
+       </ol>
+      </article>
+      <article class="task" id="hacienda-t2">
+       <div class="task-head">
+        <span class="task-number">
+         10.02
+        </span>
+        <h3>
+         Enviar comprobantes
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Abra Pendientes / con error.
+        </li>
+        <li>
+         Marque el documento que desea enviar o Seleccionar todos en esta p&aacute;gina.
+        </li>
+        <li>
+         Presione Enviar seleccionadas a Hacienda (N).
+        </li>
+        <li>
+         Revise posteriormente si el estado pasa a Procesando o Aceptados; investigue cualquier rechazo.
+        </li>
+       </ol>
+      </article>
+     </div>
+     <a class="back-link" href="#contenido">
+      &uarr; Ir al &iacute;ndice
+     </a>
+    </section>
+    <section class="module" data-search="sucursales administraci&oacute;n de las sedes registrar una sucursal editar o eliminar una sucursal" id="mod-sucursales">
+     <div class="module-header">
+      <div>
+       <div class="eyebrow">
+        M&Oacute;DULO 11 / 18
+       </div>
+       <h2>
+        Sucursales
+       </h2>
+       <p>
+        Administraci&oacute;n de las sedes
+       </p>
+      </div>
+      <button class="video-btn" data-title="Sucursales" data-video="videos/sucursales.mp4" type="button">
+       ▶ Ver video del m&oacute;dulo
+      </button>
+     </div>
+     <div class="task-grid">
+      <article class="task" id="sucursales-t1">
+       <div class="task-head">
+        <span class="task-number">
+         11.01
+        </span>
+        <h3>
+         Registrar una sucursal
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Presione + Nueva sucursal.
+        </li>
+        <li>
+         Ingrese nombre, prefijo &uacute;nico para las gu&iacute;as, c&oacute;digo de sucursal (3 d&iacute;gitos) y terminal (5 d&iacute;gitos) de Hacienda.
+        </li>
+        <li>
+         Complete direcci&oacute;n, c&oacute;digos de provincia, cant&oacute;n y distrito, y tel&eacute;fono.
+        </li>
+        <li>
+         Configure los horarios de cada d&iacute;a.
+        </li>
+        <li>
+         Verifique Sucursal activa y presione Guardar.
+        </li>
+       </ol>
+      </article>
+      <article class="task" id="sucursales-t2">
+       <div class="task-head">
+        <span class="task-number">
+         11.02
+        </span>
+        <h3>
+         Editar o eliminar una sucursal
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Ubique la sucursal en el listado.
+        </li>
+        <li>
+         Use Editar, actualice los campos y presione Guardar.
+        </li>
+        <li>
+         Para eliminar, seleccione Eliminar y confirme solo si corresponde.
+        </li>
+       </ol>
+      </article>
+     </div>
+     <a class="back-link" href="#contenido">
+      &uarr; Ir al &iacute;ndice
+     </a>
+    </section>
+    <section class="module" data-search="cajas configuraci&oacute;n de cajas e impresoras crear una caja editar o eliminar una caja" id="mod-cajas">
+     <div class="module-header">
+      <div>
+       <div class="eyebrow">
+        M&Oacute;DULO 12 / 18
+       </div>
+       <h2>
+        Cajas
+       </h2>
+       <p>
+        Configuraci&oacute;n de cajas e impresoras
+       </p>
+      </div>
+      <button class="video-btn" data-title="Cajas" data-video="videos/cajas.mp4" type="button">
+       ▶ Ver video del m&oacute;dulo
+      </button>
+     </div>
+     <div class="task-grid">
+      <article class="task" id="cajas-t1">
+       <div class="task-head">
+        <span class="task-number">
+         12.01
+        </span>
+        <h3>
+         Crear una caja
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Presione Nueva caja.
+        </li>
+        <li>
+         Elija la Sede a la que pertenece.
+        </li>
+        <li>
+         Escriba un Nombre reconocible para el cajero.
+        </li>
+        <li>
+         Configure Impresora de recibos y Ancho del rollo (por ejemplo 80 mm o 57 mm).
+        </li>
+        <li>
+         Verifique Caja activa y presione Guardar.
+        </li>
+       </ol>
+      </article>
+      <article class="task" id="cajas-t2">
+       <div class="task-head">
+        <span class="task-number">
+         12.02
+        </span>
+        <h3>
+         Editar o eliminar una caja
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Localice la caja en la sede correspondiente.
+        </li>
+        <li>
+         Use Editar para cambiar nombre, sede, impresora, rollo o estado; presione Guardar.
+        </li>
+        <li>
+         Para retirar el registro use Eliminar y confirme la operaci&oacute;n.
+        </li>
+       </ol>
+      </article>
+     </div>
+     <aside class="alert">
+      <strong>
+       ⚠ Nota importante
+      </strong>
+      <p>
+       Cada caja administra su propio turno y arqueo; si dos cajeros cobran a la vez, deben trabajar en cajas diferentes.
+      </p>
+     </aside>
+     <a class="back-link" href="#contenido">
+      &uarr; Ir al &iacute;ndice
+     </a>
+    </section>
+    <section class="module" data-search="tarifario c&aacute;lculo y administraci&oacute;n de precios probar una cotizaci&oacute;n crear una tarifa editar o eliminar una tarifa" id="mod-tarifario">
+     <div class="module-header">
+      <div>
+       <div class="eyebrow">
+        M&Oacute;DULO 13 / 18
+       </div>
+       <h2>
+        Tarifario
+       </h2>
+       <p>
+        C&aacute;lculo y administraci&oacute;n de precios
+       </p>
+      </div>
+      <button class="video-btn" data-title="Tarifario" data-video="videos/tarifario.mp4" type="button">
+       ▶ Ver video del m&oacute;dulo
+      </button>
+     </div>
+     <div class="task-grid">
+      <article class="task" id="tarifario-t1">
+       <div class="task-head">
+        <span class="task-number">
+         13.01
+        </span>
+        <h3>
+         Probar una cotizaci&oacute;n
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Indique Origen y Destino.
+        </li>
+        <li>
+         Escriba Peso (kg), Largo, Ancho y Alto (cm).
+        </li>
+        <li>
+         Presione Cotizar.
+        </li>
+        <li>
+         Revise peso real, peso volum&eacute;trico, tarifa aplicada y precio final.
+        </li>
+       </ol>
+      </article>
+      <article class="task" id="tarifario-t2">
+       <div class="task-head">
+        <span class="task-number">
+         13.02
+        </span>
+        <h3>
+         Crear una tarifa
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Presione + Nueva tarifa.
+        </li>
+        <li>
+         Ingrese Nombre opcional y Tipo de env&iacute;o: Todos, Paquete, Sobre o Documento.
+        </li>
+        <li>
+         Seleccione Sede origen y destino o Cualquiera para aplicar una tarifa general.
+        </li>
+        <li>
+         Indique Peso desde, Peso hasta, Precio (₡) y ₡ por kg adicional cuando aplique.
+        </li>
+        <li>
+         Marque Tarifa activa y presione Guardar.
+        </li>
+       </ol>
+      </article>
+      <article class="task" id="tarifario-t3">
+       <div class="task-head">
+        <span class="task-number">
+         13.03
+        </span>
+        <h3>
+         Editar o eliminar una tarifa
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Localice la tarifa registrada.
+        </li>
+        <li>
+         Use Editar para ajustar sus valores y guarde los cambios.
+        </li>
+        <li>
+         Use Eliminar si necesita retirarla y confirme seg&uacute;n el aviso del sistema.
+        </li>
+       </ol>
+      </article>
+     </div>
+     <aside class="alert">
+      <strong>
+       ⚠ Nota importante
+      </strong>
+      <p>
+       Si no existe una tarifa configurada para el peso y la ruta, se deber&aacute; ingresar el precio de forma manual.
+      </p>
+     </aside>
+     <a class="back-link" href="#contenido">
+      &uarr; Ir al &iacute;ndice
+     </a>
+    </section>
+    <section class="module" data-search="rutas trayectos entre sucursales crear una ruta editar o eliminar una ruta" id="mod-rutas">
+     <div class="module-header">
+      <div>
+       <div class="eyebrow">
+        M&Oacute;DULO 14 / 18
+       </div>
+       <h2>
+        Rutas
+       </h2>
+       <p>
+        Trayectos entre sucursales
+       </p>
+      </div>
+      <button class="video-btn" data-title="Rutas" data-video="videos/rutas.mp4" type="button">
+       ▶ Ver video del m&oacute;dulo
+      </button>
+     </div>
+     <div class="task-grid">
+      <article class="task" id="rutas-t1">
+       <div class="task-head">
+        <span class="task-number">
+         14.01
+        </span>
+        <h3>
+         Crear una ruta
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Ingrese al m&oacute;dulo Rutas y presione la opci&oacute;n para crear una ruta.
+        </li>
+        <li>
+         Indique Nombre, Sede de origen, Sede de destino y, opcionalmente, D&iacute;as de tr&aacute;nsito.
+        </li>
+        <li>
+         Marque Se ofrece al crear gu&iacute;as para que est&eacute; disponible al facturar y presione Guardar.
+        </li>
+       </ol>
+      </article>
+      <article class="task" id="rutas-t2">
+       <div class="task-head">
+        <span class="task-number">
+         14.02
+        </span>
+        <h3>
+         Editar o eliminar una ruta
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Ubique la ruta que desea modificar.
+        </li>
+        <li>
+         Seleccione Editar, realice los cambios y guarde.
+        </li>
+        <li>
+         Si necesita retirarla, use Eliminar y confirme.
+        </li>
+       </ol>
+      </article>
+     </div>
+     <a class="back-link" href="#contenido">
+      &uarr; Ir al &iacute;ndice
+     </a>
+    </section>
+    <section class="module" data-search="tipos de bulto categor&iacute;as de los paquetes crear un tipo de bulto editar o eliminar un tipo de bulto" id="mod-bultos">
+     <div class="module-header">
+      <div>
+       <div class="eyebrow">
+        M&Oacute;DULO 15 / 18
+       </div>
+       <h2>
+        Tipos de bulto
+       </h2>
+       <p>
+        Categor&iacute;as de los paquetes
+       </p>
+      </div>
+      <button class="video-btn" data-title="Tipos de bulto" data-video="videos/bultos.mp4" type="button">
+       ▶ Ver video del m&oacute;dulo
+      </button>
+     </div>
+     <div class="task-grid">
+      <article class="task" id="bultos-t1">
+       <div class="task-head">
+        <span class="task-number">
+         15.01
+        </span>
+        <h3>
+         Crear un tipo de bulto
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Abra Tipos de bulto y presione + Nuevo tipo.
+        </li>
+        <li>
+         Digite Nombre y Orden (los n&uacute;meros menores aparecen primero).
+        </li>
+        <li>
+         Marque Marcar como fr&aacute;gil si la categor&iacute;a requiere etiqueta FR&Aacute;GIL.
+        </li>
+        <li>
+         Active Se ofrece al crear gu&iacute;as y presione Guardar.
+        </li>
+       </ol>
+      </article>
+      <article class="task" id="bultos-t2">
+       <div class="task-head">
+        <span class="task-number">
+         15.02
+        </span>
+        <h3>
+         Editar o eliminar un tipo de bulto
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Localice el tipo de bulto en la lista.
+        </li>
+        <li>
+         Use Editar para corregir sus datos y guarde.
+        </li>
+        <li>
+         Use Eliminar si corresponde, previa confirmaci&oacute;n.
+        </li>
+       </ol>
+      </article>
+     </div>
+     <a class="back-link" href="#contenido">
+      &uarr; Ir al &iacute;ndice
+     </a>
+    </section>
+    <section class="module" data-search="impuestos configuraci&oacute;n de tasas tributarias registrar un impuesto editar o desactivar un impuesto" id="mod-impuestos">
+     <div class="module-header">
+      <div>
+       <div class="eyebrow">
+        M&Oacute;DULO 16 / 18
+       </div>
+       <h2>
+        Impuestos
+       </h2>
+       <p>
+        Configuraci&oacute;n de tasas tributarias
+       </p>
+      </div>
+      <button class="video-btn" data-title="Impuestos" data-video="videos/impuestos.mp4" type="button">
+       ▶ Ver video del m&oacute;dulo
+      </button>
+     </div>
+     <div class="task-grid">
+      <article class="task" id="impuestos-t1">
+       <div class="task-head">
+        <span class="task-number">
+         16.01
+        </span>
+        <h3>
+         Registrar un impuesto
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Abra Impuestos y presione + Nuevo impuesto.
+        </li>
+        <li>
+         Ingrese Nombre, Porcentaje (%) y C&oacute;digo de tarifa Hacienda.
+        </li>
+        <li>
+         Configure Predeterminado si debe aplicarse autom&aacute;ticamente y mantenga Activo.
+        </li>
+        <li>
+         Presione Guardar.
+        </li>
+       </ol>
+      </article>
+      <article class="task" id="impuestos-t2">
+       <div class="task-head">
+        <span class="task-number">
+         16.02
+        </span>
+        <h3>
+         Editar o desactivar un impuesto
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Localice el impuesto correspondiente.
+        </li>
+        <li>
+         Use Editar para actualizar su configuraci&oacute;n.
+        </li>
+        <li>
+         Si debe dejar de aplicarse, utilice la opci&oacute;n de desactivar o eliminar que ofrezca el sistema y confirme.
+        </li>
+       </ol>
+      </article>
+     </div>
+     <a class="back-link" href="#contenido">
+      &uarr; Ir al &iacute;ndice
+     </a>
+    </section>
+    <section class="module" data-search="usuarios cuentas de acceso y roles crear un usuario editar el rol u otros datos desactivar o eliminar un usuario" id="mod-usuarios">
+     <div class="module-header">
+      <div>
+       <div class="eyebrow">
+        M&Oacute;DULO 17 / 18
+       </div>
+       <h2>
+        Usuarios
+       </h2>
+       <p>
+        Cuentas de acceso y roles
+       </p>
+      </div>
+      <button class="video-btn" data-title="Usuarios" data-video="videos/usuarios.mp4" type="button">
+       ▶ Ver video del m&oacute;dulo
+      </button>
+     </div>
+     <div class="task-grid">
+      <article class="task" id="usuarios-t1">
+       <div class="task-head">
+        <span class="task-number">
+         17.01
+        </span>
+        <h3>
+         Crear un usuario
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         En el men&uacute; izquierdo, seleccione Usuarios y presione + Nuevo usuario.
+        </li>
+        <li>
+         Complete Nombre completo, Usuario, Correo electr&oacute;nico y Contrase&ntilde;a.
+        </li>
+        <li>
+         Seleccione el Rol y la Sucursal base; agregue tel&eacute;fono si corresponde.
+        </li>
+        <li>
+         Compruebe que Activo est&eacute; marcado y presione Guardar.
+        </li>
+       </ol>
+      </article>
+      <article class="task" id="usuarios-t2">
+       <div class="task-head">
+        <span class="task-number">
+         17.02
+        </span>
+        <h3>
+         Editar el rol u otros datos
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Ubique al usuario y presione Editar.
+        </li>
+        <li>
+         Elija un nuevo Rol o modifique la sucursal y los datos requeridos.
+        </li>
+        <li>
+         Deje Contrase&ntilde;a vac&iacute;a si no desea cambiarla.
+        </li>
+        <li>
+         Presione Guardar.
+        </li>
+       </ol>
+      </article>
+      <article class="task" id="usuarios-t3">
+       <div class="task-head">
+        <span class="task-number">
+         17.03
+        </span>
+        <h3>
+         Desactivar o eliminar un usuario
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Localice el usuario correspondiente.
+        </li>
+        <li>
+         Use Editar y desmarque Activo si lo que necesita es impedir su acceso sin borrar el registro.
+        </li>
+        <li>
+         Si corresponde eliminarlo, utilice Eliminar y confirme con precauci&oacute;n.
+        </li>
+       </ol>
+      </article>
+     </div>
+     <aside class="alert">
+      <strong>
+       ⚠ Nota importante
+      </strong>
+      <p>
+       Las credenciales son personales. Asigne &uacute;nicamente los permisos que cada colaborador necesita.
+      </p>
+     </aside>
+     <a class="back-link" href="#contenido">
+      &uarr; Ir al &iacute;ndice
+     </a>
+    </section>
+    <section class="module" data-search="actividad de usuarios bit&aacute;cora de eventos filtrar actividad consultar un evento" id="mod-actividad">
+     <div class="module-header">
+      <div>
+       <div class="eyebrow">
+        M&Oacute;DULO 18 / 18
+       </div>
+       <h2>
+        Actividad de usuarios
+       </h2>
+       <p>
+        Bit&aacute;cora de eventos
+       </p>
+      </div>
+      <button class="video-btn" data-title="Actividad de usuarios" data-video="videos/actividad.mp4" type="button">
+       ▶ Ver video del m&oacute;dulo
+      </button>
+     </div>
+     <div class="task-grid">
+      <article class="task" id="actividad-t1">
+       <div class="task-head">
+        <span class="task-number">
+         18.01
+        </span>
+        <h3>
+         Filtrar actividad
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         En el men&uacute; izquierdo, seleccione Actividad de usuarios.
+        </li>
+        <li>
+         Utilice los filtros disponibles para delimitar usuario, evento o rango de fechas.
+        </li>
+        <li>
+         Revise los resultados para localizar operaciones realizadas.
+        </li>
+       </ol>
+      </article>
+      <article class="task" id="actividad-t2">
+       <div class="task-head">
+        <span class="task-number">
+         18.02
+        </span>
+        <h3>
+         Consultar un evento
+        </h3>
+       </div>
+       <p class="instruccion">
+        Siga estos pasos:
+       </p>
+       <ol class="pasos">
+        <li>
+         Seleccione el registro de inter&eacute;s en la bit&aacute;cora.
+        </li>
+        <li>
+         Revise la informaci&oacute;n del evento, usuario responsable y fecha disponible.
+        </li>
+        <li>
+         Utilice estos datos para investigar una modificaci&oacute;n u operaci&oacute;n espec&iacute;fica.
+        </li>
+       </ol>
+      </article>
+     </div>
+     <a class="back-link" href="#contenido">
+      &uarr; Ir al &iacute;ndice
+     </a>
+    </section>
+    <section class="module appendix" id="problemas">
+     <div class="eyebrow">
+      AYUDA
+     </div>
+     <h2>
+      Soluci&oacute;n de problemas
+     </h2>
+     <div class="faq-grid">
+      <details>
+       <summary>
+        No puedo iniciar sesi&oacute;n
+       </summary>
+       <p>
+        Verifique el usuario y la contrase&ntilde;a. Si los olvid&oacute;, use la recuperaci&oacute;n desde la pantalla de acceso o consulte al administrador.
+       </p>
+      </details>
+      <details>
+       <summary>
+        La caja tiene una diferencia
+       </summary>
+       <p>
+        Cuente otra vez y verifique las entradas y salidas. Escriba una explicaci&oacute;n en Nota de cierre si la diferencia persiste.
+       </p>
+      </details>
+      <details>
+       <summary>
+        Necesito factura electr&oacute;nica y sale tiquete
+       </summary>
+       <p>
+        Revise la identificaci&oacute;n sin guiones y los datos del cliente antes de emitir el documento.
+       </p>
+      </details>
+      <details>
+       <summary>
+        El comprobante electr&oacute;nico presenta error
+       </summary>
+       <p>
+        Consulte Pendientes de env&iacute;o a Hacienda y revise los documentos con error o rechazados.
+       </p>
+      </details>
+      <details>
+       <summary>
+        El paquete tiene otro precio
+       </summary>
+       <p>
+        Revise peso real, peso volum&eacute;trico y la tarifa configurada para esa ruta.
+       </p>
+      </details>
+     </div>
+    </section>
+    <section class="module appendix" id="faq">
+     <div class="eyebrow">
+      CONSULTAS HABITUALES
+     </div>
+     <h2>
+      Preguntas frecuentes
+     </h2>
+     <p class="section-lead">
+      Presione una pregunta para consultar su respuesta.
+     </p>
+     <div class="faq-grid">
+      <details>
+       <summary>
+        &iquest;C&oacute;mo abrir una caja?
+       </summary>
+       <p>
+        Ingrese a Caja, seleccione la caja, indique el Fondo inicial y abra el turno antes de comenzar a cobrar.
+       </p>
+      </details>
+      <details>
+       <summary>
+        &iquest;C&oacute;mo cerrar una caja y qu&eacute; es el arqueo?
+       </summary>
+       <p>
+        El arqueo compara el dinero contado f&iacute;sicamente contra el que el sistema espera. En Caja presione Cerrar turno y hacer arqueo, cuente denominaciones, anote diferencias y confirme.
+       </p>
+      </details>
+      <details>
+       <summary>
+        &iquest;C&oacute;mo interpretar el PDF del cierre?
+       </summary>
+       <p>
+        Fondo inicial es el sencillo de apertura; Efectivo esperado = fondo inicial + ventas en efectivo + entradas &minus; salidas. Total contado es el efectivo real y Diferencia es contado menos esperado. Otros medios se muestran por separado.
+       </p>
+      </details>
+      <details>
+       <summary>
+        &iquest;C&oacute;mo registrar una entrada o salida?
+       </summary>
+       <p>
+        En Caja &rarr; Entrada o salida de efectivo, seleccione Tipo, escriba Monto y Motivo y presione Registrar.
+       </p>
+      </details>
+      <details>
+       <summary>
+        &iquest;Por qu&eacute; no aparece una gu&iacute;a en &laquo;Por cobrar en caja&raquo;?
+       </summary>
+       <p>
+        Antes de cobrar debe cambiarse el estado de la gu&iacute;a a Lleg&oacute; a destino. &Uacute;nicamente las gu&iacute;as en ese estado aparecen en la lista de cobro.
+       </p>
+      </details>
+      <details>
+       <summary>
+        &iquest;C&oacute;mo crear un usuario?
+       </summary>
+       <p>
+        En Usuarios presione + Nuevo usuario, complete sus datos, rol, sucursal, marque Activo y guarde.
+       </p>
+      </details>
+      <details>
+       <summary>
+        &iquest;C&oacute;mo cambiar el rol?
+       </summary>
+       <p>
+        En Usuarios localice la cuenta, presione Editar, cambie Rol y guarde. Deje la contrase&ntilde;a vac&iacute;a si no desea cambiarla.
+       </p>
+      </details>
+      <details>
+       <summary>
+        &iquest;Qu&eacute; es una cotizaci&oacute;n?
+       </summary>
+       <p>
+        Es una estimaci&oacute;n del precio para informar al cliente. No es una venta oficial y no consume consecutivos de gu&iacute;a.
+       </p>
+      </details>
+      <details>
+       <summary>
+        &iquest;Qu&eacute; hago si el sistema no me deja ingresar?
+       </summary>
+       <p>
+        Revise las credenciales y utilice &iquest;Olvidaste tu contrase&ntilde;a? para solicitar un enlace de recuperaci&oacute;n. Si persiste, contacte al administrador.
+       </p>
+      </details>
+      <details>
+       <summary>
+        &iquest;Qu&eacute; hago si falta o sobra dinero?
+       </summary>
+       <p>
+        Vuelva a contar y revise las entradas y salidas registradas. Si a&uacute;n existe diferencia, descr&iacute;bala en la Nota de cierre antes de confirmar.
+       </p>
+      </details>
+      <details>
+       <summary>
+        &iquest;Por qu&eacute; sale tiquete y no factura electr&oacute;nica?
+       </summary>
+       <p>
+        Revise que el cliente est&eacute; registrado con identificaci&oacute;n fiscal. Sin ella, se puede emitir Tiquete Electr&oacute;nico.
+       </p>
+      </details>
+      <details>
+       <summary>
+        &iquest;Qu&eacute; hacer con un comprobante rechazado por Hacienda?
+       </summary>
+       <p>
+        Consulte Pendientes de env&iacute;o a Hacienda, verifique los datos y reintente el env&iacute;o de comprobantes con error cuando corresponda.
+       </p>
+      </details>
+      <details>
+       <summary>
+        &iquest;Por qu&eacute; el precio es distinto al esperado?
+       </summary>
+       <p>
+        Puede aplicarse el peso volum&eacute;trico si el paquete ocupa mucho espacio. Compruebe medidas, peso y reglas del Tarifario.
+       </p>
+      </details>
+     </div>
+    </section>
+    <section class="module appendix" id="glosario">
+     <div class="eyebrow">
+      REFERENCIA
+     </div>
+     <h2>
+      Glosario
+     </h2>
+     <p class="section-lead">
+      T&eacute;rminos del POS explicados con palabras sencillas.
+     </p>
+     <div class="table-wrap">
+      <table>
+       <thead>
+        <tr>
+         <th>
+          T&eacute;rmino
+         </th>
+         <th>
+          Definici&oacute;n
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <th scope="row">
+          Arqueo de caja
+         </th>
+         <td>
+          Conteo f&iacute;sico de billetes y monedas para compararlos con el efectivo esperado.
+         </td>
+        </tr>
+        <tr>
+         <th scope="row">
+          CSV
+         </th>
+         <td>
+          Archivo de valores separados por comas para importar informaci&oacute;n de clientes desde hojas de c&aacute;lculo.
+         </td>
+        </tr>
+        <tr>
+         <th scope="row">
+          Corte de per&iacute;odo
+         </th>
+         <td>
+          Agrupaci&oacute;n de las gu&iacute;as pendientes de un cliente de cr&eacute;dito para emitir un estado de cuenta.
+         </td>
+        </tr>
+        <tr>
+         <th scope="row">
+          Encomienda / Gu&iacute;a
+         </th>
+         <td>
+          Registro con c&oacute;digo &uacute;nico que permite identificar y seguir un env&iacute;o.
+         </td>
+        </tr>
+        <tr>
+         <th scope="row">
+          Manifiesto de carga
+         </th>
+         <td>
+          Documento que agrupa los paquetes transportados en un mismo viaje o cierre.
+         </td>
+        </tr>
+        <tr>
+         <th scope="row">
+          Por cobrar
+         </th>
+         <td>
+          Modalidad en la que paga la persona que recibe o retira la encomienda.
+         </td>
+        </tr>
+        <tr>
+         <th scope="row">
+          Peso volum&eacute;trico
+         </th>
+         <td>
+          Peso comercial calculado seg&uacute;n las dimensiones del paquete.
+         </td>
+        </tr>
+        <tr>
+         <th scope="row">
+          Fondo inicial
+         </th>
+         <td>
+          Efectivo de apertura de caja reservado, por ejemplo, para dar vuelto.
+         </td>
+        </tr>
+        <tr>
+         <th scope="row">
+          Sucursal de origen
+         </th>
+         <td>
+          Oficina desde la que se despacha una encomienda.
+         </td>
+        </tr>
+        <tr>
+         <th scope="row">
+          Sucursal de destino
+         </th>
+         <td>
+          Oficina a la que llega la encomienda para su entrega.
+         </td>
+        </tr>
+        <tr>
+         <th scope="row">
+          Tiquete electr&oacute;nico
+         </th>
+         <td>
+          Comprobante fiscal simplificado que no requiere identificaci&oacute;n del receptor del comprobante.
+         </td>
+        </tr>
+        <tr>
+         <th scope="row">
+          Factura electr&oacute;nica
+         </th>
+         <td>
+          Comprobante fiscal con la identificaci&oacute;n del cliente para su tr&aacute;mite ante Hacienda.
+         </td>
+        </tr>
+        <tr>
+         <th scope="row">
+          Antig&uuml;edad de saldos
+         </th>
+         <td>
+          Clasificaci&oacute;n de la deuda pendiente seg&uacute;n el tiempo transcurrido.
+         </td>
+        </tr>
+        <tr>
+         <th scope="row">
+          Abono
+         </th>
+         <td>
+          Pago parcial o total aplicado al saldo adeudado.
+         </td>
+        </tr>
+        <tr>
+         <th scope="row">
+          Tarifario
+         </th>
+         <td>
+          Configuraci&oacute;n que determina el precio de los env&iacute;os.
+         </td>
+        </tr>
+        <tr>
+         <th scope="row">
+          Rol
+         </th>
+         <td>
+          Conjunto de permisos asignados a un usuario.
+         </td>
+        </tr>
+        <tr>
+         <th scope="row">
+          Bit&aacute;cora
+         </th>
+         <td>
+          Historial de eventos y operaciones realizadas en el sistema.
+         </td>
+        </tr>
+        <tr>
+         <th scope="row">
+          SINPE M&oacute;vil
+         </th>
+         <td>
+          Medio de pago por transferencia m&oacute;vil utilizado en Costa Rica.
+         </td>
+        </tr>
+        <tr>
+         <th scope="row">
+          Arqueo / Diferencia
+         </th>
+         <td>
+          Comparaci&oacute;n entre el dinero realmente contado y el efectivo esperado.
+         </td>
+        </tr>
+        <tr>
+         <th scope="row">
+          Sede / Sucursal
+         </th>
+         <td>
+          Punto f&iacute;sico de atenci&oacute;n y operaci&oacute;n de la empresa.
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+    </section>
+   </main>
+  </div>
+  <!-- EDITAR CONTACTO: cambie nombre, teléfono y correo en el footer siguiente. -->
+  <footer class="footer">
+   <div class="footer-inner">
+    <div>
+     <strong id="nombre-empresa">
+      FLK Developments
+     </strong>
+     <p>
+      Soporte del sistema POS para encomiendas
+     </p>
+    </div>
+    <div>
+     <span>
+      Tel&eacute;fono
+     </span>
+     <a href="tel:+50600000000" id="telefono-empresa">
+      +506 0000-0000
+     </a>
+    </div>
+    <div>
+     <span>
+      Correo
+     </span>
+     <a href="mailto:contacto@tuempresa.com" id="correo-empresa">
+      contacto@tuempresa.com
+     </a>
+    </div>
+    <div>
+     <span>
+      Documento
+     </span>
+     <p>
+      Manual de usuario &middot; Versi&oacute;n 1
+     </p>
+    </div>
+   </div>
+   <small>
+    Edite el nombre, n&uacute;mero y correo directamente en este footer del archivo index.html.
+   </small>
+  </footer>
+  <button aria-label="Volver arriba" class="floating-top" id="subir" type="button">
+   &uarr;
+  </button>
+  <dialog aria-labelledby="titulo-video" class="modal-video" id="modal-video">
+   <div class="modal-head">
+    <div>
+     <small>
+      VIDEO TUTORIAL &middot; UN VIDEO POR M&Oacute;DULO
+     </small>
+     <h2 id="titulo-video">
+      Video del m&oacute;dulo
+     </h2>
+    </div>
+    <button aria-label="Cerrar" class="close-video" type="button">
+     ✕
+    </button>
+   </div>
+   <video controls="" id="reproductor-video" playsinline="" preload="metadata">
+   </video>
+   <div class="missing-video" hidden="" id="missing-video">
+    <b>
+     Video pendiente
+    </b>
+    <p>
+     Guarde el video de este m&oacute;dulo con esta ruta:
+    </p>
+    <code id="ruta-video">
+    </code>
+    <p>
+     El bot&oacute;n funcionar&aacute; autom&aacute;ticamente al agregar el archivo.
+    </p>
+   </div>
+  </dialog>
+  <script>
+// Un único video por módulo. Cambie la ruta data-video en index.html si cambia el nombre del archivo.
+const dialog=document.querySelector('#modal-video');const player=document.querySelector('#reproductor-video');const missing=document.querySelector('#missing-video');
+document.querySelectorAll('.video-btn').forEach(button=>button.addEventListener('click',()=>{const ruta=button.dataset.video;document.querySelector('#titulo-video').textContent=button.dataset.title;document.querySelector('#ruta-video').textContent=ruta;missing.hidden=true;player.hidden=false;player.src=ruta;dialog.showModal();player.load();player.play().catch(()=>{});}));
+player.addEventListener('error',()=>{player.hidden=true;missing.hidden=false;});
+function closeVideo(){dialog.close()}document.querySelector('.close-video').addEventListener('click',closeVideo);dialog.addEventListener('click',e=>{if(e.target===dialog)closeVideo()});dialog.addEventListener('close',()=>{player.pause();player.removeAttribute('src');player.load()});
+const links=[...document.querySelectorAll('.nav-link')];const search=document.querySelector('#buscador');search.addEventListener('input',()=>{const query=search.value.toLocaleLowerCase('es').trim();links.forEach(a=>{const module=document.querySelector(a.getAttribute('href'));a.hidden=!module.dataset.search.includes(query);});});
+const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){links.forEach(link=>link.classList.toggle('active',link.getAttribute('href')==='#'+e.target.id));}})},{rootMargin:'-15% 0px -72% 0px'});document.querySelectorAll('section.module[id^="mod-"]').forEach(section=>observer.observe(section));
+const back=document.querySelector('#subir');window.addEventListener('scroll',()=>back.classList.toggle('visible',window.scrollY>500),{passive:true});back.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+  </script>
+ </body>
+</html>
