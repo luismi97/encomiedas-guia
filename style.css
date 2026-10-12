@@ -133,3 +133,18 @@ tbody th { width: 32%; }
   .page-layout { display: block; border: 0; box-shadow: none; }
   .module, .welcome { break-inside: avoid; }
 }
+
+.palabra-brillo {
+    color: #67e8f9;
+    display: inline-block;
+    animation: brillo 2s ease-in-out infinite;
+}
+
+@keyframes brillo {
+    0%, 100% {
+        text-shadow: 0 0 0px transparent;
+    }
+    50% {
+        text-shadow: 0 0 15px #67e8f9;
+    }
+}
