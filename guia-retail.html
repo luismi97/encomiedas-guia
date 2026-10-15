@@ -1,0 +1,2502 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Manual de usuario interactivo del sistema POS Retail de FLK Developments" name="description"/>
+<title>Manual de usuario | FLK POS Retail</title>
+<link href="estilos/style-retail.css?v=1.0.2" rel="stylesheet"/>
+<link href="assets/imagenes/logoblanco.svg" rel="icon" type="image/png"/>
+</head>
+<body>
+<a class="saltar" href="#contenido-principal">
+   Saltar al contenido principal
+  </a>
+<!-- EDITAR LOGO: reemplace imagenes/logo.png con el archivo del logo de la empresa. -->
+<header class="banner" id="arriba">
+<div class="banner-inner">
+<div class="identity">
+<div class="logo-slot">
+<img alt="Logo de la empresa" onerror="this.hidden=true;this.nextElementSibling.hidden=false" src="assets/imagenes/logo.png"/>
+<span class="logo-fallback" hidden="">
+       FLK
+      </span>
+</div>
+<div>
+<span class="brand-small">
+       FLK DEVELOPMENTS 
+      </span>
+<h1>
+        Manual de Usuario
+        <span class="palabra-brillo">Retail</span>
+</h1>
+<p>
+       Aprenda a utilizar cada módulo, paso a paso.
+      </p>
+</div>
+</div>
+<div class="version">POS RETAIL <span>
+      Versión 1 · Octubre 2026
+     </span>
+</div>
+</div>
+</header>
+<div class="page-layout">
+<aside aria-label="Índice del manual" class="sidebar" id="contenido">
+<div class="sidebar-sticky">
+<div class="sidebar-top">
+<h2>
+       Contenido del manual
+      </h2>
+<span>
+       17 módulos
+      </span>
+</div>
+<label class="search-label" for="buscador">
+      Buscar un módulo
+     </label>
+<input autocomplete="off" id="buscador" placeholder="Ej. ventas, kardex, clientes…" type="search"/>
+<nav id="module-nav">
+<a class="nav-link" href="#mod-inicio">
+<span class="nav-dot">
+</span>
+       Inicio y panel de control
+      </a>
+<a class="nav-link" href="#mod-pos">
+<span class="nav-dot">
+</span>
+       Punto de venta
+      </a>
+<a class="nav-link" href="#mod-proveedores">
+<span class="nav-dot">
+</span>
+       Proveedores
+      </a>
+<a class="nav-link" href="#mod-productos">
+<span class="nav-dot">
+</span>
+       Productos
+      </a>
+<a class="nav-link" href="#mod-kardex">
+<span class="nav-dot">
+</span>
+       Kardex
+      </a>
+<a class="nav-link" href="#mod-existencias">
+<span class="nav-dot">
+</span>
+       Existencias
+      </a>
+<a class="nav-link" href="#mod-categorias">
+<span class="nav-dot">
+</span>
+       Categorías
+      </a>
+<a class="nav-link" href="#mod-panel-inventario">
+<span class="nav-dot">
+</span>
+       Panel de control de inventario
+      </a>
+<a class="nav-link" href="#mod-movimientos">
+<span class="nav-dot">
+</span>
+       Movimientos de inventario
+      </a>
+<a class="nav-link" href="#mod-informes-inventario">
+<span class="nav-dot">
+</span>
+       Informes de inventario
+      </a>
+<a class="nav-link" href="#mod-cuentas-cobrar">
+<span class="nav-dot">
+</span>
+       Cuentas por cobrar
+      </a>
+<a class="nav-link" href="#mod-ventas">
+<span class="nav-dot">
+</span>
+       Ventas
+      </a>
+<a class="nav-link" href="#mod-cotizaciones">
+<span class="nav-dot">
+</span>
+       Cotizaciones
+      </a>
+<a class="nav-link" href="#mod-clientes">
+<span class="nav-dot">
+</span>
+       Clientes
+      </a>
+<a class="nav-link" href="#mod-personal">
+<span class="nav-dot">
+</span>
+       Personal
+      </a>
+
+<a class="nav-link" href="#mod-pagos">
+<span class="nav-dot">
+</span>
+       Pagos
+      </a>
+<a class="nav-link" href="#mod-informes">
+<span class="nav-dot">
+</span>
+       Informes
+      </a>
+</nav>
+<div class="sidebar-links">
+<a href="#acceso">
+       Acceso al sistema
+      </a>
+<a href="#problemas">
+       Solución de problemas
+      </a>
+<a href="#faq">
+       Preguntas frecuentes
+      </a>
+<a href="#glosario">
+       Glosario
+      </a>
+</div>
+</div>
+</aside>
+<main id="contenido-principal">
+<section class="welcome" id="acceso">
+<span class="eyebrow">
+      GUÍA PRÁCTICA
+     </span>
+<h2>Cómo utilizar este manual de POS Retail</h2>
+<p>
+      Este manual está organizado por módulos, igual que el sistema. Elija un módulo en el índice y lea sus tareas en orden. Cada paso indica qué opción debe buscar y qué hacer después. Puede consultar un video por módulo cuando esté disponible.
+     </p>
+<div class="intro-grid">
+<div>
+<b>
+        01
+       </b>
+<span>
+        Elija un módulo.
+       </span>
+</div>
+<div>
+<b>
+        02
+       </b>
+<span>
+        Siga los pasos de cada tarjeta.
+       </span>
+</div>
+<div>
+<b>
+        03
+       </b>
+<span>
+        Consulte el video si necesita una demostración.
+       </span>
+</div>
+</div>
+<article class="task intro-card">
+<div class="task-head">
+<span class="task-number">
+        A
+       </span>
+<h3>Iniciar sesión en POS Retail</h3>
+<button class="video-btn video-btn-task" data-title="Inicio de sesión de POS Retail" data-video="assets/videos-retail/iniciosesion.R.mp4" style="margin-left: 55%" type="button">
+        ▶ Ver video
+       </button>
+</div>
+<p class="instruccion">
+       Siga estos pasos:
+      </p>
+<ol class="pasos"><li>Abra el navegador e ingrese a <strong ><a href="https://prodretailpos.flkdevelopment.com/login" target="_blank" rel="noopener noreferrer">https://prodretailpos.flkdevelopment.com/login</a></strong>
+.</li><li>En la casilla <strong>Correo electrónico</strong>, escriba el correo asociado a su cuenta.</li><li>En <strong>Contraseña</strong>, ingrese su clave. Puede usar el <strong>ícono del ojo</strong> para comprobar lo que escribió.</li><li>Si lo desea, marque <strong>Recordarme</strong>. El <strong>ícono de la luna</strong> permite cambiar al modo oscuro.</li><li>Presione <strong>Iniciar sesión</strong>. Al ingresar, verá las opciones del sistema según su acceso.</li></ol>
+</article><article class="task intro-card"><div class="task-head"><span class="task-number">B</span><h3>Recuperar una contraseña olvidada</h3></div><p class="instruccion">Siga estos pasos:</p><ol class="pasos"><li>En la pantalla de acceso, presione <strong>¿Olvidaste tu contraseña?</strong>.</li><li>Escriba el <strong>correo electrónico</strong> registrado y presione <strong>Enviar enlace de restablecimiento de contraseña</strong>.</li><li>Revise su correo y siga las instrucciones del enlace para crear una contraseña nueva.</li><li>Si necesita volver, seleccione <strong>Volver al inicio de sesión</strong>.</li></ol></article>
+<article class="task intro-card"><div class="task-head"><span class="task-number">C</span><h3>Crear una cuenta nueva</h3></div><p class="instruccion">Siga estos pasos:</p><ol class="pasos"><li>En el inicio de sesión, seleccione <strong>Crear una cuenta</strong>.</li><li>Escriba el <strong>nombre del negocio</strong>, su <strong>nombre completo</strong>, <strong>correo electrónico</strong> y <strong>contraseña</strong>. Complete cualquier campo obligatorio señalado por el sistema.</li><li>Presione <strong>Siguiente: Detalles de la Sucursal</strong>.</li><li>Ingrese el <strong>nombre de la sucursal</strong>, seleccione el <strong>país</strong> y agregue la <strong>dirección</strong>.</li><li>Compruebe los datos y presione <strong>Registrarse</strong> para terminar.</li></ol></article></section>
+<!-- MÓDULOS: cada section class="module" contiene tareas article class="task". data-video indica un único video para todo el módulo. -->
+<div class="modules-heading">
+<div>
+<span class="eyebrow">
+       DOCUMENTACIÓN POR MÓDULOS
+      </span>
+<h2>
+       Tareas del sistema
+      </h2>
+</div>
+<span class="count">
+      17 módulos · 56 tarjetas
+     </span>
+</div>
+<section class="module" data-search="inicio y panel de control navegación general y estadísticas navegar por el menú lateral consultar el panel de control" id="mod-inicio">
+<div class="module-header">
+<div>
+<div class="eyebrow">
+        MÓDULO 01 / 17
+       </div>
+<h2>
+        Inicio y panel de control
+       </h2>
+<p>
+        Navegación general y estadísticas
+       </p>
+</div>
+<button class="video-btn" data-title="Inicio y panel de control" data-video="assets/videos-retail/panel-de-control.mp4" type="button">
+       ▶ Ver video del módulo
+      </button>
+</div>
+<div class="task-grid">
+<article class="task" id="inicio-t1">
+<div class="task-head">
+<span class="task-number">
+         01.01
+        </span>
+<h3>
+         Navegar por el menú lateral
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Al ingresar, el menú de navegación aparece en el lado izquierdo de la pantalla.
+        </li>
+<li>
+         Seleccione el módulo que necesita: <strong>POS</strong>, <strong>Inventario</strong>, <strong>Clientes</strong>, <strong>Caja</strong>, entre otros.
+        </li>
+<li>
+         Para ampliar el área de trabajo, contraiga o expanda el menú con el icono de flechas ubicado en la esquina superior.
+        </li>
+</ol>
+</article>
+<article class="task" id="inicio-t2">
+<div class="task-head">
+<span class="task-number">
+         01.02
+        </span>
+<h3>
+         Consultar el panel de control
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos"><li>Abra <strong>Panel de Control</strong> desde el menú.</li><li>Consulte las <strong>ventas del día</strong>, el <strong>monto vendido</strong>, los <strong>clientes atendidos</strong> y las <strong>ventas diarias promedio</strong>.</li><li>Revise la <strong>gráfica de ventas del mes</strong>, los <strong>métodos de pago</strong> y los <strong>productos más vendidos</strong>.</li></ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search="punto de venta caja registradora: ventas y cobro agregar productos a la venta vender un producto no registrado (venta libre) elegir el tipo de factura revisar los totales y cobrar" id="mod-pos">
+<div class="module-header">
+<div>
+<div class="eyebrow">
+        MÓDULO 02 / 17
+       </div>
+<h2>
+        Punto de venta
+       </h2>
+<p>
+        Caja registradora: ventas y cobro
+       </p>
+</div>
+<button class="video-btn" data-title="Punto de venta" data-video="assets/videos-retail/punto-de-venta.mp4" type="button">
+       ▶ Ver video del módulo
+      </button>
+</div>
+<div class="task-grid">
+<article class="task" id="pos-t1">
+<div class="task-head">
+<span class="task-number">
+         02.01
+        </span>
+<h3>
+         Agregar productos a la venta
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos"><li>En el menú lateral, abra <strong>Punto de Venta</strong> y seleccione la <strong>sucursal</strong> con la que trabajará.</li><li>Utilice el área de <strong>escaneo</strong> para leer el código de barras o busque el producto por <strong>nombre</strong>.</li><li>Agregue los artículos a la venta y revise su <strong>cantidad</strong>. Puede modificarla antes del cobro.</li></ol>
+</article>
+<article class="task" id="pos-t2">
+<div class="task-head">
+<span class="task-number">
+         02.02
+        </span>
+<h3>
+         Vender un producto no registrado (venta libre)
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos"><li>Presione <strong>Venta libre</strong> cuando necesite vender un artículo que no está registrado en el catálogo.</li><li>Escriba su <strong>descripción</strong>, <strong>precio</strong> y <strong>cantidad</strong>, según los campos que muestra el formulario.</li><li>Confirme para agregar el artículo a la venta y revise el total.</li></ol>
+</article>
+<article class="task" id="pos-t3">
+<div class="task-head">
+<span class="task-number">
+         02.03
+        </span>
+<h3>
+         Elegir el tipo de factura
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos"><li>Seleccione <strong>Factura de contado</strong> cuando el cliente pagará en ese momento, o <strong>Factura de crédito</strong> si la venta quedará bajo esa modalidad.</li><li>Compruebe que el tipo de factura y los productos sean correctos antes de continuar.</li><li>Si no desea continuar, utilice la opción para <strong>cancelar la venta</strong>.</li></ol>
+</article>
+<article class="task" id="pos-t4">
+<div class="task-head">
+<span class="task-number">
+         02.04
+        </span>
+<h3>
+         Revisar los totales y cobrar
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos"><li>Revise los productos, el <strong>subtotal</strong> y el <strong>total</strong> de la venta.</li><li>Presione <strong>Cobrar</strong> y seleccione el medio de pago: <strong>Efectivo</strong>, <strong>Tarjeta</strong>, <strong>SINPE</strong> u otro disponible.</li><li>Ingrese el <strong>monto recibido</strong>. Si el cliente usa varias formas de pago, registre los importes correspondientes.</li><li>Presione <strong>Completar pago</strong>. Si pagó en efectivo, revise el <strong>vuelto</strong> que indica el sistema.</li><li>Al finalizar, revise el <strong>comprobante</strong> y utilice la opción de imprimir si lo necesita.</li></ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search="proveedores inventario · gestión de proveedores buscar un proveedor exportar e importar información agregar un nuevo proveedor" id="mod-proveedores">
+<div class="module-header">
+<div>
+<div class="eyebrow">
+        MÓDULO 03 / 17
+       </div>
+<h2>
+        Proveedores
+       </h2>
+<p>
+        Inventario · Gestión de proveedores
+       </p>
+</div>
+<button class="video-btn" data-title="Proveedores" data-video="assets/videos-retail/inventario-proveedores.mp4" type="button">
+       ▶ Ver video del módulo
+      </button>
+</div>
+<div class="task-grid">
+<article class="task" id="proveedores-t1">
+<div class="task-head">
+<span class="task-number">
+         03.01
+        </span>
+<h3>
+         Buscar un proveedor
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Abra <strong>Inventario</strong> y seleccione <strong>Proveedores</strong>.
+        </li>
+<li>
+         Escriba en la barra de búsqueda superior el código, el nombre o el correo electrónico del proveedor.
+        </li>
+<li>
+         Debajo de la barra puede ver los nombres de los proveedores actuales y su información.
+        </li>
+</ol>
+</article>
+<article class="task" id="proveedores-t2">
+<div class="task-head">
+<span class="task-number">
+         03.02
+        </span>
+<h3>
+         Exportar e importar información
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Use los botones de exportación para descargar la información en <strong>Excel</strong> o <strong>PDF</strong>.
+        </li>
+<li>
+         Use el botón de importación para cargar facturas <strong>XML</strong>.
+        </li>
+<li>
+         Estas funciones no requieren configuración manual adicional.
+        </li>
+</ol>
+</article>
+<article class="task" id="proveedores-t3">
+<div class="task-head">
+<span class="task-number">
+         03.03
+        </span>
+<h3>
+         Agregar un nuevo proveedor
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Haga clic en <strong>Agregar Proveedor</strong>.
+        </li>
+<li>
+         En la ventana emergente complete los campos obligatorios: <strong>Nombre</strong>, <strong>Correo Electrónico</strong>, <strong>Teléfono</strong>, <strong>Dirección</strong> y <strong>Cédula Jurídica</strong>.
+        </li>
+<li>
+         Presione <strong>Guardar</strong> para registrar la información.
+        </li>
+</ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search="productos inventario · registro y mantenimiento de productos buscar y filtrar productos exportar e importar productos agregar un producto actualizar un producto borrar un producto" id="mod-productos">
+<div class="module-header">
+<div>
+<div class="eyebrow">
+        MÓDULO 04 / 17
+       </div>
+<h2>
+        Productos
+       </h2>
+<p>
+        Inventario · Registro y mantenimiento de productos
+       </p>
+</div>
+<button class="video-btn" data-title="Productos" data-video="assets/videos-retail/inventario-productos.mp4" type="button">
+       ▶ Ver video del módulo
+      </button>
+</div>
+<div class="task-grid">
+<article class="task" id="productos-t1">
+<div class="task-head">
+<span class="task-number">
+         04.01
+        </span>
+<h3>
+         Buscar y filtrar productos
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Abra <strong>Inventario</strong> y seleccione <strong>Productos</strong>.
+        </li>
+<li>
+         Use las barras de búsqueda para ingresar el nombre o el número del producto, o para filtrar por proveedor.
+        </li>
+<li>
+         Presione <strong>Mostrar Filtros</strong> para acotar la búsqueda según criterios específicos.
+        </li>
+<li>
+         Para pasar de una página a otra de la lista, use el paginador ubicado en la esquina inferior.
+        </li>
+</ol>
+</article>
+<article class="task" id="productos-t2">
+<div class="task-head">
+<span class="task-number">
+         04.02
+        </span>
+<h3>
+         Exportar e importar productos
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         En la parte superior, presione el botón de <strong>Excel</strong> o <strong>PDF</strong> para exportar la lista de productos.
+        </li>
+<li>
+         Para cargar productos en bloque, use la opción <strong>Importar CSV</strong>.
+        </li>
+</ol>
+</article>
+<article class="task" id="productos-t3">
+<div class="task-head">
+<span class="task-number">
+         04.03
+        </span>
+<h3>
+         Agregar un producto
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Presione <strong>Agregar Producto</strong>.
+        </li>
+<li>
+<strong>Datos básicos:</strong> digite o escanee con el lector de barras el <strong>Código de producto</strong>; escriba el <strong>Nombre</strong> comercial y una <strong>Descripción</strong> con detalles como presentación o volumen.
+        </li>
+<li>
+<strong>Proveedores:</strong> busque y seleccione el <strong>Proveedor</strong> principal por nombre o código, indique el <strong>Código de proveedor</strong> (consecutivo interno que le asigna el proveedor al producto) y agregue <strong>Proveedores adicionales</strong> si también lo surten.
+        </li>
+<li>
+<strong>Clasificación y costo:</strong> seleccione la <strong>Unidad de medida</strong> y la <strong>Categoría</strong>, e ingrese el <strong>Precio de costo</strong>, que se usa para calcular márgenes y valuación del inventario.
+        </li>
+<li>
+<strong>Inventario:</strong> marque <strong>Controlar inventario</strong> si desea que el sistema descuente el stock en cada venta; indique el <strong>Stock inicial</strong> y la <strong>Alerta de stock bajo</strong> (cantidad mínima para recibir una advertencia de reabastecimiento).
+        </li>
+<li>
+<strong>Configuración fiscal:</strong> busque por palabra clave o digite el <strong>Código CABYS</strong> de 13 dígitos (si lo deja en blanco, el sistema asigna el CABYS por defecto del negocio); elija la <strong>Categoría de IVA</strong> y defina con <strong>Está disponible</strong> (Sí o No) si el producto está activo para la venta.
+        </li>
+<li>
+<strong>Imagen y precio:</strong> use <strong>Examinar…</strong> para adjuntar una fotografía; active <strong>Tiene variaciones</strong> si hay presentaciones distintas (colores o tallas); indique el <strong>Margen de ganancia</strong> y digite el <strong>Precio</strong> de venta. Marque <strong>Este precio ya incluye IVA</strong> si el monto ya tiene el impuesto integrado.
+        </li>
+<li>
+         Para terminar, presione el botón <strong>Agregar</strong>, en la parte inferior izquierda.
+        </li>
+</ol>
+</article>
+<article class="task" id="productos-t4">
+<div class="task-head">
+<span class="task-number">
+         04.04
+        </span>
+<h3>
+         Actualizar un producto
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         En la lista de productos, haga clic en <strong>Actualizar</strong> en la fila del artículo.
+        </li>
+<li>
+         En la ventana <strong>Editar Producto</strong> (con los mismos campos del formulario de creación) modifique únicamente lo que requiera cambios o correcciones.
+        </li>
+<li>
+         Presione <strong>Guardar</strong> para aplicar los cambios, o <strong>Cancelar</strong> si no desea conservarlos.
+        </li>
+</ol>
+</article>
+<article class="task" id="productos-t5">
+<div class="task-head">
+<span class="task-number">
+         04.05
+        </span>
+<h3>
+         Borrar un producto
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         En la fila del producto, haga clic en el icono de basurero, a la par del botón Actualizar.
+        </li>
+<li>
+         Cuando aparezca la alerta de confirmación, presione <strong>Delete</strong>.
+        </li>
+</ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search="kardex inventario · libro de existencias por producto consultar el kardex de un producto filtrar la consulta interpretar el resumen y los movimientos" id="mod-kardex">
+<div class="module-header">
+<div>
+<div class="eyebrow">
+        MÓDULO 05 / 17
+       </div>
+<h2>
+        Kardex
+       </h2>
+<p>
+        Inventario · Libro de existencias por producto
+       </p>
+</div>
+<button class="video-btn" data-title="Kardex" data-video="assets/videos-retail/inventario-kardex.mp4" type="button">
+       ▶ Ver video del módulo
+      </button>
+</div>
+<div class="task-grid">
+<article class="task" id="kardex-t1">
+<div class="task-head">
+<span class="task-number">
+         05.01
+        </span>
+<h3>
+         Consultar el kardex de un producto
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Abra <strong>Inventario</strong> y seleccione <strong>Kardex</strong>.
+        </li>
+<li>
+         En la parte superior derecha verifique el nombre del producto seleccionado, su código y el stock actual disponible.
+        </li>
+<li>
+         Para ver otro artículo, presione <strong>Cambiar producto</strong>.
+        </li>
+</ol>
+</article>
+<article class="task" id="kardex-t2">
+<div class="task-head">
+<span class="task-number">
+         05.02
+        </span>
+<h3>
+         Filtrar la consulta
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Elija un período con los botones rápidos: <strong>Hoy</strong>, <strong>Esta semana</strong>, <strong>Este mes</strong>, <strong>Mes pasado</strong> o <strong>Este año</strong>.
+        </li>
+<li>
+         También puede definir manualmente la <strong>Fecha inicio</strong> y la <strong>Fecha fin</strong>.
+        </li>
+<li>
+         Use el menú desplegable para filtrar por <strong>Tipo de movimiento</strong>.
+        </li>
+<li>
+         Presione <strong>Exportar CSV</strong> para descargar el reporte de kardex.
+        </li>
+</ol>
+</article>
+<article class="task" id="kardex-t3">
+<div class="task-head">
+<span class="task-number">
+         05.03
+        </span>
+<h3>
+         Interpretar el resumen y los movimientos
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Revise las cuatro tarjetas del período: <strong>Saldo inicial</strong>, <strong>Total entradas</strong>, <strong>Total salidas</strong> y <strong>Saldo final</strong>, cada una con sus unidades y valor económico.
+        </li>
+<li>
+         En la tabla de movimientos consulte la <strong>Fecha</strong>, el <strong>Tipo de movimiento</strong>, el <strong>Documento</strong> de soporte y el <strong>Proveedor</strong> asociado.
+        </li>
+<li>
+         Revise también la <strong>Entrada</strong>, la <strong>Salida</strong>, el <strong>Costo unitario</strong>, el <strong>Saldo</strong>, el <strong>Costo promedio</strong> y el <strong>Saldo valorizado</strong> (valor total del inventario en ese punto).
+        </li>
+</ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search="existencias inventario · stock actual, historial y ajustes revisar las existencias consultar el historial de un producto ajustar el stock" id="mod-existencias">
+<div class="module-header">
+<div>
+<div class="eyebrow">
+        MÓDULO 06 / 17
+       </div>
+<h2>
+        Existencias
+       </h2>
+<p>
+        Inventario · Stock actual, historial y ajustes
+       </p>
+</div>
+<button class="video-btn" data-title="Existencias" data-video="assets/videos-retail/inventario-existencias.R.mp4" type="button">
+       ▶ Ver video del módulo
+      </button>
+</div>
+<div class="task-grid">
+<article class="task" id="existencias-t1">
+<div class="task-head">
+<span class="task-number">
+         06.01
+        </span>
+<h3>
+         Revisar las existencias
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Abra <strong>Inventario</strong> y seleccione <strong>Existencias</strong>.
+        </li>
+<li>
+         En las tarjetas superiores consulte la valuación total del inventario y la cantidad de productos con stock bajo.
+        </li>
+<li>
+         Marque <strong>Mostrar solo stock bajo</strong> para ver únicamente los artículos en estado crítico.
+        </li>
+<li>
+         Busque un producto por nombre o número en una barra, y filtre por proveedor (nombre o número) en la otra.
+        </li>
+<li>
+         En la tabla revise <strong>Producto</strong>, <strong>Categoría</strong>, <strong>Precio de costo</strong> y <strong>Stock actual</strong>: el distintivo verde indica inventario disponible y el rojo, stock bajo o negativo.
+        </li>
+<li>
+         Para recorrer la lista, use el paginador de la esquina inferior derecha.
+        </li>
+</ol>
+</article>
+<article class="task" id="existencias-t2">
+<div class="task-head">
+<span class="task-number">
+         06.02
+        </span>
+<h3>
+         Consultar el historial de un producto
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         En la columna <strong>Acción</strong> del producto, presione <strong>Historial</strong>.
+        </li>
+<li>
+         En la ventana <strong>Historial de movimientos</strong> revise fechas, tipo de movimiento (como venta o devolución), cantidad, stock actual y notas.
+        </li>
+<li>
+         Si necesita más detalle, presione <strong>Ver kardex completo</strong>.
+        </li>
+</ol>
+</article>
+<article class="task" id="existencias-t3">
+<div class="task-head">
+<span class="task-number">
+         06.03
+        </span>
+<h3>
+         Ajustar el stock
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         En la columna <strong>Acción</strong> del producto, presione <strong>Ajustar</strong>.
+        </li>
+<li>
+         En la ventana <strong>Ajustar stock</strong> seleccione el tipo de movimiento: <strong>Entrada</strong> o <strong>Salida</strong>.
+        </li>
+<li>
+         Indique la cantidad a ingresar o retirar y escriba una nota que justifique el ajuste.
+        </li>
+<li>
+         Presione <strong>Guardar</strong>.
+        </li>
+</ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search="categorías inventario · clasificación de los productos buscar y crear categorías editar una categoría eliminar una categoría" id="mod-categorias">
+<div class="module-header">
+<div>
+<div class="eyebrow">
+        MÓDULO 07 / 17
+       </div>
+<h2>
+        Categorías
+       </h2>
+<p>
+        Inventario · Clasificación de los productos
+       </p>
+</div>
+<button class="video-btn" data-title="Categorías" data-video="assets/videos-retail/inventario-categorias.mp4" type="button">
+       ▶ Ver video del módulo
+      </button>
+</div>
+<div class="task-grid">
+<article class="task" id="categorias-t1">
+<div class="task-head">
+<span class="task-number">
+         07.01
+        </span>
+<h3>
+         Buscar y crear categorías
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Abra <strong>Inventario</strong> y seleccione <strong>Categorías</strong>.
+        </li>
+<li>
+         Para localizar una categoría, escriba su nombre en la barra de búsqueda superior.
+        </li>
+<li>
+         Presione <strong>Agregar Categoría</strong>.
+        </li>
+<li>
+         En la ventana <strong>Nueva categoría</strong> escriba el <strong>Nombre de la categoría</strong> y presione <strong>Guardar</strong> (o <strong>Cancelar</strong> si no desea registrarla).
+        </li>
+</ol>
+</article>
+<article class="task" id="categorias-t2">
+<div class="task-head">
+<span class="task-number">
+         07.02
+        </span>
+<h3>
+         Editar una categoría
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         En la tabla, ubique la categoría y presione <strong>Editar</strong> (icono de lápiz).
+        </li>
+<li>
+         En la ventana <strong>Editar Categoría</strong> modifique el nombre.
+        </li>
+<li>
+         Presione <strong>Guardar</strong>.
+        </li>
+</ol>
+</article>
+<article class="task" id="categorias-t3">
+<div class="task-head">
+<span class="task-number">
+         07.03
+        </span>
+<h3>
+         Eliminar una categoría
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         En la columna <strong>Acción</strong>, presione <strong>Eliminar</strong> (icono de basurero).
+        </li>
+<li>
+         Cuando el sistema pregunte «¿Está seguro de eliminar esta categoría?», elija <strong>Sí, eliminar</strong> para confirmar o <strong>Cancelar</strong> para conservarla.
+        </li>
+</ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search="panel de control de inventario inventario · métricas y alertas en tiempo real filtrar la información del panel interpretar los bloques informativos" id="mod-panel-inventario">
+<div class="module-header">
+<div>
+<div class="eyebrow">
+        MÓDULO 08 / 17
+       </div>
+<h2>
+        Panel de control de inventario
+       </h2>
+<p>
+        Inventario · Métricas y alertas en tiempo real
+       </p>
+</div>
+<button class="video-btn" data-title="Panel de control de inventario" data-video="assets/videos-retail/inventario-panel-de-control.mp4" type="button">
+       ▶ Ver video del módulo
+      </button>
+</div>
+<div class="task-grid">
+<article class="task" id="panel-inventario-t1">
+<div class="task-head">
+<span class="task-number">
+         08.01
+        </span>
+<h3>
+         Filtrar la información del panel
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Abra <strong>Inventario</strong> y seleccione <strong>Panel de control</strong>.
+        </li>
+<li>
+         En <strong>Filtrar por Categoría</strong> elija una categoría (por ejemplo Cuidado Personal, Snacks, Bebidas, Limpieza o Abarrotes) o <strong>Todas las Categorías</strong>.
+        </li>
+<li>
+         En <strong>Período de Tiempo</strong> elija un rango como <strong>Hoy</strong>, <strong>Esta Semana</strong> o <strong>Este Mes</strong>.
+        </li>
+</ol>
+</article>
+<article class="task" id="panel-inventario-t2">
+<div class="task-head">
+<span class="task-number">
+         08.02
+        </span>
+<h3>
+         Interpretar los bloques informativos
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Revise los bloques por categoría: muestran el total de artículos registrados y alertas en rojo con los productos agotados o por debajo del mínimo configurado.
+        </li>
+<li>
+         En <strong>Artículos Más Movidos</strong> consulte los productos con mayor rotación en el período.
+        </li>
+<li>
+         En <strong>Alertas de Stock Bajo</strong> revise los productos críticos (en rojo), con su stock actual y la cantidad mínima requerida.
+        </li>
+<li>
+         En <strong>Correlación Uso-Stock</strong> compare el ritmo de consumo con las existencias disponibles.
+        </li>
+<li>
+         En <strong>Stock Próximo a Vencer</strong> identifique los productos cercanos a su fecha de expiración para rotarlos pronto.
+        </li>
+</ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search="movimientos de inventario inventario · entradas, salidas, desperdicios y ajustes consultar y filtrar movimientos registrar una entrada de stock" id="mod-movimientos">
+<div class="module-header">
+<div>
+<div class="eyebrow">
+        MÓDULO 09 / 17
+       </div>
+<h2>
+        Movimientos de inventario
+       </h2>
+<p>
+        Inventario · Entradas, salidas, desperdicios y ajustes
+       </p>
+</div>
+<button class="video-btn" data-title="Movimientos de inventario" data-video="assets/videos-retail/inventario-movimientos.mp4" type="button">
+       ▶ Ver video del módulo
+      </button>
+</div>
+<div class="task-grid">
+<article class="task" id="movimientos-t1">
+<div class="task-head">
+<span class="task-number">
+         09.01
+        </span>
+<h3>
+         Consultar y filtrar movimientos
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Abra <strong>Inventario</strong> y seleccione <strong>Movimientos</strong>.
+        </li>
+<li>
+         Revise las tarjetas superiores: <strong>Ingresos</strong>, <strong>Salida</strong>, <strong>Desperdicio</strong> y <strong>Ajustes</strong> (número de correcciones manuales).
+        </li>
+<li>
+         Busque por nombre, código de producto o usuario en la barra de búsqueda.
+        </li>
+<li>
+         Filtre con los menús <strong>Tipo de movimiento</strong> (Todos los Tipos, Entrada, Salida, Merma o Ajuste), <strong>Categorías</strong> y <strong>Período de tiempo</strong> (Hoy, Esta Semana, Este Mes o Este Trimestre).
+        </li>
+<li>
+         Presione <strong>Limpiar Filtros</strong> para restablecer la búsqueda.
+        </li>
+<li>
+         En la tabla consulte <strong>Fecha</strong>, <strong>Producto/Categoría</strong>, <strong>Movimiento</strong>, <strong>Cantidad</strong>, <strong>Proveedor</strong>, <strong>Usuario</strong> y <strong>Acciones</strong>.
+        </li>
+</ol>
+</article>
+<article class="task" id="movimientos-t2">
+<div class="task-head">
+<span class="task-number">
+         09.02
+        </span>
+<h3>
+         Registrar una entrada de stock
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Presione <strong>+ Agregar Entrada de Stock</strong>, en la parte superior derecha.
+        </li>
+<li>
+         En la ventana lateral elija el <strong>Tipo de Transacción</strong>: Ingreso de Stock, Salida de Stock o Desperdicio.
+        </li>
+<li>
+         Defina la <strong>Fecha</strong> y la <strong>Hora</strong> del movimiento.
+        </li>
+<li>
+         Busque y seleccione el <strong>Producto</strong> por nombre, código interno o código de barras.
+        </li>
+<li>
+         Indique la <strong>Cantidad</strong> y el <strong>Precio Unitario de Compra</strong>.
+        </li>
+<li>
+         Si corresponde, seleccione el <strong>Proveedor</strong> y escriba una <strong>Nota</strong> explicativa.
+        </li>
+<li>
+         Presione <strong>Guardar</strong> para aplicar el movimiento, o <strong>Cancelar</strong> para salir sin guardar.
+        </li>
+</ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search="informes de inventario inventario · uso, pronóstico, rotación y costos analizar el uso de inventario consultar el pronóstico de uso analizar la rotación de stock calcular el costo de mercancías vendidas (cogs)" id="mod-informes-inventario">
+<div class="module-header">
+<div>
+<div class="eyebrow">
+        MÓDULO 10 / 17
+       </div>
+<h2>
+        Informes de inventario
+       </h2>
+<p>
+        Inventario · Uso, pronóstico, rotación y costos
+       </p>
+</div>
+<button class="video-btn" data-title="Informes de inventario" data-video="assets/videos-retail/inventario-informes.mp4" type="button">
+       ▶ Ver video del módulo
+      </button>
+</div>
+<div class="task-grid">
+<article class="task" id="informes-inventario-t1">
+<div class="task-head">
+<span class="task-number">
+         10.01
+        </span>
+<h3>
+         Analizar el uso de inventario
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Abra <strong>Inventario</strong> → <strong>Informes</strong> y elija la pestaña <strong>Análisis de Uso de Inventario</strong>.
+        </li>
+<li>
+         Seleccione el <strong>Periodo del informe</strong> (Diario, Semanal o Mensual) y las <strong>Fecha de inicio</strong> y <strong>Fecha de fin</strong>.
+        </li>
+<li>
+         Si lo necesita, escriba el nombre de un producto en <strong>Buscar Artículos</strong>.
+        </li>
+<li>
+         Revise el <strong>Uso Real</strong> y su porcentaje de variación, la gráfica de <strong>Tendencias de Uso</strong> y la tabla <strong>Detalles de Uso Real</strong> (Artículo, Cantidad, Fecha y Tipo de movimiento).
+        </li>
+</ol>
+</article>
+<article class="task" id="informes-inventario-t2">
+<div class="task-head">
+<span class="task-number">
+         10.02
+        </span>
+<h3>
+         Consultar el pronóstico de uso
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Abra la pestaña <strong>Pronóstico de Uso de Inventario</strong>.
+        </li>
+<li>
+         Filtre con <strong>Buscar Artículos</strong> y <strong>Seleccionar Artículo</strong>, y defina el <strong>Periodo de Pronóstico</strong> (por ejemplo, 7 días).
+        </li>
+<li>
+         Revise la gráfica de proyección y la tabla con <strong>Artículo</strong>, <strong>Stock Actual</strong>, <strong>Cantidad de Uso</strong>, <strong>Promedio Diario</strong> y <strong>Días Estimados Restantes</strong> antes del agotamiento.
+        </li>
+</ol>
+</article>
+<article class="task" id="informes-inventario-t3">
+<div class="task-head">
+<span class="task-number">
+         10.03
+        </span>
+<h3>
+         Analizar la rotación de stock
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Abra la pestaña <strong>Análisis de Rotación de Stock</strong>.
+        </li>
+<li>
+         Indique la <strong>Fecha de inicio</strong>, la <strong>Fecha de fin</strong> y, si desea, busque un artículo.
+        </li>
+<li>
+         Revise la gráfica <strong>Principales Artículos por Rotación</strong> y la tabla con <strong>Nombre del Artículo</strong>, <strong>Stock Actual</strong>, <strong>Cantidad de Uso</strong> y <strong>Tasa de Rotación</strong>.
+        </li>
+</ol>
+</article>
+<article class="task" id="informes-inventario-t4">
+<div class="task-head">
+<span class="task-number">
+         10.04
+        </span>
+<h3>
+         Calcular el costo de mercancías vendidas (COGS)
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Abra la pestaña <strong>Costo de Mercancías Vendidas (COGS)</strong>.
+        </li>
+<li>
+         Defina la <strong>Fecha inicio</strong>, la <strong>Fecha fin</strong> y la <strong>Categoría</strong>.
+        </li>
+<li>
+         Presione <strong>Generar Informe</strong>.
+        </li>
+<li>
+         Revise el <strong>Costo Total de Mercancías Vendidas</strong> y la tabla con <strong>Artículo</strong>, <strong>Categoría</strong>, <strong>Cantidad Usada</strong> y <strong>Costo Total</strong>.
+        </li>
+</ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search="cuentas por cobrar crédito, saldos y abonos de clientes revisar el panel de cartera administrar clientes de crédito agregar un cliente de crédito consultar la antigüedad de saldos consultar el historial de pagos" id="mod-cuentas-cobrar">
+<div class="module-header">
+<div>
+<div class="eyebrow">
+        MÓDULO 11 / 17
+       </div>
+<h2>
+        Cuentas por cobrar
+       </h2>
+<p>
+        Crédito, saldos y abonos de clientes
+       </p>
+</div>
+<button class="video-btn" data-title="Cuentas por cobrar" data-video="assets/videos-retail/inventario-cuentas-por-cobrar.mp4" type="button">
+       ▶ Ver video del módulo
+      </button>
+</div>
+<div class="task-grid">
+<article class="task" id="cuentas-cobrar-t1">
+<div class="task-head">
+<span class="task-number">
+         11.01
+        </span>
+<h3>
+         Revisar el panel de cartera
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Abra <strong>Cuentas por Cobrar</strong> y entre a la pestaña <strong>Panel de Cartera</strong>.
+        </li>
+<li>
+         Revise las tarjetas: <strong>Total en Cartera</strong> (monto global adeudado), <strong>Total Vencido</strong> y <strong>Vence en 7 días</strong>.
+        </li>
+<li>
+         En <strong>Clientes con mayor saldo</strong> consulte el nombre, el estado de cuenta y el saldo de los clientes con deudas activas.
+        </li>
+</ol>
+</article>
+<article class="task" id="cuentas-cobrar-t2">
+<div class="task-head">
+<span class="task-number">
+         11.02
+        </span>
+<h3>
+         Administrar clientes de crédito
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Abra la pestaña <strong>Clientes de Crédito</strong>.
+        </li>
+<li>
+         Busque por nombre, identificación o teléfono en la barra superior.
+        </li>
+<li>
+         En la tabla revise <strong>Código</strong>, <strong>Nombre</strong>, <strong>Identificación</strong>, <strong>Teléfono</strong>, <strong>Límite de crédito</strong>, <strong>Saldo</strong> y <strong>Estado</strong> (Activo o Inactivo).
+        </li>
+<li>
+         Para modificar un cliente, presione <strong>Editar</strong>; en <strong>Editar Cliente</strong> cambie nombre, tipo de identificación, identificación, teléfono, correo, dirección, <strong>Límite de crédito</strong> o <strong>Días de crédito</strong>, y presione <strong>Guardar</strong>.
+        </li>
+<li>
+         Para cambiar su estado, use <strong>Desactivar</strong> o <strong>Activar</strong> y confirme en la alerta del sistema.
+        </li>
+</ol>
+</article>
+<article class="task" id="cuentas-cobrar-t3">
+<div class="task-head">
+<span class="task-number">
+         11.03
+        </span>
+<h3>
+         Agregar un cliente de crédito
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         En <strong>Clientes de Crédito</strong>, presione <strong>Agregar Cliente</strong>.
+        </li>
+<li>
+         En la ventana <strong>Agregar Cliente</strong> complete la ficha con los datos de contacto y los parámetros de crédito (límite y días de crédito).
+        </li>
+<li>
+         Presione <strong>Guardar</strong>.
+        </li>
+</ol>
+</article>
+<article class="task" id="cuentas-cobrar-t4">
+<div class="task-head">
+<span class="task-number">
+         11.04
+        </span>
+<h3>
+         Consultar la antigüedad de saldos
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Abra la pestaña <strong>Antigüedad de Saldos</strong>.
+        </li>
+<li>
+         Revise por cliente el <strong>Nombre</strong> y las columnas <strong>Al día</strong>, <strong>1-30 días</strong>, <strong>31-60 días</strong>, <strong>61-90 días</strong>, <strong>Más de 90 días</strong> y el <strong>Total</strong> acumulado.
+        </li>
+<li>
+         Para descargar el reporte, use <strong>Exportar Excel</strong> o <strong>Exportar PDF</strong> en la esquina superior derecha.
+        </li>
+</ol>
+</article>
+<article class="task" id="cuentas-cobrar-t5">
+<div class="task-head">
+<span class="task-number">
+         11.05
+        </span>
+<h3>
+         Consultar el historial de pagos
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Abra la pestaña <strong>Historial de Pagos</strong>.
+        </li>
+<li>
+         Seleccione la <strong>Fecha inicio</strong> y la <strong>Fecha fin</strong> de la consulta.
+        </li>
+<li>
+         Revise la tabla de abonos: <strong>Nombre</strong>, <strong>Fecha</strong>, <strong>Monto</strong>, <strong>Forma de pago</strong>, <strong>Aplicado a</strong> y <strong>Cajero</strong>.
+        </li>
+<li>
+         Descargue el reporte con los botones <strong>Excel</strong> o <strong>PDF</strong>.
+        </li>
+</ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search="ventas consulta y gestión de facturas consultar y filtrar las ventas registrar una nueva venta" id="mod-ventas">
+<div class="module-header">
+<div>
+<div class="eyebrow">
+        MÓDULO 12 / 17
+       </div>
+<h2>
+        Ventas
+       </h2>
+<p>
+        Consulta y gestión de facturas
+       </p>
+</div>
+<button class="video-btn" data-title="Ventas" data-video="assets/videos-retail/ventas.mp4" type="button">
+       ▶ Ver video del módulo
+      </button>
+</div>
+<div class="task-grid">
+<article class="task" id="ventas-t1">
+<div class="task-head">
+<span class="task-number">
+         12.01
+        </span>
+<h3>
+         Consultar y filtrar las ventas
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Abra <strong>Ventas</strong>.
+        </li>
+<li>
+         En <strong>Hacienda</strong> filtre por el estado de la factura electrónica: Todas, Por enviar, Sin comprobante, Pendiente, Firmando, Enviado, Aceptado, Rechazado o Error.
+        </li>
+<li>
+         En <strong>Forma de pago</strong> elija Efectivo, Tarjeta, SINPE o Con saldo pendiente (o todas las formas de pago).
+        </li>
+<li>
+         En <strong>Período de tiempo</strong> elija Hoy, Semana Actual, Semana Pasada, Últimos 7 Días, Mes Actual, Mes Pasado, Año Actual o Año Pasado.
+        </li>
+<li>
+         Si lo prefiere, seleccione las fechas de inicio y fin en el calendario flotante.
+        </li>
+<li>
+         Presione <strong>Actualizar</strong> para refrescar la lista de ventas.
+        </li>
+</ol>
+</article>
+<article class="task" id="ventas-t2">
+<div class="task-head">
+<span class="task-number">
+         12.02
+        </span>
+<h3>
+         Registrar una nueva venta
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         En la parte superior derecha, presione <strong>Nueva Venta</strong>: el sistema lo lleva al <strong>Punto de venta (POS)</strong>.
+        </li>
+<li>
+         Procese la factura como se explica en el módulo Punto de venta.
+        </li>
+<li>
+         Verifique en esta pantalla los indicadores de conexión de las impresoras configuradas (<strong>Impresora Bluetooth conectada</strong> e <strong>Impresora Conectada (MOQI)</strong>).
+        </li>
+</ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search="cotizaciones presupuestos por escrito para los clientes consultar cotizaciones crear una nueva cotización" id="mod-cotizaciones">
+<div class="module-header">
+<div>
+<div class="eyebrow">
+        MÓDULO 13 / 17
+       </div>
+<h2>
+        Cotizaciones
+       </h2>
+<p>
+        Presupuestos por escrito para los clientes
+       </p>
+</div>
+<button class="video-btn" data-title="Cotizaciones" data-video="assets/videos-retail/cotizaciones.mp4" type="button">
+       ▶ Ver video del módulo
+      </button>
+</div>
+<div class="task-grid">
+<article class="task" id="cotizaciones-t1">
+<div class="task-head">
+<span class="task-number">
+         13.01
+        </span>
+<h3>
+         Consultar cotizaciones
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Abra <strong>Cotizaciones</strong>.
+        </li>
+<li>
+         Busque por número, cliente, cédula o correo.
+        </li>
+<li>
+         Filtre por estado: <strong>Todos los estados</strong>, <strong>Sin enviar</strong>, <strong>Enviada</strong> o <strong>Vencida</strong>.
+        </li>
+<li>
+         En la tabla revise <strong>Cotización</strong>, <strong>Cliente</strong>, <strong>Estado</strong>, <strong>Válida hasta</strong>, <strong>Total</strong> y <strong>Acción</strong>.
+        </li>
+</ol>
+</article>
+<article class="task" id="cotizaciones-t2">
+<div class="task-head">
+<span class="task-number">
+         13.02
+        </span>
+<h3>
+         Crear una nueva cotización
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Presione <strong>Nueva cotización</strong>, en la parte superior derecha.
+        </li>
+<li>
+<strong>Cliente:</strong> busque un cliente registrado por nombre, cédula, correo o teléfono, o escriba manualmente Cliente, Cédula, Correo y Teléfono si no está registrado.
+        </li>
+<li>
+<strong>Productos:</strong> busque por nombre, código de barras o SKU. Para conceptos o servicios que aún no existen, use <strong>Agregar línea libre</strong> e indique descripción, cantidad, precio (IVA incluido), descuento %, IVA y total.
+        </li>
+<li>
+<strong>Condiciones y totales:</strong> defina la fecha en <strong>Válida hasta</strong> y, si desea, agregue <strong>Notas y condiciones</strong> (plazo de entrega, forma de pago, garantía, etc.). A la derecha se calculan el subtotal, el IVA y el total.
+        </li>
+<li>
+         Finalice con <strong>Guardar y enviar</strong> o <strong>Guardar</strong>; use <strong>Cancelar</strong> para salir sin registrar.
+        </li>
+</ol>
+</article>
+</div>
+<aside class="alert">
+<strong>
+       ⚠ Nota importante
+      </strong>
+<p>
+       Las cotizaciones no son ventas: no descuentan inventario, no entran en la caja y no se envían a Hacienda.
+      </p>
+</aside>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search="clientes registro general e historial de compras buscar y exportar clientes consultar el historial de compras actualizar un cliente eliminar un cliente" id="mod-clientes">
+<div class="module-header">
+<div>
+<div class="eyebrow">
+        MÓDULO 14 / 17
+       </div>
+<h2>
+        Clientes
+       </h2>
+<p>
+        Registro general e historial de compras
+       </p>
+</div>
+<button class="video-btn" data-title="Clientes" data-video="assets/videos-retail/clientes.mp4" type="button">
+       ▶ Ver video del módulo
+      </button>
+</div>
+<div class="task-grid">
+<article class="task" id="clientes-t1">
+<div class="task-head">
+<span class="task-number">
+         14.01
+        </span>
+<h3>
+         Buscar y exportar clientes
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Abra <strong>Clientes</strong>.
+        </li>
+<li>
+         Escriba en la barra superior el nombre, el correo electrónico o la cédula/identificación del cliente.
+        </li>
+<li>
+         Para exportar la lista, use los botones <strong>Excel</strong> o <strong>PDF</strong> de la parte superior derecha.
+        </li>
+<li>
+         En la tabla revise <strong>Nombre del cliente</strong>, <strong>Correo electrónico</strong>, <strong>Teléfono</strong> y <strong>Total de ventas</strong>.
+        </li>
+</ol>
+</article>
+<article class="task" id="clientes-t2">
+<div class="task-head">
+<span class="task-number">
+         14.02
+        </span>
+<h3>
+         Consultar el historial de compras
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         En la columna <strong>Total de ventas</strong> presione el botón del cliente (por ejemplo, <em>1 Ventas</em>).
+        </li>
+<li>
+         Se despliega un panel lateral con las facturas vinculadas al cliente.
+        </li>
+<li>
+         Revise el estado (<strong>Pagado</strong>, <strong>Rechazado</strong>), la cantidad de productos, la fecha, la hora y el monto total.
+        </li>
+</ol>
+</article>
+<article class="task" id="clientes-t3">
+<div class="task-head">
+<span class="task-number">
+         14.03
+        </span>
+<h3>
+         Actualizar un cliente
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         En la columna <strong>Acción</strong>, presione <strong>Actualizar</strong>.
+        </li>
+<li>
+         En la ventana <strong>Editar Cliente</strong> modifique el <strong>Nombre del Cliente</strong>, el <strong>Correo Electrónico</strong> o el <strong>Teléfono</strong>.
+        </li>
+<li>
+         Presione <strong>Guardar</strong> (o <strong>Cancelar</strong> para salir).
+        </li>
+</ol>
+</article>
+<article class="task" id="clientes-t4">
+<div class="task-head">
+<span class="task-number">
+         14.04
+        </span>
+<h3>
+         Eliminar un cliente
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         En la columna <strong>Acción</strong>, presione el icono de basurero.
+        </li>
+<li>
+         En la ventana <strong>¿Eliminar Cliente?</strong> elija entre <strong>Cancelar</strong>, <strong>Eliminar junto con sus acciones</strong> o <strong>Eliminar</strong>.
+        </li>
+</ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search="personal colaboradores, roles y permisos buscar y exportar personal agregar un miembro cambiar el rol o editar un miembro" id="mod-personal">
+<div class="module-header">
+<div>
+<div class="eyebrow">
+        MÓDULO 15 / 17
+       </div>
+<h2>
+        Personal
+       </h2>
+<p>
+        Colaboradores, roles y permisos
+       </p>
+</div>
+<button class="video-btn" data-title="Personal" data-video="assets/videos-retail/personal.mp4" type="button">
+       ▶ Ver video del módulo
+      </button>
+</div>
+<div class="task-grid">
+<article class="task" id="personal-t1">
+<div class="task-head">
+<span class="task-number">
+         15.01
+        </span>
+<h3>
+         Buscar y exportar personal
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Abra <strong>Personal</strong>.
+        </li>
+<li>
+         Escriba el nombre o el correo electrónico del usuario en la barra superior.
+        </li>
+<li>
+         Para exportar la lista, use los botones <strong>Excel</strong> o <strong>PDF</strong> de la parte superior derecha.
+        </li>
+<li>
+         En la tabla revise <strong>Nombre del miembro</strong>, <strong>Correo electrónico</strong>, <strong>Rol</strong> y <strong>Acción</strong>.
+        </li>
+</ol>
+</article>
+<article class="task" id="personal-t2">
+<div class="task-head">
+<span class="task-number">
+         15.02
+        </span>
+<h3>
+         Agregar un miembro
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Presione <strong>Agregar miembro</strong>.
+        </li>
+<li>
+         En la ventana <strong>Agregar miembro</strong> complete el <strong>Nombre del miembro</strong>, la <strong>Dirección de correo electrónico</strong> y la <strong>Contraseña</strong>.
+        </li>
+<li>
+         Asigne el <strong>Rol</strong>: <strong>Administrador</strong>, <strong>Jefe</strong> o <strong>Cajero</strong>.
+        </li>
+<li>
+         Presione <strong>Guardar</strong>.
+        </li>
+</ol>
+</article>
+<article class="task" id="personal-t3">
+<div class="task-head">
+<span class="task-number">
+         15.03
+        </span>
+<h3>
+         Cambiar el rol o editar un miembro
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Para cambiar solo el rol, use el menú desplegable de la columna <strong>Rol</strong> y elija Administrador, Jefe o Cajero.
+        </li>
+<li>
+         Para editar más datos, presione <strong>Actualizar</strong> en la columna <strong>Acción</strong>.
+        </li>
+<li>
+         En la ventana <strong>Editar miembro</strong> modifique el nombre, el correo electrónico o el rol.
+        </li>
+<li>
+         Presione <strong>Guardar</strong> (o <strong>Cancelar</strong> para salir).
+        </li>
+</ol>
+</article>
+</div>
+<aside class="alert">
+<strong>
+       ⚠ Nota importante
+      </strong>
+<p>
+       El usuario activo no puede modificar su propio rol: el sistema muestra el mensaje «No puedes cambiar tu propio rol».
+      </p>
+</aside>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search="pagos cobros realizados y pagos pendientes consultar los pagos realizados consultar los pagos pendientes liquidar un saldo pendiente (agregar pago)" id="mod-pagos">
+<div class="module-header">
+<div>
+<div class="eyebrow">
+        MÓDULO 16 / 17
+       </div>
+<h2>
+        Pagos
+       </h2>
+<p>
+        Cobros realizados y pagos pendientes
+       </p>
+</div>
+<button class="video-btn" data-title="Pagos" data-video="assets/videos-retail/pagos.mp4" type="button">
+       ▶ Ver video del módulo
+      </button>
+</div>
+<div class="task-grid">
+<article class="task" id="pagos-t1">
+<div class="task-head">
+<span class="task-number">
+         16.01
+        </span>
+<h3>
+         Consultar los pagos realizados
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Abra <strong>Pagos</strong> y entre a la sección <strong>Pagos</strong>.
+        </li>
+<li>
+         Busque por monto, método, ID de transacción o número de comprobante.
+        </li>
+<li>
+         Para descargar el listado completo, presione <strong>Exportar</strong>.
+        </li>
+<li>
+         En la tabla revise <strong>ID</strong>, <strong>Monto</strong>, <strong>Método de pago</strong> (Efectivo, Tarjeta, SINPE, etc.), <strong>Comprobante</strong>, <strong>Venta</strong> vinculada y <strong>Fecha y hora</strong>.
+        </li>
+<li>
+         Use el paginador inferior para moverse entre registros antiguos y recientes.
+        </li>
+</ol>
+</article>
+<article class="task" id="pagos-t2">
+<div class="task-head">
+<span class="task-number">
+         16.02
+        </span>
+<h3>
+         Consultar los pagos pendientes
+        </h3>
+
+<button class="video-btn video-btn-task" data-title="Pagos pendientes y liquidar un saldo" data-video="assets/videos-retail/pagos-pagospendientes.R.mp4" type="button">
+        ▶ Ver video
+       </button>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Abra la sección <strong>Pagos Pendientes</strong>.
+        </li>
+<li>
+         En la parte superior revise el encabezado con la suma del monto global adeudado.
+        </li>
+<li>
+         Busque por monto o número de pedido.
+        </li>
+<li>
+         En la tabla revise <strong>Monto</strong> pendiente, <strong>Método de pago</strong>, <strong>Venta</strong> asociada, <strong>Fecha y hora</strong> y <strong>Acción</strong>.
+        </li>
+</ol>
+</article>
+<article class="task" id="pagos-t3">
+<div class="task-head">
+<span class="task-number">
+         16.03
+        </span>
+<h3>
+         Liquidar un saldo pendiente (Agregar pago)
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         En la columna <strong>Acción</strong> de la venta pendiente, presione <strong>Agregar Pago</strong>: se abre la ventana <strong>Pago</strong>.
+        </li>
+<li>
+         Elija el método de pago. <strong>Efectivo (F1):</strong> ingrese el monto en la casilla <strong>Monto</strong>, con los botones rápidos de billetes (₡1,000, ₡2,000, ₡5,000, ₡10,000, ₡20,000) o con el teclado numérico en pantalla.
+        </li>
+<li>
+<strong>Tarjeta (F2):</strong> digite los <strong>Últimos 4 del voucher</strong> del datáfono. <strong>SINPE (F3):</strong> digite el <strong>Número de referencia SINPE</strong> emitido por el banco. <strong>Otra Moneda (F4):</strong> seleccione la divisa (por ejemplo USD - Dólares), la tasa de cambio vigente y el monto recibido.
+        </li>
+<li>
+         Revise la <strong>Cuenta Total</strong>, el <strong>Monto Pagado</strong> y el <strong>Monto Pendiente</strong> (en rojo). Si la facturación electrónica está activa, los impuestos ya están requeridos y no se pueden modificar.
+        </li>
+<li>
+         Si el cliente necesita comprobante a su nombre, marque <strong>Facturar (Factura Electrónica con cédula)</strong>.
+        </li>
+<li>
+         Verifique que el monto ingresado cubre la deuda y presione <strong>Completar Pago</strong> (o <strong>Cancelar</strong> para salir sin guardar).
+        </li>
+</ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search="informes reportes de ventas, compras, ganancias y auditoría informe de ventas informe de artículos informe de categorías informe de compras reporte de ganancias auditoría de ventas" id="mod-informes">
+<div class="module-header">
+<div>
+<div class="eyebrow">
+        MÓDULO 17 / 17
+       </div>
+<h2>
+        Informes
+       </h2>
+<p>
+        Reportes de ventas, compras, ganancias y auditoría
+       </p>
+</div>
+
+</div>
+<div class="task-grid">
+<article class="task" id="informes-t1">
+<div class="task-head">
+<span class="task-number">
+         17.01
+        </span>
+<h3>
+         Informe de ventas
+        </h3>
+
+<button class="video-btn video-btn-task" data-title="Informe de ventas" data-video="assets/videos-retail/informeventas.R.mp4" type="button">
+        ▶ Ver video
+       </button>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Abra <strong>Informes</strong> y elija <strong>Informe de Ventas</strong>.
+        </li>
+<li>
+         Seleccione el período rápido (Hoy, Semana Actual, Semana Pasada, Últimos 7 Días, Mes Actual, Mes Pasado, Año Actual o Año Pasado) o las fechas inicial y final.
+        </li>
+<li>
+         Revise las tarjetas: <strong>Cuenta total</strong>, <strong>Total de ventas</strong>, <strong>Artículos</strong>, <strong>Subtotal</strong>, <strong>Descuento</strong> y <strong>Total</strong>, además del desglose por método de pago (<strong>Efectivo</strong>, <strong>Tarjeta</strong>, <strong>SINPE</strong> y <strong>Pendientes</strong>).
+        </li>
+<li>
+         Consulte el desglose de IVA por tarifa, código de impuesto y base imponible, y la tabla de ventas con Fecha, Total de ventas, Artículos, Subtotal, Descuento y Total.
+        </li>
+<li>
+         Use <strong>Excel</strong>, <strong>PDF</strong> o <strong>Obtener informe</strong> para descargarlo o enviarlo.
+        </li>
+</ol>
+</article>
+<article class="task" id="informes-t2">
+<div class="task-head">
+<span class="task-number">
+         17.02
+        </span>
+<h3>
+         Informe de artículos
+        </h3>
+
+<button class="video-btn video-btn-task" data-title="Informe de artículos" data-video="assets/videos-retail/informearticulos.R.mp4" type="button">
+        ▶ Ver video
+       </button>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Elija <strong>Informe de Artículos</strong>.
+        </li>
+<li>
+         Seleccione el período rápido o las fechas <strong>Fecha inicio</strong> y <strong>Fecha fin</strong>.
+        </li>
+<li>
+         Revise la tabla con <strong>Nombre del producto</strong>, <strong>Cant.</strong> (unidades vendidas) y <strong>Monto</strong> (total generado por el artículo).
+        </li>
+<li>
+         Exporte con <strong>Excel</strong> o <strong>PDF</strong> si lo necesita.
+        </li>
+</ol>
+</article>
+<article class="task" id="informes-t3">
+<div class="task-head">
+<span class="task-number">
+         17.03
+        </span>
+<h3>
+         Informe de categorías
+        </h3>
+
+<button class="video-btn video-btn-task" data-title="Informe de categorías" data-video="assets/videos-retail/informecategorias.R.mp4" type="button">
+        ▶ Ver video
+       </button>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Elija <strong>Informe de Categorías</strong>.
+        </li>
+<li>
+         Seleccione el rango de fechas.
+        </li>
+<li>
+         Revise la tabla con <strong>Categoría</strong>, <strong>Cant.</strong> (unidades comercializadas en el grupo) y <strong>Monto</strong> (dinero acumulado).
+        </li>
+<li>
+         Exporte con <strong>Excel</strong> o <strong>PDF</strong> si lo necesita.
+        </li>
+</ol>
+</article>
+<article class="task" id="informes-t4">
+<div class="task-head">
+<span class="task-number">
+         17.04
+        </span>
+<h3>
+         Informe de compras
+        </h3>
+
+<button class="video-btn video-btn-task" data-title="Informe de compras" data-video="assets/videos-retail/informecompras.R.mp4" type="button">
+        ▶ Ver video
+       </button>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Elija <strong>Informe de Compras</strong>.
+        </li>
+<li>
+         Seleccione el período y el rango de fechas, o busque por proveedor (nombre o número).
+        </li>
+<li>
+         Revise las tarjetas <strong>Compras</strong> (cantidad de transacciones), <strong>Subtotal</strong>, <strong>Descuento</strong> e <strong>Impuesto</strong>.
+        </li>
+<li>
+         Compare el abastecimiento en las tablas <strong>Por proveedor</strong> y <strong>Por día</strong>.
+        </li>
+<li>
+         En el detalle consulte Número, Fecha, Proveedor, Clave de factura, Subtotal, Impuesto y Total.
+        </li>
+<li>
+         Use <strong>Excel</strong>, <strong>PDF</strong> o <strong>Obtener informe</strong> según necesite.
+        </li>
+</ol>
+</article>
+<article class="task" id="informes-t5">
+<div class="task-head">
+<span class="task-number">
+         17.05
+        </span>
+<h3>
+         Reporte de ganancias
+        </h3>
+
+<button class="video-btn video-btn-task" data-title="Reporte de ganancias" data-video="assets/videos-retail/reporteganancias.R.mp4" type="button">
+        ▶ Ver video
+       </button>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Elija <strong>Reporte de Ganancias</strong>: muestra la utilidad neta (precio de venta sin IVA ni descuentos, menos el costo del producto).
+        </li>
+<li>
+         Defina el período con los filtros temporales.
+        </li>
+<li>
+         En el resumen revise <strong>Venta neta</strong>, <strong>Costo</strong>, <strong>Ganancia</strong>, <strong>Margen %</strong> y <strong>Utilidad</strong>.
+        </li>
+<li>
+         En <strong>Ganancia por producto</strong> consulte Producto, Cant., Venta neta, Costo, Ganancia y Margen %; en <strong>Por día</strong>, la evolución diaria de venta neta, costo y ganancia.
+        </li>
+<li>
+         Use <strong>Excel</strong>, <strong>PDF</strong> o <strong>Obtener informe</strong> para descargarlo o enviarlo.
+        </li>
+</ol>
+</article>
+<article class="task" id="informes-t6">
+<div class="task-head">
+<span class="task-number">
+         17.06
+        </span>
+<h3>
+         Auditoría de ventas
+        </h3>
+
+<button class="video-btn video-btn-task" data-title="Auditoría de ventas" data-video="assets/videos-retail/auditoriaventas.R.mp4" type="button">
+        ▶ Ver video
+       </button>
+</div>
+<p class="instruccion">
+        Siga estos pasos:
+       </p>
+<ol class="pasos">
+<li>
+         Elija <strong>Auditoría de Ventas</strong>: registra las acciones sensibles de cajeros y usuarios para detectar inconsistencias.
+        </li>
+<li>
+         Revise los totales de <strong>Movimientos</strong> auditados y <strong>Monto retirado</strong>.
+        </li>
+<li>
+         Acote por rango de fechas.
+        </li>
+<li>
+         En <strong>Todos los movimientos</strong> filtre por acción: rebaja de cantidad, producto quitado, cantidad cambiada a menos, venta cancelada, venta pendiente o cobrada anulada, descuento aplicado, venta libre agregada, pago de cartera anulado o factura de crédito anulada.
+        </li>
+<li>
+         En <strong>Todos los usuarios</strong> elija a un cajero o usuario específico.
+        </li>
+<li>
+         En la tabla consulte Fecha y hora, Usuario, Movimiento, Producto afectado, Cant., Monto y la Venta vinculada.
+        </li>
+</ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module appendix" id="problemas">
+<div class="eyebrow">
+      AYUDA
+     </div>
+<h2>
+      Solución de problemas
+     </h2>
+<div class="faq-grid">
+<details>
+<summary>
+        No puedo iniciar sesión
+       </summary>
+<p>
+        Verifique que está usando las credenciales que le fueron otorgadas. Si el problema continúa, consulte al administrador.
+       </p>
+</details>
+<details>
+<summary>
+        No encuentro un producto en el punto de venta
+       </summary>
+<p>
+        Pruebe con <strong>Buscar producto</strong> por nombre o código. Si aún no está registrado, puede venderlo con <strong>Venta libre</strong> o crearlo en Inventario → Productos.
+       </p>
+</details>
+<details>
+<summary>
+        El stock de un producto no coincide
+       </summary>
+<p>
+        Revise el <strong>Historial</strong> en Existencias o el <strong>Kardex</strong> del producto y corrija la cantidad con <strong>Ajustar</strong>, escribiendo una nota que justifique el cambio.
+       </p>
+</details>
+<details>
+<summary>
+        Una factura no fue aceptada por Hacienda
+       </summary>
+<p>
+        En <strong>Ventas</strong>, filtre por el estado de <strong>Hacienda</strong> (Rechazado o Error) para localizarla y revisar su información.
+       </p>
+</details>
+<details>
+<summary>
+        Un cliente aparece con saldo pendiente
+       </summary>
+<p>
+        Vaya a <strong>Pagos → Pagos Pendientes</strong>, ubique la venta y presione <strong>Agregar Pago</strong> para liquidar el saldo.
+       </p>
+</details>
+</div>
+</section>
+<section class="module appendix" id="faq">
+<div class="eyebrow">
+      CONSULTAS HABITUALES
+     </div>
+<h2>
+      Preguntas frecuentes
+     </h2>
+<p class="section-lead">
+      Presione una pregunta para consultar su respuesta.
+     </p>
+<div class="faq-grid">
+<details>
+<summary>
+        ¿Cómo registro un producto nuevo?
+       </summary>
+<p>
+        En Inventario → Productos presione <strong>Agregar Producto</strong>, complete los datos y presione <strong>Agregar</strong> en la parte inferior izquierda.
+       </p>
+</details>
+<details>
+<summary>
+        ¿Cómo registro la mercancía que llega?
+       </summary>
+<p>
+        En Inventario → Movimientos presione <strong>+ Agregar Entrada de Stock</strong>, elija <strong>Ingreso de Stock</strong>, seleccione el producto, indique cantidad y precio unitario de compra, y guarde.
+       </p>
+</details>
+<details>
+<summary>
+        ¿Cómo corrijo el stock de un producto?
+       </summary>
+<p>
+        En Existencias presione <strong>Ajustar</strong> en la fila del producto, elija Entrada o Salida, indique la cantidad y una nota, y guarde.
+       </p>
+</details>
+<details>
+<summary>
+        ¿Cómo veo los productos con poco stock?
+       </summary>
+<p>
+        En Existencias marque <strong>Mostrar solo stock bajo</strong>, o consulte <strong>Alertas de Stock Bajo</strong> en el panel de control de inventario.
+       </p>
+</details>
+<details>
+<summary>
+        ¿Cómo hago una venta a crédito?
+       </summary>
+<p>
+        En el Punto de venta agregue los productos y presione <strong>Factura de crédito</strong>. La cuenta queda con saldo pendiente y puede registrar un <strong>Abono inicial</strong>.
+       </p>
+</details>
+<details>
+<summary>
+        ¿Cómo cobro un saldo pendiente?
+       </summary>
+<p>
+        En Pagos → Pagos Pendientes presione <strong>Agregar Pago</strong> en la venta correspondiente, elija el método de pago y presione <strong>Completar Pago</strong>.
+       </p>
+</details>
+<details>
+<summary>
+        ¿Qué es una cotización?
+       </summary>
+<p>
+        Es un presupuesto por escrito para el cliente. No es una venta: no descuenta inventario, no entra en la caja ni se envía a Hacienda.
+       </p>
+</details>
+<details>
+<summary>
+        ¿Cómo agrego a un colaborador?
+       </summary>
+<p>
+        En Personal presione <strong>Agregar miembro</strong>, complete nombre, correo y contraseña, asigne el rol (Administrador, Jefe o Cajero) y guarde.
+       </p>
+</details>
+<details>
+<summary>
+        ¿Puedo cambiar mi propio rol?
+       </summary>
+<p>
+        No. El sistema muestra el mensaje «No puedes cambiar tu propio rol»; otro usuario autorizado debe hacerlo.
+       </p>
+</details>
+<details>
+<summary>
+        ¿Dónde veo cuánto gané?
+       </summary>
+<p>
+        En Informes → <strong>Reporte de Ganancias</strong> encontrará la venta neta, el costo, la ganancia y el margen, por producto y por día.
+       </p>
+</details>
+<details>
+<summary>
+        ¿Cómo sé quién anuló una venta o aplicó un descuento?
+       </summary>
+<p>
+        En Informes → <strong>Auditoría de Ventas</strong> filtre por tipo de movimiento o por usuario y revise fecha, producto, monto y venta vinculada.
+       </p>
+</details>
+</div>
+</section>
+<section class="module appendix" id="glosario">
+<div class="eyebrow">
+      REFERENCIA
+     </div>
+<h2>
+      Glosario
+     </h2>
+<p class="section-lead">
+      Términos del sistema explicados con palabras sencillas.
+     </p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>
+          Término
+         </th>
+<th>
+          Definición
+         </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">
+          Punto de venta (POS)
+         </th>
+<td>
+          Pantalla que funciona como caja registradora para escanear productos, facturar y cobrar.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Venta libre
+         </th>
+<td>
+          Venta de un producto aún no registrado, con nombre, precio, IVA y cantidad escritos a mano.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Factura de crédito
+         </th>
+<td>
+          Venta cuyo monto queda como saldo pendiente del cliente; puede incluir un abono inicial.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Abono
+         </th>
+<td>
+          Pago parcial o total aplicado a un saldo adeudado.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Kardex
+         </th>
+<td>
+          Libro de existencias por producto con sus entradas, salidas, saldo y costo.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Stock
+         </th>
+<td>
+          Cantidad de unidades disponibles de un producto.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Stock bajo
+         </th>
+<td>
+          Situación en que la existencia llega o queda por debajo del mínimo configurado en la alerta del producto.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Merma / Desperdicio
+         </th>
+<td>
+          Producto perdido o descartado que se registra como movimiento de inventario.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Rotación de stock
+         </th>
+<td>
+          Medida de qué tan rápido sale un producto del inventario.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          COGS
+         </th>
+<td>
+          Costo de mercancías vendidas: costo directo de los productos vendidos en un período.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Código CABYS
+         </th>
+<td>
+          Código de 13 dígitos de la lista de bienes y servicios de Hacienda.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Antigüedad de saldos
+         </th>
+<td>
+          Clasificación de la deuda de los clientes según el tiempo de morosidad.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Cotización
+         </th>
+<td>
+          Presupuesto por escrito que no equivale a una venta.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          SINPE
+         </th>
+<td>
+          Medio de pago por transferencia utilizado en Costa Rica; se registra con su número de referencia.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Rol
+         </th>
+<td>
+          Conjunto de permisos asignados a un usuario: Administrador, Jefe o Cajero.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Auditoría de ventas
+         </th>
+<td>
+          Registro de las acciones sensibles de cajeros y usuarios en la operación de caja.
+         </td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</main>
+</div>
+<!-- EDITAR CONTACTO: cambie nombre, teléfono y correo en el footer siguiente. -->
+<footer class="footer">
+<div class="footer-inner">
+<div>
+<strong id="nombre-empresa">
+      FLK Developments
+     </strong>
+<p>
+      Soporte del sistema POS para supermercados
+     </p>
+</div>
+<div>
+<span>
+      Teléfono
+     </span>
+<a href="tel:+50600000000" id="telefono-empresa">
+      +506 7262 7896
+     </a>
+</div>
+<div>
+<span>
+      Correo
+     </span>
+<a href="mailto:contacto@tuempresa.com" id="correo-empresa">
+        info@flkdevelopment.com
+     </a>
+</div>
+<div>
+<span>
+     Redes sociales
+     </span>
+<div>
+<a href="https://www.facebook.com/flkcrc">
+<svg class="bi bi-facebook" fill="currentColor" height="25" viewbox="0 0 16 16" width="25" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
+</svg>
+</a>
+<!-- Instagram con enlace funcional -->
+<a href="https://www.instagram.com/flkdevelopment" rel="noopener noreferrer" style="color: inherit;" target="_blank">
+<svg class="bi bi-instagram" fill="currentColor" height="25" viewbox="0 0 16 16" width="25" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+</svg>
+</a>
+<a href="https://api.whatsapp.com/send/?phone=50672627896">
+<svg class="bi bi-whatsapp" fill="currentColor" height="25" viewbox="0 0 16 16" width="25" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<button aria-label="Volver arriba" class="floating-top" id="subir" type="button">
+   ↑
+  </button>
+<dialog aria-labelledby="titulo-video" class="modal-video" id="modal-video">
+<div class="modal-head">
+<div>
+<small>
+      VIDEO TUTORIAL · UN VIDEO POR MÓDULO
+     </small>
+<h2 id="titulo-video">
+      Video del módulo
+     </h2>
+</div>
+<button aria-label="Cerrar" class="close-video" type="button">
+     ✕
+    </button>
+</div>
+<video controls="" id="reproductor-video" playsinline="" preload="metadata">
+</video>
+<div class="missing-video" hidden="" id="missing-video">
+<b>
+     Video pendiente
+    </b>
+<p>
+     Guarde el video de este módulo con esta ruta:
+    </p>
+<code id="ruta-video">
+</code>
+<p>
+     El botón funcionará automáticamente al agregar el archivo.
+    </p>
+</div>
+</dialog>
+<script src="scripts/app.js?v=1.0.1"></script>
+</body>
+</html>

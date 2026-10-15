@@ -7,19 +7,19 @@
   <title>
    Manual de usuario | FLK Encomiendas
   </title>
-  <link href="style.css?v=1.0.2" rel="stylesheet"/>
- <link rel="icon" type="image/png" href="imagenes/logoblanco.svg">
+  <link href="estilos/style.css?v=1.0.2" rel="stylesheet"/>
+ <link rel="icon" type="image/png" href="assets/imagenes/logoblanco.svg">
  </head>
  <body>
   <a class="saltar" href="#contenido-principal">
    Saltar al contenido principal
   </a>
-  <!-- EDITAR LOGO: reemplace imagenes/logo.png con el archivo del logo de la empresa. -->
+  <!-- EDITAR LOGO: reemplace assets/imagenes/logo.png con el archivo del logo de la empresa. -->
   <header class="banner" id="arriba">
    <div class="banner-inner">
     <div class="identity">
      <div class="logo-slot">
-      <img alt="Logo de la empresa" onerror="this.hidden=true;this.nextElementSibling.hidden=false" src="imagenes/logo.png"/>
+      <img alt="Logo de la empresa" onerror="this.hidden=true;this.nextElementSibling.hidden=false" src="assets/imagenes/logo.png"/>
       <span class="logo-fallback" hidden="">
        FLK
       </span>
@@ -210,14 +210,13 @@
        <span class="task-number">
         A
        </span>
-       
        <h3>
         Ingresar al sistema
        </h3>
+       <button class="video-btn" data-title="Ingresar al sistema" data-video="assets/videos/iniciodesesion.mp4" type="button" style="margin-left: auto; flex: none;">
+        ▶ Ver video del m&oacute;dulo
+       </button>
       </div>
-        <button class="video-btn" data-title="Facturas / Encomiendas" data-video="videos/iniciodesesion.mp4" type="button" style="margin-left: 75%; margin-bottom: 1rem;">
-       ▶ Ver video del m&oacute;dulo
-      </button>
       <p class="instruccion">
        Siga estos pasos:
       </p>
@@ -225,7 +224,7 @@
        <li>
         Abra su navegador e ingrese a
         <strong>
-         encomiendas.flkdevelopment.com
+          <a href="https://encomiendas.flkdevelopment.com/login" target="_blank" rel="noopener noreferrer">https://encomiendas.flkdevelopment.com/login</a>
         </strong>
         .
        </li>
@@ -276,7 +275,7 @@
         Resumen diario y navegaci&oacute;n
        </p>
       </div>
-      <button class="video-btn" data-title="Inicio" data-video="videos/inicio.mp4" type="button">
+      <button class="video-btn" data-title="Inicio" data-video="assets/videos/inicio.mp4" type="button">
        ▶ Ver video del m&oacute;dulo
       </button>
      </div>
@@ -356,7 +355,7 @@
         Registro, consulta e impresi&oacute;n de gu&iacute;as
        </p>
       </div>
-      <button class="video-btn" data-title="Facturas / Encomiendas" data-video="videos/facturas.mp4" type="button">
+      <button class="video-btn" data-title="Facturas / Encomiendas" data-video="assets/videos/facturas.mp4" type="button">
        ▶ Ver video del m&oacute;dulo
       </button>
      </div>
@@ -466,7 +465,7 @@
         Viajes asignados a repartidores
        </p>
       </div>
-      <button class="video-btn" data-title="Mi ruta" data-video="videos/mi-ruta.mp4" type="button">
+      <button class="video-btn" data-title="Mi ruta" data-video="assets/videos/mi-ruta.mp4" type="button">
        ▶ Ver video del m&oacute;dulo
       </button>
       
@@ -517,7 +516,7 @@
         Manifiestos de los paquetes que viajan juntos
        </p>
       </div>
-      <button class="video-btn" data-title="Cierres de env&iacute;o" data-video="videos/cierreEV.mp4" type="button">
+      <button class="video-btn" data-title="Cierres de env&iacute;o" data-video="assets/videos/cierreEV.mp4" type="button">
        ▶ Ver video del m&oacute;dulo
       </button>
      </div>
@@ -597,7 +596,7 @@
         Apertura, movimientos, cobros, arqueo y cierre
        </p>
       </div>
-    <button class="video-btn" data-title="Caja" data-video="videos/caja.mp4" type="button">
+    <button class="video-btn" data-title="Caja" data-video="assets/videos/caja.mp4" type="button">
        ▶ Ver video del m&oacute;dulo
       </button>
      </div>
@@ -766,7 +765,7 @@
         Presupuestos que no generan factura
        </p>
       </div>
-       <button class="video-btn" data-title="Cotizaciones" data-video="videos/ctz.mp4" type="button">
+       <button class="video-btn" data-title="Cotizaciones" data-video="assets/videos/ctz.mp4" type="button">
        ▶ Ver video del m&oacute;dulo
       </button>
      </div>
@@ -851,7 +850,7 @@
         Registro manual o masivo de clientes
        </p>
       </div>
-      <button class="video-btn" data-title="Clientes" data-video="videos/clientes.mp4" type="button">
+      <button class="video-btn" data-title="Clientes" data-video="assets/videos/clientes.mp4" type="button">
        ▶ Ver video del m&oacute;dulo
       </button>
      </div>
@@ -975,7 +974,7 @@
         Saldos, cortes de per&iacute;odo y abonos
        </p>
       </div>
-      <button class="video-btn" data-title="Cr&eacute;dito y cuentas por cobrar" data-video="videos/credito.mp4" type="button">
+      <button class="video-btn" data-title="Cr&eacute;dito y cuentas por cobrar" data-video="assets/videos/credito.mp4" type="button">
        ▶ Ver video del m&oacute;dulo
       </button>
      </div>
@@ -1100,7 +1099,7 @@
         Estad&iacute;sticas y seguimiento operativo
        </p>
       </div>
-      <button class="video-btn" data-title="Reportes" data-video="videos/reportes.mp4" type="button">
+      <button class="video-btn" data-title="Reportes" data-video="assets/videos/reportes.mp4" type="button">
        ▶ Ver video del m&oacute;dulo
       </button>
      </div>
@@ -1153,7 +1152,7 @@
         Transmisi&oacute;n de comprobantes electr&oacute;nicos
        </p>
       </div>
-      <button class="video-btn" data-title="Pendientes de env&iacute;o a Hacienda" data-video="videos/hacienda.mp4" type="button">
+      <button class="video-btn" data-title="Pendientes de env&iacute;o a Hacienda" data-video="assets/videos/hacienda.mp4" type="button">
        ▶ Ver video del m&oacute;dulo
       </button>
      </div>
@@ -1227,7 +1226,7 @@
         Administraci&oacute;n de las sedes
        </p>
       </div>
-      <button class="video-btn" data-title="Sucursales" data-video="videos/sucursales.mp4" type="button">
+      <button class="video-btn" data-title="Sucursales" data-video="assets/videos/sucursales.mp4" type="button">
        ▶ Ver video del m&oacute;dulo
       </button>
      </div>
@@ -1304,7 +1303,7 @@
         Configuraci&oacute;n de cajas e impresoras
        </p>
       </div>
-      <button class="video-btn" data-title="Cajas" data-video="videos/cajas.mp4" type="button">
+      <button class="video-btn" data-title="Cajas" data-video="assets/videos/cajas.mp4" type="button">
        ▶ Ver video del m&oacute;dulo
       </button>
      </div>
@@ -1389,7 +1388,7 @@
         C&aacute;lculo y administraci&oacute;n de precios
        </p>
       </div>
-      <button class="video-btn" data-title="Tarifario" data-video="videos/tarifario.mp4" type="button">
+      <button class="video-btn" data-title="Tarifario" data-video="assets/videos/tarifario.mp4" type="button">
        ▶ Ver video del m&oacute;dulo
       </button>
      </div>
@@ -1501,7 +1500,7 @@
         Trayectos entre sucursales
        </p>
       </div>
-      <button class="video-btn" data-title="Rutas" data-video="videos/rutas.mp4" type="button">
+      <button class="video-btn" data-title="Rutas" data-video="assets/videos/rutas.mp4" type="button">
        ▶ Ver video del m&oacute;dulo
       </button>
      </div>
@@ -1572,7 +1571,7 @@
         Categor&iacute;as de los paquetes
        </p>
       </div>
-      <button class="video-btn" data-title="Tipos de bulto" data-video="videos/bultos.mp4" type="button">
+      <button class="video-btn" data-title="Tipos de bulto" data-video="assets/videos/bultos.mp4" type="button">
        ▶ Ver video del m&oacute;dulo
       </button>
      </div>
@@ -1646,7 +1645,7 @@
         Configuraci&oacute;n de tasas tributarias
        </p>
       </div>
-      <button class="video-btn" data-title="Impuestos" data-video="videos/impuestos.mp4" type="button">
+      <button class="video-btn" data-title="Impuestos" data-video="assets/videos/impuestos.mp4" type="button">
        ▶ Ver video del m&oacute;dulo
       </button>
      </div>
@@ -1720,7 +1719,7 @@
         Cuentas de acceso y roles
        </p>
       </div>
-      <button class="video-btn" data-title="Usuarios" data-video="videos/usuarios.mp4" type="button">
+      <button class="video-btn" data-title="Usuarios" data-video="assets/videos/usuarios.mp4" type="button">
        ▶ Ver video del m&oacute;dulo
       </button>
      </div>
@@ -1829,7 +1828,7 @@
         Bit&aacute;cora de eventos
        </p>
       </div>
-      <button class="video-btn" data-title="Actividad de usuarios" data-video="videos/actividad.mp4" type="button">
+      <button class="video-btn" data-title="Actividad de usuarios" data-video="assets/videos/actividad.mp4" type="button">
        ▶ Ver video del m&oacute;dulo
       </button>
      </div>
@@ -2332,6 +2331,6 @@
    </div>
   </dialog>
  
-   <script src="app.js?v=1.0.1"></script>
+   <script src="scripts/app.js?v=1.0.1"></script>
  </body>
 </html>

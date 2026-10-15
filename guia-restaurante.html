@@ -1,0 +1,2167 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Manual de usuario interactivo del sistema POS para Restaurantes" name="description"/>
+<title>
+   Manual de usuario | FLK Restaurantes
+  </title>
+<link href="estilos/style-restaurante.css?v=1.0.2" rel="stylesheet"/>
+<link href="assets/imagenes/logoblanco.svg" rel="icon" type="image/png"/>
+</head>
+<body>
+<a class="saltar" href="#contenido-principal">
+   Saltar al contenido principal
+  </a>
+<!-- EDITAR LOGO: reemplace imagenes/logo.png con el archivo del logo de la empresa. -->
+<header class="banner" id="arriba">
+<div class="banner-inner">
+<div class="identity">
+<div class="logo-slot">
+<img alt="Logo de la empresa" onerror="this.hidden=true;this.nextElementSibling.hidden=false" src="assets/imagenes/logo.png"/>
+<span class="logo-fallback" hidden="">
+       FLK
+      </span>
+</div>
+<div>
+<span class="brand-small">
+       FLK DEVELOPMENTS
+      </span>
+<h1>
+       Manual de Usuario
+       <span class="palabra-brillo">
+        Restaurantes
+       </span>
+</h1>
+<p>
+       Aprenda a utilizar cada módulo, paso a paso.
+      </p>
+</div>
+</div>
+<div class="version">
+     POS RESTAURANTES
+     <span>
+      Versión 1 · Octubre 2026
+     </span>
+</div>
+</div>
+</header>
+<div class="page-layout">
+<aside aria-label="Índice del manual" class="sidebar" id="contenido">
+<div class="sidebar-sticky">
+<div class="sidebar-top">
+<h2>
+       Contenido del manual
+      </h2>
+<span>15 módulos</span>
+</div>
+<label class="search-label" for="buscador">
+      Buscar un módulo
+     </label>
+<input autocomplete="off" id="buscador" placeholder="Ej. menú, mesas, caja…" type="search"/>
+<nav id="module-nav">
+<a class="nav-link" href="#mod-panel-de-control">
+<span class="nav-dot">
+</span>
+       Panel de control
+      </a>
+<a class="nav-link" href="#mod-modulo-de-menu">
+<span class="nav-dot">
+</span>Menú</a>
+<a class="nav-link" href="#mod-modulo-de-mesas">
+<span class="nav-dot">
+</span>Mesas</a>
+<a class="nav-link" href="#mod-solicitudes-de-mesero">
+<span class="nav-dot">
+</span>
+       Solicitudes de Mesero
+      </a>
+<a class="nav-link" href="#mod-reservaciones">
+<span class="nav-dot">
+</span>
+       Reservaciones
+      </a>
+<a class="nav-link" href="#mod-punto-de-venta-pos">
+<span class="nav-dot">
+</span>
+       Punto de Venta (POS)
+      </a>
+<a class="nav-link" href="#mod-ordenes">
+<span class="nav-dot">
+</span>
+       Órdenes
+      </a>
+<a class="nav-link" href="#mod-clientes">
+<span class="nav-dot">
+</span>
+       Clientes
+      </a>
+<a class="nav-link" href="#mod-personal">
+<span class="nav-dot">
+</span>
+       Personal
+      </a>
+<a class="nav-link" href="#mod-ejecutivo-de-entregas">
+<span class="nav-dot">
+</span>
+       Ejecutivo de Entregas
+      </a>
+<a class="nav-link" href="#mod-pagos">
+<span class="nav-dot">
+</span>
+       Pagos
+      </a>
+<a class="nav-link" href="#mod-informes">
+<span class="nav-dot">
+</span>
+       Informes
+      </a>
+<a class="nav-link" href="#mod-caja">
+<span class="nav-dot">
+</span>
+       Caja
+      </a>
+<a class="nav-link" href="#mod-inventario">
+<span class="nav-dot">
+</span>
+       Inventario
+      </a>
+<a class="nav-link" href="#mod-configuraciones">
+<span class="nav-dot">
+</span>
+       Configuraciones
+      </a>
+</nav>
+<div class="sidebar-links">
+<a href="#mod-seleccion-de-sucursal">Selección de sucursal</a><a href="#mod-componentes-de-la-barra-superior-de-navegacion">Barra superior</a><a href="#acceso">
+       Acceso al sistema
+      </a>
+<a href="#problemas">
+       Solución de problemas
+      </a>
+<a href="#faq">
+       Preguntas frecuentes
+      </a>
+<a href="#glosario">
+       Glosario
+      </a>
+<a href="#mod-sitio-del-cliente">Sitio del cliente</a></div>
+</div>
+</aside>
+<main id="contenido-principal">
+<section class="welcome" id="acceso">
+<span class="eyebrow">
+      GUÍA PRÁCTICA
+     </span>
+<h2>
+      Cómo utilizar este manual
+     </h2>
+<p>
+      Este manual está organizado por módulos, igual que el sistema. Elija un módulo en el índice y lea
+                    sus tareas en orden. Cada paso indica qué opción debe buscar y qué hacer después. Puede consultar un
+                    video por módulo cuando esté disponible.
+     </p>
+<div class="intro-grid">
+<div>
+<b>
+        01
+       </b>
+<span>
+        Elija un módulo.
+       </span>
+</div>
+<div>
+<b>
+        02
+       </b>
+<span>
+        Siga los pasos de cada tarjeta.
+       </span>
+</div>
+<div>
+<b>
+        03
+       </b>
+<span>
+        Consulte el video si necesita una demostración.
+       </span>
+</div>
+</div>
+<article class="task intro-card">
+<div class="task-head"><span class="task-number">A</span><h3>Iniciar sesión en POS Restaurantes</h3><button class="video-btn video-btn-task" data-title="Inicio de sesión de POS Restaurantes" data-video="assets/videos-restaurante/inicio-de-sesion.mp4" type="button">▶ Ver video</button></div>
+<p class="instruccion">Siga estos pasos:</p><ol class="pasos">
+<!-- EDITAR URL: sustituya «URL del POS Restaurantes que le proporcionó la empresa» por la dirección oficial cuando esté confirmada. --><li>Abra Chrome u otro navegador. En la <strong>barra de direcciones</strong>, escriba la  <strong ><a href="https://prodflkpos.flkdevelopment.com/login" target="_blank" rel="noopener noreferrer">https://prodflkpos.flkdevelopment.com/login</a></strong>  y presione <strong>Enter</strong>.</li><li>En la casilla <strong>Correo electrónico</strong>, escriba el correo asociado a su cuenta.</li><li>En <strong>Contraseña</strong>, ingrese su clave. Si desea comprobarla, presione el <strong>ícono del ojo</strong>.</li><li>Si lo desea, marque <strong>Recuérdame</strong>. Utilice esta opción únicamente en dispositivos personales.</li><li>Presione <strong>Iniciar Sesión</strong> para acceder al sistema.</li></ol>
+</article><article class="task intro-card">
+<div class="task-head"><span class="task-number">B</span><h3>Recuperar una contraseña olvidada</h3></div>
+<p class="instruccion">Siga estos pasos:</p><ol class="pasos"><li>En la pantalla de inicio, seleccione <strong>¿Olvidaste tu contraseña?</strong>.</li><li>Escriba el <strong>correo electrónico</strong> registrado y presione <strong>Enviar Enlace de Restablecimiento de Contraseña</strong>.</li><li>Revise su correo y siga las indicaciones del enlace recibido para crear una contraseña nueva.</li><li>Si desea regresar, seleccione <strong>Volver al inicio de sesión</strong>.</li></ol>
+</article><article class="task intro-card">
+<div class="task-head"><span class="task-number">C</span><h3>Crear una cuenta nueva</h3></div>
+<p class="instruccion">Siga estos pasos:</p><ol class="pasos"><li>En la pantalla de inicio, seleccione <strong>Crear una cuenta</strong>.</li><li>Complete el <strong>nombre del restaurante</strong>, su <strong>nombre completo</strong>, <strong>correo electrónico</strong> y contraseña.</li><li>Presione <strong>Siguiente: Detalles de la Sucursal</strong>.</li><li>Escriba el <strong>nombre de la sucursal</strong>, seleccione el <strong>país</strong> y agregue su dirección.</li><li>Revise los datos y presione <strong>Registrarse</strong> para completar el registro. Si ya tiene una cuenta, use <strong>¿Ya estás registrado? Inicia sesión aquí</strong>.</li></ol>
+</article>
+</section>
+<!-- MÓDULOS: cada section class="module" contiene tareas article class="task". data-video indica un único video para todo el módulo. -->
+<section class="welcome function-section" data-search="componentes barra superior navegación contraer menú órdenes de hoy nuevas reservas solicitudes de mesero idioma pantalla completa tema perfil configuraciones cerrar sesión" id="mod-componentes-de-la-barra-superior-de-navegacion">
+<div class="module-header">
+<div>
+<div class="eyebrow">FUNCIONES GENERALES</div>
+<h2>
+        Componentes de la Barra Superior de Navegación
+       </h2>
+<p>
+        Accesos rápidos, notificaciones y opciones de la cuenta.
+       </p>
+</div>
+
+</div>
+<div class="task-grid">
+<article class="task" id="componentes-de-la-barra-superior-de-navegacion-t1">
+<div class="task-head">
+<span class="task-number">F.01</span>
+<h3>
+         Componentes de la Barra Superior de Navegación
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos">
+<li>
+<strong>
+          Icono Contraer Menú (&lt;&lt;):
+         </strong>
+         Oculta o despliega el menú lateral izquierdo para
+                    optimizar el área de trabajo en pantalla.
+        </li>
+<li>
+<strong>
+          Órdenes de Hoy:
+         </strong>
+         Muestra en tiempo real la cantidad de pedidos
+                    registrados durante la jornada activa.
+        </li>
+<li>
+<strong>
+          Nuevas reservas:
+         </strong>
+         Notifica la cantidad de reservaciones pendientes
+                    de revisión o confirmación.
+        </li>
+<li>
+<strong>
+          Nueva Solicitud de Mesero:
+         </strong>
+         Alerta la presencia de llamadas o solicitudes
+                    de asistencia realizadas por los clientes
+                    desde el portal del cliente.
+        </li>
+<li>
+<strong>
+          Selector de Idioma (Español):
+         </strong>
+         Permite cambiar el idioma preferido
+                    de la plataforma.
+        </li>
+<li>
+<strong>
+          Utilidades de Pantalla y Tema:
+         </strong>
+         Incluye botones para alternar el modo
+                    pantalla completa y cambiar entre el
+                    tema claro u oscuro.
+        </li>
+<li>
+<strong>
+          Menú de Perfil de Usuario:
+         </strong>
+         Muestra el usuario activo e incluye un menú
+                    desplegable con opciones para gestionar
+                    el Perfil, ir a Configuraciones o Cerrar Sesión.
+        </li>
+</ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section><section class="welcome function-section" data-search="seleccion de sucursal este módulo permite seleccionar y administrar la sucursal que se desea utilizar. en la pestaña de selección se mostrarán las sucursales disponibles, como “principal y secundaria”, según la configuración de cada cliente. para registrar una nueva sucursal, seleccione la opción correspondiente y complete la información solicitada por el sistema. una vez registrada, la nueva sucursal estará disponible para su selección y administración." id="mod-seleccion-de-sucursal">
+<div class="module-header">
+<div>
+<div class="eyebrow">FUNCIONES GENERALES</div>
+<h2>
+        Selección de Sucursal
+       </h2>
+<p>
+        Seleccione la sucursal del restaurante o registre una nueva.
+       </p>
+</div>
+
+</div>
+<div class="task-grid">
+<article class="task" id="seleccion-de-sucursal-t1">
+<div class="task-head">
+<span class="task-number">F.02</span>
+<h3>
+         Selección de Sucursal
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos">
+<li>
+         Seleccione la sucursal disponible que desea administrar (por ejemplo, Principal o Secundaria).
+        </li>
+<li>
+         Si necesita otra sucursal, elija la opción para registrarla y complete la información solicitada.
+        </li>
+</ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section><div class="modules-heading">
+<div>
+<span class="eyebrow">
+       DOCUMENTACIÓN POR MÓDULOS
+      </span>
+<h2>
+       Tareas del sistema
+      </h2>
+</div>
+<span class="count">15 módulos · 26 tarjetas</span>
+</div>
+<section class="module" data-search="panel de control el panel de control es la pantalla principal del sistema y está diseñado exclusivamente para ofrecer una vista panorámica, automatizada y en tiempo real del rendimiento operativo y financiero del restaurante. esta sección es únicamente informativa y recopila datos estadísticos de las transacciones sin permitir modificaciones directas sobre los valores mostrados. módulos y métricas que se muestran en pantalla 1. resumen de estadísticas diarias presenta tarjetas informativas con las métricas acumuladas del día en curso y su variación respecto a periodos anteriores: órdenes de hoy: indica el número total de pedidos procesados durante el día y el porcentaje de variación comparado con el día anterior. ganancias de hoy: muestra el total de ingresos generados en el día en moneda local (₡), junto con la variación comparativa respecto al día anterior. clientes de hoy: contabiliza la cantidad de clientes atendidos en la jornada diaria y su comparativa porcentual frente al día previo. ganancias diarias promedio: presenta el promedio de ingresos diarios calculados para el mes en curso y la comparación porcentual respecto al mes anterior. 2. gráfico de ventas mensuales muestra una gráfica con el monto acumulado en ventas del mes en curso (ventas de este mes) y el porcentaje de crecimiento o decrecimiento en comparación con el mes anterior. 3. órdenes de hoy panel lateral que lista en tiempo real los pedidos o comisiones que van ingresando durante la jornada diaria. en caso de no registrar ventas activas, la sección indicará “esperando el primer pedido del día”. 4. indicadores de preferencia y comportamiento (hoy) ubicados en la parte inferior del panel, estos bloques resumen el desempeño de la jornada: método de pago (hoy): muestra el desglose de los medios de pago más utilizados por los clientes (efectivo, tarjeta, transferencias). plato más vendido (hoy): identifica el ítem o producto del menú con mayor volumen de demanda en el día. mesas más vendidas (hoy): destaca las zonas o mesas de la sala que registraron mayor consumo o rotación diaria." id="mod-panel-de-control">
+<div class="module-header">
+<div>
+<div class="eyebrow">MÓDULO 01 / 15</div>
+<h2>
+        Panel de control
+       </h2>
+<p>
+        Consulte las estadísticas, ventas y órdenes del restaurante en tiempo real.
+       </p>
+</div>
+<button class="video-btn" data-title="Panel de control" data-video="assets/videos-restaurante/panel-de-control.mp4" style="margin-left: auto; align-self: flex-start;" type="button">
+       ▶ Ver video del módulo
+      </button>
+</div>
+<div class="task-grid">
+<article class="task" id="panel-de-control-t1">
+<div class="task-head">
+<span class="task-number">01.01</span>
+<h3>
+         Panel de control
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos">
+<li>
+<strong>
+          Estadísticas del día:
+         </strong>
+         Consulte las órdenes, ganancias y clientes de hoy, junto con su comparación respecto al día anterior.
+        </li>
+<li>
+<strong>
+          Ganancias diarias promedio:
+         </strong>
+         Revise el promedio de ingresos diarios y su variación respecto al mes anterior.
+        </li>
+<li>
+<strong>
+          Ventas del mes:
+         </strong>
+         Observe el gráfico de ventas acumuladas y su comparación con el mes anterior.
+        </li>
+<li>
+<strong>
+          Órdenes de hoy:
+         </strong>
+         Consulte los pedidos que aparecen en el panel lateral durante la jornada.
+        </li>
+<li>
+<strong>
+          Indicadores del día:
+         </strong>
+         Revise los métodos de pago, el plato más vendido y las mesas con mayor consumo.
+        </li>
+</ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search='modulo de menu el módulo menú permite estructurar la carta del restaurante organizando los platillos, bebidas y productos por listas de menú, categorías y modificaciones. componentes de la pantalla: buscador: campo "busca tu menú aquí" para filtrar por nombre. botón agregar menú: abre el panel para crear una nueva carta. lista de menús: muestra los menús registrados o el mensaje "¡no se agregó ningún menú!" si está vacía. crear un nuevo menú haga clic en agregar menú. en el panel agregar menú, ingrese el nombre del menú. presione guardar para registrarlo o cancelar para descartar. en este submódulo se crean y gestionan los platillos, bebidas y productos individuales que se ofrecen en el establecimiento. componentes de la pantalla buscador y filtros: permite buscar productos por nombre o aplicar filtros mediante el botón mostrar filtros. tabla de artículos: muestra el nombre, precio, categoría, menú asignado, disponibilidad y opciones de acción para cada producto. botón agregar artículo del menú: abre el formulario lateral para registrar un nuevo producto. crear un nuevo artículo haga clic en agregar artículo del menú. complete los datos principales del formulario: nombre y descripción: indique el nombre del producto y una breve reseña de sus ingredientes o características. menú y categoría: seleccione el menú al que pertenece (ej. desayunos) y su categoría correspondiente. estación: asigne el área de preparación (ej. cocina, barra). etiquetas y tiempo: seleccione el tipo de producto (veg, no veg, huevo, bebida, otro) e ingrese el tiempo estimado de preparación en minutos. configuración adicional: defina si está disponible, active si se debe descontar de inventario en cada venta, suba una imagen del artículo e indique si tiene variaciones. precio: ingrese el costo de venta en moneda local. finalmente presione “guardar” para finalizar el registro. en esta sección se agrupan los productos de la carta según su clasificación (ej. postres, entradas, bebidas) para facilitar su ubicación en la toma de pedidos. componentes de la pantalla: buscador: campo "busca la categoría de tu elemento aquí" para filtrar por nombre. tabla de categorías: muestra la relación de categorías creadas y los artículos vinculados a cada una. botón agregar categoría de artículo: abre la ventana emergente para registrar una nueva categoría. crear una nueva categoría haga clic en agregar categoría de artículo. en la ventana categoría de artículo, ingrese el nombre de la categoría de artículo (ej. postres). presione “guardar” para registrarla o “cancelar” para descartar. permite crear y gestionar agrupaciones de opciones o adicionales (ej. extras, término de la carne, salsas) para aplicarlos a los platillos del menú durante la toma de pedidos. componentes de la pantalla buscador: campo "busca la categoría de tu elemento aquí" para filtrar los grupos existentes. tabla de grupos: muestra el nombre del grupo, las opciones incluidas y las acciones disponibles. botón agregar grupo de modificadores: abre el panel lateral para registrar un nuevo grupo. crear un grupo de modificaciones haga clic en agregar grupo de modificadores. en el panel agregar grupo de modificadores, complete los siguientes datos: nombre y descripción: ingrese la denominación del grupo (ej. extras) y una breve explicación. opciones del modificador: ingrese el nombre de la opción (ej. queso extra), su precio adicional y marque si está disponible. para sumar más alternativas, use el botón agregar opción de modificador. ubicaciones: seleccione los platillos o artículos del menú a los que se asociará este grupo de modificaciones. presione guardar para registrar el grupo o cancelar para descartar. en esta sección se asignan las reglas de selección de los grupos de modificadores previamente creados a productos específicos del menú, definiendo si la elección de opciones es obligatoria o de selección múltiple. componentes de la pantalla: buscador: campo "busca la categoría de tu elemento aquí" para filtrar las asignaciones existentes. tabla de asignaciones: muestra el nombre del artículo, el grupo de modificadores asociado, si es obligatorio, si permite selección múltiple y las acciones de gestión. botón agregar modificador de ítem: abre el panel lateral para vincular un grupo de modificadores a un platillo. asignar un modificador a un artículo haga clic en agregar modificador de ítem. en el panel agregar modificador de ítem, complete las opciones: nombre del ítem del menú: seleccione el producto al que se le aplicarán las modificaciones. grupo de modificadores: elija el grupo de opciones correspondiente. permitir selección múltiple: marque esta casilla si el cliente o mesero puede elegir más de una opción del grupo. es obligatorio: marque esta casilla si es indispensable seleccionar al menos una opción para procesar el pedido. presione guardar para aplicar la asignación o cancelar para descartar. en esta sección se configuran los lugares físicos de preparación del restaurante (ej. cocina, bar, fogón) para que cada área filtre en comandas únicamente los platillos que le corresponden. componentes de la pantalla buscador: campo "busca una estación aquí" para filtrar áreas por nombre. tabla de estaciones: muestra el nombre de la estación, los artículos del menú vinculados y las acciones de gestión. botón agregar estación: abre la ventana emergente para registrar un nuevo área de preparación. crear una nueva estación haga clic en agregar estación. en la ventana estación, ingrese el nombre de la estación (ej. cocina, bar, fogón). presione “guardar” para registrarla o “cancelar” para descartar.' id="mod-modulo-de-menu">
+<div class="module-header">
+<div>
+<div class="eyebrow">MÓDULO 02 / 15</div>
+<h2>Menú</h2>
+<p>
+        Organice los menús, productos, categorías, modificaciones y estaciones.
+       </p>
+</div>
+<!-- <button class="video-btn" data-title="Módulo de Menú" data-video="assets/videos-restaurante/modulo-de-menu.mp4" style="margin-left: auto; align-self: flex-start;" type="button">
+       ▶ Ver video del módulo
+      </button> !-->
+</div>
+<div class="task-grid">
+<article class="task" id="modulo-de-menu-t2">
+<div class="task-head">
+<span class="task-number">02.02</span>
+<h3>
+         Menús
+        </h3>
+<button class="video-btn video-btn-task" data-title="Menús" data-video="assets/videos-restaurante/menus.mp4" type="button">▶ Ver video</button>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos"><li>Abra <strong>Menú &gt; Menús</strong> para consultar o buscar las cartas existentes.</li><li>Seleccione un menú para ver sus artículos y, cuando corresponda, las opciones de importar artículos, <strong>Mostrar variaciones</strong> y <strong>Actualizar</strong>.</li><li>Para crear uno, presione <strong>Agregar menú</strong>, escriba el nombre y seleccione <strong>Guardar</strong>.</li></ol>
+</article>
+<article class="task" id="modulo-de-menu-t3">
+<div class="task-head">
+<span class="task-number">02.03</span>
+<h3>
+         Elementos de Menú
+        </h3>
+<button class="video-btn video-btn-task" data-title="Elementos de Menú" data-video="assets/videos-restaurante/elementos-menu.mp4" type="button">▶ Ver video</button>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos"><li>Abra <strong>Menú &gt; Elementos del Menú</strong>. Use el buscador o <strong>Mostrar filtros</strong> para filtrar por categoría, tipo y disponibilidad; después puede elegir <strong>Ocultar filtros</strong>.</li><li>En un artículo, presione <strong>Mostrar variaciones</strong> para consultar sus presentaciones y precios; cierre la ventana con <strong>Cancelar</strong>.</li><li>Para editar un artículo existente, seleccione <strong>Actualizar</strong>, corrija nombre, descripción, menú, categoría, estación, tiempo de preparación, disponibilidad, imagen o variaciones y guarde.</li><li>Para registrar un producto nuevo, presione <strong>Agregar artículo del menú</strong>, complete sus datos y precios, y seleccione <strong>Guardar</strong>.</li></ol>
+</article>
+<article class="task" id="modulo-de-menu-t4">
+<div class="task-head">
+<span class="task-number">02.04</span>
+<h3>
+         Categorías de Artículos
+        </h3>
+<button class="video-btn video-btn-task" data-title="Categorías de Artículos" data-video="assets/videos-restaurante/categorias-articulos.mp4" type="button">▶ Ver video</button>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos"><li>En <strong>Menú &gt; Categorías de Artículos</strong>, use el buscador y consulte la cantidad de artículos por categoría.</li><li>Para corregir el nombre de una categoría, presione <strong>Actualizar</strong> y guarde; también dispone de <strong>Eliminar</strong>.</li><li>Para agregar una, presione <strong>Agregar categoría de artículo</strong>, indique su nombre y seleccione <strong>Guardar</strong>.</li></ol>
+</article>
+<article class="task" id="modulo-de-menu-t5">
+<div class="task-head">
+<span class="task-number">02.05</span>
+<h3>
+         Grupos de Modificaciones
+        </h3>
+<button class="video-btn video-btn-task" data-title="Grupos de Modificaciones" data-video="assets/videos-restaurante/grupos-modificaciones.mp4" type="button">▶ Ver video</button>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos">
+<li>
+         En
+         <strong>
+          Grupos de Modificaciones
+         </strong>
+         , consulte los grupos existentes y seleccione
+         <strong>
+          Agregar grupo de modificadores
+         </strong>
+         .
+        </li>
+<li>
+         Ingrese el nombre y la descripción del grupo.
+        </li>
+<li>
+         Agregue las opciones con su precio adicional y disponibilidad; utilice
+         <strong>
+          Agregar opción de modificador
+         </strong>
+         si necesita más.
+        </li>
+<li>
+         Seleccione los artículos a los que se aplicará el grupo y presione
+         <strong>
+          Guardar
+         </strong>
+         .
+        </li>
+</ol>
+</article>
+<article class="task" id="modulo-de-menu-t6">
+<div class="task-head">
+<span class="task-number">02.06</span>
+<h3>
+         Modificadores de elementos
+        </h3>
+<button class="video-btn video-btn-task" data-title="Modificadores de elementos" data-video="assets/videos-restaurante/modificadores-elementos.mp4" type="button">▶ Ver video</button>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos"><li>En <strong>Menú &gt; Modificadores de elementos</strong>, busque y revise los modificadores registrados.</li><li>Seleccione <strong>Actualizar</strong> para editar el artículo asignado, el grupo de modificaciones y las opciones de selección múltiple u obligatoriedad.</li><li>Si necesita crear uno, presione <strong>Agregar modificador de ítem</strong>, seleccione artículo y grupo, configure las opciones y presione <strong>Guardar</strong>.</li></ol>
+</article>
+<article class="task" id="modulo-de-menu-t7">
+<div class="task-head">
+<span class="task-number">02.07</span>
+<h3>
+         Estaciones
+        </h3>
+<button class="video-btn video-btn-task" data-title="Estaciones" data-video="assets/videos-restaurante/estaciones.mp4" type="button">▶ Ver video</button>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos">
+<li>
+         En
+         <strong>
+          Estaciones
+         </strong>
+         , consulte o busque las áreas de preparación existentes.
+        </li>
+<li>
+         Seleccione
+         <strong>
+          Agregar Estación
+         </strong>
+         .
+        </li>
+<li>
+         Ingrese el nombre de la estación (por ejemplo, Cocina o Bar) y presione
+         <strong>
+          Guardar
+         </strong>
+         .
+        </li>
+</ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search='modulo de mesas en esta sección se configuran las diferentes zonas físicas del restaurante (ej. salón, terraza, azotea) para organizar la distribución de las mesas. componentes de la pantalla tabla de áreas: muestra el nombre de cada área creada, la cantidad de mesas asignadas y las opciones para actualizar o eliminar. botón agregar área: abre el panel lateral para registrar una nueva zona. crear una nueva área haga clic en agregar área. en el panel agregar área, ingrese el nombre del área (ej. azotea, terraza, salón). presione “guardar” para registrarla o “cancelar” para descartar. en esta sección se visualiza y gestiona la distribución de las mesas en cada área del restaurante, permitiendo monitorear en tiempo real su estado de ocupación o reserva. componentes de la pantalla filtros y pestañas: incluye el menú desplegable "filtrar por disponibilidad" y pestañas para alternar entre "todas las áreas" o áreas específicas (ej. salón, terraza, azotea). tarjeta de mesa: muestra el código de la mesa, el número de asientos, los accesos para editar o ver orden y el estado identificado por colores (verde: disponible, azul: en uso, rojo: reservada). botón agregar mesa: abre el panel lateral para dar de alta una nueva mesa. crear una nueva mesa haga clic en agregar mesa. en el panel agregar mesa, complete los siguientes datos: elegir área: seleccione la zona física a la que pertenecerá la mesa. código de mesa: ingrese la identificación de la mesa (ej. t01). capacidad de asientos: indique la cantidad máxima de comensales (ej. 4). estado: marque la casilla correspondiente entre activo e inactivo. presione “guardar” para registrarla o “cancelar” para descartar. en esta sección se generan y descargan los códigos qr asignados a cada mesa o área, permitiendo a los clientes escanearlos para acceder al menú digital y realizar sus pedidos. componentes de la pantalla filtros de áreas: pestañas para filtrar la vista por "todas las áreas" o por zonas específicas (ej. salón, terraza, azotea). tarjeta de código qr: muestra la vista previa del código qr vinculado a una mesa específica, identificando el código de la mesa, la cantidad de asientos y su estado (disponible, en uso, reservada). botón descargar: icono con la flecha hacia abajo para guardar el archivo de la imagen del código qr e imprimirlo para la mesa. botón abrir enlace: icono de enlace externo para abrir directamente la url del menú asociada a esa mesa.' id="mod-modulo-de-mesas">
+<div class="module-header">
+<div>
+<div class="eyebrow">MÓDULO 03 / 15</div>
+<h2>Mesas</h2>
+<p>
+        Administre las áreas, las mesas y sus códigos QR.
+       </p>
+</div>
+<!-- <button class="video-btn" data-title="Módulo de Mesas" data-video="assets/videos-restaurante/mesas.mp4" style="margin-left: auto; align-self: flex-start;" type="button">
+       ▶ Ver video del módulo
+      </button> -->
+</div>
+<div class="task-grid">
+<article class="task" id="modulo-de-mesas-t1">
+<div class="task-head">
+<span class="task-number">03.01</span>
+<h3>
+         Áreas
+        </h3>
+<button class="video-btn video-btn-task" data-title="Áreas" data-video="assets/videos-restaurante/areas.mp4" type="button">▶ Ver video</button>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos">
+<li>
+         En
+         <strong>
+          Mesas &gt; Áreas
+         </strong>
+         , revise las áreas registradas y sus mesas asignadas.
+        </li>
+<li>
+         Presione
+         <strong>
+          Agregar Área
+         </strong>
+         y escriba el nombre de la zona (por ejemplo, Salón o Terraza).
+        </li>
+<li>
+         Presione
+         <strong>
+          Guardar
+         </strong>
+         para registrarla.
+        </li>
+</ol>
+</article>
+<article class="task" id="modulo-de-mesas-t2">
+<div class="task-head">
+<span class="task-number">03.02</span>
+<h3>
+         Mesas
+        </h3>
+<button class="video-btn video-btn-task" data-title="Mesas" data-video="assets/videos-restaurante/mesas.mp4" type="button">▶ Ver video</button>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos"><li>En <strong>Mesas &gt; Mesas</strong>, seleccione un área y utilice el filtro de disponibilidad para encontrar las mesas.</li><li>Consulte el código, la capacidad, el estado y las opciones de órdenes de cada mesa.</li><li>Presione <strong>Editar</strong> para modificar un registro existente, o <strong>Agregar mesa</strong> para crear otro.</li><li>Complete el área, código, cantidad de asientos y estado de la mesa, y presione <strong>Guardar</strong>.</li></ol>
+</article>
+<article class="task" id="modulo-de-mesas-t3">
+<div class="task-head">
+<span class="task-number">03.03</span>
+<h3>
+         Códigos QR
+        </h3>
+<button class="video-btn video-btn-task" data-title="Códigos QR" data-video="assets/videos-restaurante/codigos-qr.mp4" type="button">▶ Ver video</button>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos">
+<li>
+         En
+         <strong>
+          Códigos QR
+         </strong>
+         , seleccione
+         <strong>
+          Todas las Áreas
+         </strong>
+         o una zona específica.
+        </li>
+<li>
+         Localice la tarjeta de la mesa y compruebe su código QR.
+        </li>
+<li>
+         Utilice
+         <strong>
+          Descargar
+         </strong>
+         para guardar el código o
+         <strong>
+          Abrir enlace
+         </strong>
+         para acceder a su menú digital.
+        </li>
+</ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search='solicitudes de mesero en esta sección se reciben y gestionan en tiempo real los llamados de atención enviados por los clientes desde sus mesas mediante el menú digital. componentes de la pantalla notificación emergente: ventana flotante que aparece de forma inmediata al recibir un llamado, indicando el número de mesa (ej. mesa - m2) y ofreciendo las opciones "marcar como atendido" o "hacerlo más tarde". secciones por área: organiza las solicitudes según la ubicación del restaurante (ej. salón, terraza, azotea) e indica el número de mesas pendientes. tarjeta de solicitud: muestra el código de la mesa, el tiempo transcurrido desde la llamada y el nombre del cliente. gestionar una solicitud al recibir un llamado, responda directamente desde la notificación emergente presionando marcar como atendido o hacerlo más tarde. si pospone la alerta, gestione la petición desde la tarjeta de solicitud en el panel principal utilizando los siguientes botones: marcar como atendido: cierra la solicitud una vez que la mesa ha sido servida. mostrar orden: despliega los detalles del pedido asociado a esa mesa.' id="mod-solicitudes-de-mesero">
+<div class="module-header">
+<div>
+<div class="eyebrow">MÓDULO 04 / 15</div>
+<h2>
+        Solicitudes de Mesero
+       </h2>
+<p>
+        Reciba y atienda las solicitudes enviadas desde las mesas.
+       </p>
+</div>
+<button class="video-btn" data-title="Solicitudes de Mesero" data-video="assets/videos-restaurante/solicitudes-de-mesero.mp4" style="margin-left: auto; align-self: flex-start;" type="button">
+       ▶ Ver video del módulo
+      </button>
+</div>
+<div class="task-grid">
+<article class="task" id="solicitudes-de-mesero-t1">
+<div class="task-head">
+<span class="task-number">04.01</span>
+<h3>
+         Solicitudes de Mesero
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos">
+<li>
+         Al recibir una solicitud, revise la notificación con el número de mesa.
+        </li>
+<li>
+         Seleccione
+         <strong>
+          Marcar como Atendido
+         </strong>
+         si ya atendió al cliente
+         <strong>
+         
+         </strong>
+         .
+        </li>
+<li>
+         Consulte las solicitudes pendientes en el área correspondiente (Salón, Terraza o Azotea).
+        </li>
+<li>
+         Desde la tarjeta, utilice
+         <strong>
+          Mostrar Orden
+         </strong>
+         para revisar el pedido o
+         <strong>
+          Marcar como Atendido
+         </strong>
+         para finalizar la solicitud.
+        </li>
+</ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search="reservaciones en esta sección se administran las reservas de mesas realizadas por los clientes, permitiendo programar fechas, controlar la asistencia y registrar nuevos apartados manualmente. componentes de la pantalla filtro de fecha: permite filtrar las reservaciones por rangos de tiempo (ej. semana actual) o seleccionar fechas específicas mediante los campos de calendario. tarjeta de reservación: muestra el código de la mesa asignada (ej. mt1), el número de invitados, la fecha/hora programada, los datos de contacto del cliente (nombre, correo, teléfono), notas sobre solicitudes especiales y un selector para actualizar el estado de la reserva (ej. no asistió). botón nueva reserva: abre el panel lateral para registrar una reservación de forma manual. crear una nueva reserva haga clic en nueva reserva. en el panel nueva reserva, complete los siguientes campos: fecha y horario: seleccione la fecha, la cantidad de invitados y el tipo de servicio (ej. almuerzo), luego elija la hora disponible deseada. ¿alguna solicitud especial?: ingrese observaciones adicionales o requerimientos particulares del cliente. información de contacto: ingrese el nombre del cliente, teléfono y correo electrónico. presione reservar ahora para guardar la reservación." id="mod-reservaciones">
+<div class="module-header">
+<div>
+<div class="eyebrow">MÓDULO 05 / 15</div>
+<h2>
+        Reservaciones
+       </h2>
+<p>
+        Consulte, registre y administre las reservaciones de mesas.
+       </p>
+</div>
+<button class="video-btn" data-title="Reservaciones" data-video="assets/videos-restaurante/reservaciones.mp4" style="margin-left: auto; align-self: flex-start;" type="button">
+       ▶ Ver video del módulo
+      </button>
+</div>
+<div class="task-grid">
+<article class="task" id="reservaciones-t1">
+<div class="task-head">
+<span class="task-number">05.01</span>
+<h3>
+         Reservaciones
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos"><li>Abra <strong>Reservaciones</strong> y utilice el filtro de fechas para encontrar las reservas existentes.</li><li>Consulte los datos del cliente, cantidad de invitados, fecha, hora y estado; cambie el estado desde la lista cuando sea necesario.</li><li>Presione <strong>Nueva reserva</strong>, seleccione fecha, invitados, y horario.</li><li>Agregue una solicitud especial si corresponde, y complete el nombre, teléfono y correo del cliente.</li><li>Presione <strong>Reservar ahora</strong> para registrar la reservación.</li></ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search='punto de venta pos en esta sección se gestiona la toma de pedidos presenciales, la asignación de mesas, el envío de órdenes a cocina y el cobro final de las consumiciones. componentes de la pantalla catálogo de productos (panel izquierdo): incluye el buscador de productos, el selector de categorías (ej. bebidas, comida, aperitivo, postres) y las tarjetas de platillos con sus precios o variaciones. accesos directos de cocina: botones "display cocina" y "display ordenes" para acceder al estado de preparación de los pedidos en tiempo real. detalle de la orden (panel derecho): tipo de servicio: permite elegir entre "comer en el local", "entrega" o "recoger". asignación y datos: opciones para "asignar mesa", seleccionar el número de personas (pax), el cocinero asignado y el nombre del cliente. desglose del pedido: lista detallada de los artículos agregados, cantidad, precio, subtotal, impuestos aplicables y total final. registrar y procesar un pedido seleccione el tipo de servicio (ej. comer en el local) y presione asignar mesa si corresponde. agregue los productos al pedido haciendo clic sobre las tarjetas del catálogo del panel izquierdo. utilice los botones de acción ubicados al final de la pantalla según la gestión requerida: ordenar / ordenar e imprimir: envía la comanda a la cocina para su preparación y opcionalmente imprime el ticket. cuenta: genera un precierre o estado de la cuenta para entregar al cliente antes del pago. factura y pago / facturar e imprimir recibo: procesa el pago final del pedido, emite el comprobante y cierra la transacción.' id="mod-punto-de-venta-pos">
+<div class="module-header">
+<div>
+<div class="eyebrow">MÓDULO 06 / 15</div>
+<h2>
+        Punto de Venta (POS)
+       </h2>
+<p>
+        Registre pedidos, envíe comandas y procese los pagos.
+       </p>
+</div>
+<button class="video-btn" data-title="Punto de Venta (POS)" data-video="assets/videos-restaurante/punto-de-venta.mp4" style="margin-left: auto; align-self: flex-start;" type="button">
+       ▶ Ver video del módulo
+      </button>
+</div>
+<div class="task-grid">
+<article class="task" id="punto-de-venta-pos-t1">
+<div class="task-head">
+<span class="task-number">06.01</span>
+<h3>
+         Punto de Venta (POS)
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos"><li>Ingrese en <strong>Punto de Venta (POS)</strong> y revise si necesita abrir la caja antes de cobrar.</li><li>Seleccione el tipo de servicio: <strong>Comer en el local</strong>, <strong>Entrega</strong> o <strong>Recoger</strong>. Si corresponde, utilice <strong>Asignar mesa</strong> y complete los datos del pedido.</li><li>Busque los artículos por nombre o categoría y agréguelos a la orden; elija las variaciones y cantidades necesarias.</li><li>Revise los productos, subtotal, impuestos y total antes de confirmar.</li><li>Presione <strong>Ordenar</strong> o <strong>Ordenar e imprimir</strong> para enviar la comanda a preparación. La opción <strong>Cuenta</strong> permite consultar el importe antes de cobrar.</li><li>Para completar el cobro, elija <strong>Factura y pago</strong> o <strong>Facturar e imprimir recibo</strong>, según corresponda.</li></ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search='ordenes en esta sección se visualizan y gestionan en tiempo real las comandas enviadas a las distintas áreas de preparación (cocina, barra, bar), permitiendo monitorear el progreso de elaboración de los platillos y bebidas. componentes de la pantalla filtros y estado: filtrar por estación: permite clasificar la vista según la zona de preparación asignada (barra, cocina, bar). filtros de período y fecha: opciones para seleccionar un rango de tiempo (ej. hoy) o seleccionar fechas específicas mediante el calendario. pestañas de estado: clasifican las comandas según la etapa en la que se encuentran ("en cocina", "la comida está lista", "la comida está servida"). tarjeta de comanda: muestra el número de comanda (ej. comanda #68), el código del pedido y mesa asignada (ej. orden #32 mt1), la cantidad de artículos, la fecha/hora de creación, el cocinero a cargo y la etiqueta del estado actual (ej. en cocina). gestionar una comanda consulte la lista de platillos y bebidas detallados dentro de la tarjeta de comanda. a medida que avance la preparación, presione el botón correspondiente para actualizar el estado del pedido: marcar cocina lista / marcar barra lista: notifica que la preparación en esa área ha finalizado. utilice los botones inferiores para acciones adicionales: icono de impresora: vuelve a imprimir el ticket de la comanda. cancelar: anula la comanda en caso de cambios o cancelaciones del cliente. en esta sección se listan y monitorean globalmente todos los pedidos generados en el sistema, permitiendo consultar el monto total, el estado actual de cada transacción y realizar modificaciones o agregar productos adicionales a una orden en curso. componentes de la pantalla filtros de búsqueda y fecha: selector de rango y calendario: filtra los pedidos por fechas (ej. hoy) o mediante el selector de calendario personalizado. desplegable de estado: permite clasificar la vista por tipos de orden (ej. mostrar todos órdenes). botón actualizar: refresca la lista de órdenes en pantalla. tarjeta de orden: muestra el código de la mesa (ej. mt1), el número de pedido (ej. orden #32), la fecha/hora de creación, el estado de la comanda (ej. ordenar / cocinando ahora), el monto total acumulado y el cocinero asignado. botón nueva orden: botón principal de color azul que redirige al punto de venta (pos) para crear un nuevo pedido. gestionar una orden existente para consultar los pedidos del día o de una fecha en específico, aplique los filtros superiores y presione actualizar si es necesario. dentro de la tarjeta de una orden activa, utilice las opciones disponibles: agregar a orden: permite sumar nuevos artículos o consumiciones a un pedido que aún no ha sido cerrado. nueva orden: presione este botón para acceder de inmediato al módulo de punto de venta (pos) y registrar un nuevo pedido.' id="mod-ordenes">
+<div class="module-header">
+<div>
+<div class="eyebrow">MÓDULO 07 / 15</div>
+<h2>
+        Órdenes
+       </h2>
+<p>
+        Consulte y gestione las órdenes y comandas de preparación.
+       </p>
+</div>
+<!-- <button class="video-btn" data-title="Órdenes" data-video="assets/videos-restaurante/ordenes.mp4" style="margin-left: auto; align-self: flex-start;" type="button">
+       ▶
+                        Ver video del módulo
+      </button> -->
+</div>
+<div class="task-grid">
+<article class="task" id="ordenes-t1">
+<div class="task-head">
+<span class="task-number">07.01</span>
+<h3>
+         Comanda
+        </h3>
+<button class="video-btn video-btn-task" data-title="Comanda" data-video="assets/videos-restaurante/comandas.mp4" type="button">▶ Ver video</button>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos"><li>Abra <strong>Órdenes &gt; Comanda</strong> y seleccione el período o las fechas que desea consultar.</li><li>Use los estados <strong>En cocina</strong>, <strong>La comida está lista</strong> o <strong>La comida está servida</strong>, y filtre por estación: cocina, barra o bar.</li><li>Revise los artículos de cada comanda y utilice las acciones para marcarlos como listos o servidos, según corresponda.</li><li>Si necesita una copia, utilice <strong>Imprimir</strong>; la opción <strong>Cancelar</strong> permite cancelar la comanda cuando corresponda.</li></ol>
+</article>
+<article class="task" id="ordenes-t2">
+<div class="task-head">
+<span class="task-number">07.02</span>
+<h3>
+         Órdenes
+        </h3>
+<button class="video-btn video-btn-task" data-title="Órdenes" data-video="assets/videos-restaurante/ordenes.mp4" type="button">▶ Ver video</button>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos"><li>Abra <strong>Órdenes</strong> y seleccione el período o el rango de fechas desde el calendario.</li><li>En <strong>Mostrar todas las órdenes</strong>, filtre los pedidos según su estado.</li><li>Consulte las tarjetas con el número de orden, cliente o mesa, estado y monto correspondiente.</li><li>Presione <strong>Nueva orden</strong> para registrar un pedido desde el Punto de Venta.</li></ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search="clientes en esta sección se administra el registro de los clientes del restaurante, permitiendo consultar su historial de pedidos, actualizar sus datos de contacto y exportar la lista de registros. componentes de la pantalla buscador de clientes: campo de texto para filtrar clientes por nombre, correo electrónico o número de teléfono. botón exportar: permite descargar la lista de clientes registrados en un archivo para su análisis o gestión externa. tabla de clientes: muestra el listado de usuarios con las siguientes columnas: nombre del cliente: nombre del cliente registrado. correo electrónico: dirección de correo asociada al cliente. teléfono: número telefónico de contacto. total de ordenes: muestra la cantidad acumulada de pedidos realizados por el cliente. acción: actualizar: modifica la información del cliente. icono de papelera (eliminar): remueve el registro del cliente del sistema. paginación: controles en la parte inferior para navegar entre las distintas páginas de resultados (ej. mostrando 1 a 10 de 15 resultados)." id="mod-clientes">
+<div class="module-header">
+<div>
+<div class="eyebrow">MÓDULO 08 / 15</div>
+<h2>
+        Clientes
+       </h2>
+<p>
+        Consulte y actualice los datos y el historial de los clientes.
+       </p>
+</div>
+<button class="video-btn" data-title="Clientes" data-video="assets/videos-restaurante/clientes.mp4" style="margin-left: auto; align-self: flex-start;" type="button">
+       ▶ Ver video del módulo
+      </button>
+</div>
+<div class="task-grid">
+<article class="task" id="clientes-t1">
+<div class="task-head">
+<span class="task-number">08.01</span>
+<h3>
+         Clientes
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos">
+<li>
+         En
+         <strong>
+          Clientes
+         </strong>
+         , busque por nombre, correo electrónico o teléfono.
+        </li>
+<li>
+         Revise en la tabla los datos de contacto y el total de órdenes de cada cliente.
+        </li>
+<li>
+         Utilice
+         <strong>
+          Actualizar
+         </strong>
+         para modificar un registro o el ícono de papelera para eliminarlo.
+        </li>
+<li>
+         Presione
+         <strong>
+          Exportar
+         </strong>
+         si necesita descargar la lista de clientes.
+        </li>
+</ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search='personal en esta sección se gestiona el equipo de trabajo del restaurante, permitiendo registrar nuevos empleados, definir sus roles de acceso y actualizar o eliminar sus cuentas dentro del sistema. componentes de la pantalla buscador: campo de texto para filtrar colaboradores por su nombre o correo electrónico. botón exportar: permite descargar el listado de empleados registrados. botón agregar miembro: abre el panel lateral para registrar un nuevo colaborador. tabla de personal: nombre del miembro: nombre del empleado registrado. correo electrónico: dirección de correo asociada a la cuenta. rol: desplegable para ajustar el perfil de acceso (ej. administrador, chef, jefe de sucursal, mesero). acción: botones para actualizar los cambios guardados o la papelera para eliminar el acceso. formulario "agregar miembro" al hacer clic en agregar miembro, se despliega el panel lateral para ingresar la información del nuevo usuario: nombre del miembro: ingrese el nombre completo del colaborador. dirección de correo electrónico: registre el correo con el que iniciará sesión. contraseña: defina la clave de acceso para el usuario. rol: seleccione los permisos correspondientes mediante el menú desplegable. presione guardar para finalizar el registro o cancelar para salir sin guardar.' id="mod-personal">
+<div class="module-header">
+<div>
+<div class="eyebrow">MÓDULO 09 / 15</div>
+<h2>
+        Personal
+       </h2>
+<p>
+        Registre empleados y administre sus roles y accesos.
+       </p>
+</div>
+<button class="video-btn" data-title="Personal" data-video="assets/videos-restaurante/personal.mp4" style="margin-left: auto; align-self: flex-start;" type="button">
+       ▶ Ver video del módulo
+      </button>
+</div>
+<div class="task-grid">
+<article class="task" id="personal-t1">
+<div class="task-head">
+<span class="task-number">09.01</span>
+<h3>
+         Personal
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos">
+<li>
+         En
+         <strong>
+          Personal
+         </strong>
+         , busque colaboradores o consulte sus nombres, correos y roles.
+        </li>
+<li>
+         Presione
+         <strong>
+          Agregar miembro
+         </strong>
+         para registrar un empleado.
+        </li>
+<li>
+         Ingrese nombre, correo electrónico y contraseña; seleccione el
+         <strong>
+          Rol
+         </strong>
+         correspondiente.
+        </li>
+<li>
+         Presione
+         <strong>
+          Guardar
+         </strong>
+         para crear el usuario.
+        </li>
+<li>
+         Para gestionar registros existentes, utilice
+         <strong>
+          Actualizar
+         </strong>
+         , eliminar o
+         <strong>
+          Exportar
+         </strong>
+         según corresponda.
+        </li>
+</ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search='ejecutivo de entregas en esta sección se gestiona el personal encargado de los envíos a domicilio (repartidores), permitiendo monitorear su disponibilidad, asignar entregas y consultar el historial de servicios realizados. componentes de la pantalla buscador: campo para filtrar repartidores por nombre, correo electrónico o teléfono. botón exportar: permite descargar la lista de repartidores registrados. botón agregar ejecutivo: abre el panel lateral para registrar un nuevo repartidor. tabla de ejecutivo de entregas: nombre del miembro: nombre completo del repartidor. teléfono: número de contacto telefónico. total de ordenes: cantidad de pedidos asignados o completados. estado: indica la disponibilidad del repartidor (ej. disponible). acción: opciones para actualizar la información o la papelera para eliminar el registro. reporte de repartidores: sección inferior para auditar el rendimiento mediante filtros temporales (hoy, esta semana, este mes, este año) o rangos de fechas específicos, mostrando el repartidor, número de entregas y el total acumulado de servicio exprés. formulario "agregar ejecutivo" al hacer clic en agregar ejecutivo, se abre el formulario lateral para dar de alta un nuevo repartidor: nombre del miembro: ingrese el nombre completo del ejecutivo de entregas. teléfono: registre el número telefónico de contacto. estado: defina la disponibilidad inicial mediante el menú desplegable (ej. disponible). presione guardar para registrar la información o cancelar para salir sin guardar.' id="mod-ejecutivo-de-entregas">
+<div class="module-header">
+<div>
+<div class="eyebrow">MÓDULO 10 / 15</div>
+<h2>
+        Ejecutivo de Entregas
+       </h2>
+<p>
+        Gestione repartidores, entregas y reportes de servicio.
+       </p>
+</div>
+<button class="video-btn" data-title="Ejecutivo de Entregas" data-video="assets/videos-restaurante/ejecutivodeentregas.mp4" style="margin-left: auto; align-self: flex-start;" type="button">
+       ▶ Ver video del módulo
+      </button>
+</div>
+<div class="task-grid">
+<article class="task" id="ejecutivo-de-entregas-t1">
+<div class="task-head">
+<span class="task-number">10.01</span>
+<h3>
+         Ejecutivo de Entregas
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos">
+<li>
+         En
+         <strong>
+          Ejecutivo de Entregas
+         </strong>
+         , busque repartidores y revise su teléfono, órdenes y disponibilidad.
+        </li>
+<li>
+         Presione
+         <strong>
+          Agregar ejecutivo
+         </strong>
+         e ingrese nombre y teléfono.
+        </li>
+<li>
+         Seleccione el
+         <strong>
+          Estado
+         </strong>
+         del repartidor y presione
+         <strong>
+          Guardar
+         </strong>
+         .
+        </li>
+<li>
+         Utilice
+         <strong>
+          Actualizar
+         </strong>
+         o eliminar para gestionar registros existentes;
+         <strong>
+          Exportar
+         </strong>
+         descarga la lista.
+        </li>
+<li>
+         En
+         <strong>
+          Reporte de repartidores
+         </strong>
+         , seleccione un período para revisar entregas y totales de servicio exprés.
+        </li>
+</ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search='pagos en esta sección se listan y auditan las transacciones económicas completadas en el restaurante, permitiendo consultar los detalles del cobro, los métodos de pago utilizados y exportar el historial financiero. componentes de la pantalla filtros de búsqueda y fecha: buscador: campo para buscar cobros por monto o método de pago. desplegable de filtro: permite filtrar por tipo de pago o estado (ej. todos). campos de fecha: selector de "fecha de inicio" y "fecha de fin" para establecer un rango de tiempo específico. botón exportar: descarga la lista de pagos procesados en un archivo para el control contable. tabla de pagos: id: identificador único del registro de pago. monto: valor total cobrado en la transacción (ej. ₡11,500.00). método de pago: forma de pago empleada por el cliente (ej. efectivo). id de transacción: código o referencia de la transacción bancaria o electrónica. orden: enlace directo al pedido asociado al cobro (ej. orden #29). fecha y hora: marcador de tiempo exacto en el que se registró el pago. paginación: permite navegar entre las páginas de registros financieros (ej. mostrando 1 a 10 de 25 resultados). en esta sección se agrupan las cuentas y cobros pendientes de saldar, permitiendo monitorear los pedidos abiertos y gestionar la liquidación de cuentas antes del cierre. componentes de la pantalla indicador de acumulado: muestra el monto total acumulado de las cuentas pendientes por cobrar (ej. ₡0.00). buscador: campo de texto para filtrar cobros pendientes ingresando el monto o el número de pedido. tabla de pagos pendientes: muestra las siguientes columnas de información: monto: importe total pendiente de cobro. método de pago: forma de pago seleccionada o asignada. orden: código del pedido asociado a la deuda. fecha y hora: marcador de tiempo en el que se generó la orden. acción: botones para procesar o completar la transacción directamente.' id="mod-pagos">
+<div class="module-header">
+<div>
+<div class="eyebrow">MÓDULO 11 / 15</div>
+<h2>
+        Pagos
+       </h2>
+<p>
+        Consulte los cobros realizados y los pagos pendientes.
+       </p>
+</div>
+<button class="video-btn" data-title="Pagos" data-video="assets/videos-restaurante/pagos.mp4" style="margin-left: auto; align-self: flex-start;" type="button">
+       ▶ Ver
+                        video del módulo
+      </button>
+</div>
+<div class="task-grid">
+<article class="task" id="pagos-t1">
+<div class="task-head">
+<span class="task-number">11.01</span>
+<h3>
+         Pagos
+        </h3>
+<button class="video-btn video-btn-task" data-title="Pagos" data-video="assets/videos-restaurante/pagos.mp4" type="button">▶ Ver video</button>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos">
+<li>
+         En
+         <strong>
+          Pagos
+         </strong>
+         , busque por monto o método de pago y utilice los filtros de estado o fecha.
+        </li>
+<li>
+         Consulte los registros para revisar monto, método, identificador de transacción, orden y fecha.
+        </li>
+<li>
+         Presione
+         <strong>
+          Exportar
+         </strong>
+         para descargar el historial de pagos.
+        </li>
+</ol>
+</article>
+<article class="task" id="pagos-t2">
+<div class="task-head">
+<span class="task-number">11.02</span>
+<h3>
+         Pagos Pendientes
+        </h3>
+<button class="video-btn video-btn-task" data-title="Pagos Pendientes" data-video="assets/videos-restaurante/pagos-t2.mp4" type="button">▶ Ver video</button>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos">
+<li>
+         En
+         <strong>
+          Pagos Pendientes
+         </strong>
+         , consulte el monto total acumulado por cobrar.
+        </li>
+<li>
+         Busque por monto o número de orden para localizar una cuenta.
+        </li>
+<li>
+         Revise el importe, método, orden y fecha; utilice la acción disponible para completar el cobro.
+        </li>
+</ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search="informes en esta sección se consolidan los datos estadísticos y financieros de los ingresos del restaurante, permitiendo analizar los montos cobrados, los canales de pago y los descuentos aplicados dentro de un período seleccionado. componentes de la pantalla filtros de período y fecha: selector de rango predefinido (ej. hoy) y campos de calendario para fijar el rango de fechas de análisis. botón exportar: permite descargar el reporte financiero completo para su análisis externo. tarjetas de resumen general: cuenta total: importe total acumulado bruto de las transacciones. total de ordenes: cantidad de pedidos procesados en el período. artículo(s): total de unidades o productos vendidos. subtotal: monto de ventas previo a la aplicación de impuestos o descuentos. descuento: suma total de los rebajos aplicados a las órdenes. tarjetas de métodos de pago: efectivo: total recolectado en efectivo. tarjeta: total cobrado mediante datáfono o tarjetas de crédito/débito. sinpe: total recaudado mediante transferencias electrónicas sinpe. pendiente: monto correspondiente a cuentas abiertas o saldos pendientes de pago. tabla de detalle por fecha: muestra el desglose diario de las transacciones con las columnas fecha, total de ordenes, artículo(s), subtotal, descuento y total. en esta sección se analiza el rendimiento comercial individual de cada producto del menú, permitiendo identificar los platillos y bebidas de mayor rotación así como el volumen de ingresos generado por cada uno dentro de un período específico. componentes de la pantalla filtros de período y fecha: selector de rango predefinido (ej. hoy) y campos de calendario para seleccionar el rango de fechas de consulta. botón exportar: permite descargar la lista detallada de artículos vendidos en un archivo para su revisión o reporte de inventario. tabla de informe de artículos: desglosa el desempeño individual de los productos registrados en el menú mediante las siguientes columnas: nombre del artículo: nombre del producto o platillo ofertado en el restaurante (ej. café, gallo pinto, chifrijo). cant.: número total de unidades vendidas de ese producto dentro del período seleccionado. monto: suma total recaudada por las ventas correspondientes a dicho artículo (ej. ₡0.00). en esta sección se analiza el rendimiento de ventas agrupado por las diferentes categorías del menú, permitiendo evaluar qué familias de productos (ej. bebidas, comida, postres) representan el mayor volumen de ventas e ingresos en un período seleccionado. componentes de la pantalla filtros de período y fecha: selector de rango predefinido (ej. hoy) y campos de calendario para definir el rango de fechas a consultar. botón exportar: permite descargar el informe de ventas por categorías en un archivo descargable. tabla de informe de categorías: desglosa el volumen de ventas e ingresos por cada grupo del menú mediante las siguientes columnas: categoría de artículo: nombre de la categoría o clasificación del menú (ej. bebidas, comida, aperitivo, postres). cant.: cantidad total de productos vendidos pertenecientes a dicha categoría. monto: suma total recaudada por las ventas de los productos de esa categoría (ej. ₡0.00)." id="mod-informes">
+<div class="module-header">
+<div>
+<div class="eyebrow">MÓDULO 12 / 15</div>
+<h2>
+        Informes
+       </h2>
+<p>
+        Revise las ventas y el rendimiento de artículos y categorías.
+       </p>
+</div>
+<!-- <button class="video-btn" data-title="Informes" data-video="assets/videos-restaurante/informes.mp4" style="margin-left: auto; align-self: flex-start;" type="button">
+       ▶ Ver video del módulo
+      </button> -->
+</div>
+<div class="task-grid">
+<article class="task" id="informes-t1">
+<div class="task-head">
+<span class="task-number">12.01</span>
+<h3>
+         Informe de Ventas
+        </h3>
+<button class="video-btn video-btn-task" data-title="Informe de Ventas" data-video="assets/videos-restaurante/informeventas.mp4" type="button">▶ Ver video</button>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos">
+<li>
+         En
+         <strong>
+          Informes &gt; Informe de Ventas
+         </strong>
+         , seleccione el período o las fechas de consulta.
+        </li>
+<li>
+         Revise el resumen: cuenta total, órdenes, artículos, subtotal y descuentos.
+        </li>
+<li>
+         Consulte el desglose por medio de pago: efectivo, tarjeta, SINPE y pendiente.
+        </li>
+<li>
+         Revise la tabla de ventas por fecha y presione
+         <strong>
+          Exportar
+         </strong>
+         si necesita el informe.
+        </li>
+</ol>
+</article>
+<article class="task" id="informes-t2">
+<div class="task-head">
+<span class="task-number">12.02</span>
+<h3>
+         Informe de Artículos
+        </h3>
+<button class="video-btn video-btn-task" data-title="Informe de Artículos" data-video="assets/videos-restaurante/informearticulos.mp4" type="button">▶ Ver video</button>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos">
+<li>
+         En
+         <strong>
+          Informe de Artículos
+         </strong>
+         , seleccione un período o rango de fechas.
+        </li>
+<li>
+         Revise cada artículo junto con la cantidad vendida y el monto recaudado.
+        </li>
+<li>
+         Presione
+         <strong>
+          Exportar
+         </strong>
+         para descargar el informe.
+        </li>
+</ol>
+</article>
+<article class="task" id="informes-t3">
+<div class="task-head">
+<span class="task-number">12.03</span>
+<h3>
+         Informe de Categorías
+        </h3>
+<button class="video-btn video-btn-task" data-title="Informe de Categorías" data-video="assets/videos-restaurante/informecategorias.mp4" type="button">▶ Ver video</button>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos">
+<li>
+         En
+         <strong>
+          Informe de Categorías
+         </strong>
+         , seleccione un período o rango de fechas.
+        </li>
+<li>
+         Consulte las categorías con sus cantidades vendidas y montos acumulados.
+        </li>
+<li>
+         Presione
+         <strong>
+          Exportar
+         </strong>
+         para descargar el informe.
+        </li>
+</ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search="caja en esta sección se gestiona el flujo de dinero en efectivo del establecimiento, permitiendo controlar la apertura y cierre de caja, registrar entradas o salidas de dinero, imprimir reportes de corte parcial (informe x) y consultar el historial de turnos pasados con sus correspondientes reportes de cierre (informe z). componentes de la pantalla encabezado de estado: indica si la caja se encuentra caja abierta, quién realizó la apertura, la fecha, hora y el número identificador del turno. tarjetas de resumen del turno: monto de apertura: fondo base inicial con el que abre la caja. ventas en efectivo: total de ingresos cobrados en efectivo durante el turno actual. saldo actual: suma del monto de apertura más los ingresos en efectivo. transacciones: número total de operaciones registradas en el turno. tabla ventas totales: desglosa el resumen de cobros clasificándolos por método, cantidad y el total recaudado. botones de acción: entrada de efectivo: registra ingresos extraordinarios de dinero a la caja. salida de efectivo: registra retiros de dinero o egresos por gastos menores. informe x: genera e imprime un reporte parcial del arqueo de caja del turno activo. cierre de caja: inicia el proceso para finalizar el turno y realizar el arqueo definitivo. movimientos: historial en tiempo real de los montos ingresados o retirados de forma manual durante el turno. historial de caja: tabla auditables que registra los turnos anteriores mediante las siguientes columnas: #: número de consecutivo del turno. aperturado por: nombre del colaborador que abrió el turno. apertura a las / cierre a las: fecha y hora exacta de inicio y fin. horas de turno: duración total del turno activo o cerrado. monto de apertura / monto de cierre: fondos iniciales y finales reportados. dólares en caja: recaudo registrado en divisa extranjera. estado: estado actual del turno (ej. closed). informe z: enlace para consultar e imprimir el reporte de cierre acumulado del turno." id="mod-caja">
+<div class="module-header">
+<div>
+<div class="eyebrow">MÓDULO 13 / 15</div>
+<h2>
+        Caja
+       </h2>
+<p>
+        Controle aperturas, movimientos de efectivo y cierres de caja.
+       </p>
+</div>
+<button class="video-btn" data-title="Caja" data-video="assets/videos-restaurante/caja.mp4" style="margin-left: auto; align-self: flex-start;" type="button">
+       ▶ Ver
+                        video del módulo
+      </button>
+</div>
+<div class="task-grid">
+<article class="task" id="caja-t1">
+<div class="task-head">
+<span class="task-number">13.01</span>
+<h3>
+         Caja
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos"><li>Abra <strong>Caja</strong>. Si está cerrada, presione <strong>Apertura de Caja</strong>, indique la cantidad de billetes y monedas de cada denominación y confirme la apertura.</li><li>Con la caja abierta, consulte el fondo inicial, las ventas en efectivo, el saldo actual y las transacciones del turno.</li><li>Para registrar dinero adicional o un retiro, seleccione <strong>Entrada de Efectivo</strong> o <strong>Salida de Efectivo</strong>, indique el monto y el motivo, y guarde.</li><li>Utilice <strong>Informe</strong> para consultar los movimientos registrados.</li><li>Al finalizar, presione <strong>Cierre de Caja</strong>, cuente billetes y monedas, revise el efectivo esperado, lo contado y la diferencia, y confirme el cierre.</li><li>En el historial puede consultar movimientos y registros de cajas anteriores.</li></ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search='inventario en esta sección se gestiona el control de existencias e insumos del restaurante, permitiendo registrar nuevos ítems, vincular los productos del menú con sus ingredientes y auditar los movimientos de stock en tiempo real. componentes de la pantalla buscador: campo de texto para filtrar los ítems o insumos registrados en el inventario. botón agregar ítem: despliega una ventana emergente para registrar un nuevo producto o ingrediente. tabla de inventario: listado principal donde se visualizan los ítems registrados con sus existencias disponibles. movimientos recientes: sección inferior que registra el historial de entradas, salidas o ajustes de stock realizados en la plataforma. formulario "agregar ítem" al hacer clic en agregar ítem, se despliega una ventana emergente con los siguientes campos: nombre (*): campo de texto obligatorio para ingresar la descripción o nombre del producto/insumo. unidad (*): menú desplegable obligatorio para seleccionar la unidad de medida (ej. unidad). producto del menú: opciones de vinculación mediante botones de selección: no enlazar a ningún producto del menú: mantiene el ítem únicamente como un insumo de inventario. enlazar a un producto ya existente: asocia el ítem a un platillo o bebida previamente creado. crear también un producto de menú, ya enlazado: registra de manera simultánea el ítem en el inventario y en la carta del restaurante. presione guardar para registrar el nuevo ítem o cancelar para descartar los cambios.' id="mod-inventario">
+<div class="module-header">
+<div>
+<div class="eyebrow">MÓDULO 14 / 15</div>
+<h2>
+        Inventario
+       </h2>
+<p>
+        Controle existencias, insumos y movimientos del inventario.
+       </p>
+</div>
+<button class="video-btn" data-title="Inventario" data-video="assets/videos-restaurante/inventario.mp4" style="margin-left: auto; align-self: flex-start;" type="button">
+       ▶ Ver video del módulo
+      </button>
+</div>
+<div class="task-grid">
+<article class="task" id="inventario-t1">
+<div class="task-head">
+<span class="task-number">14.01</span>
+<h3>
+         Inventario
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos">
+<li>
+         En
+         <strong>
+          Inventario
+         </strong>
+         , busque un producto o insumo y consulte sus existencias disponibles.
+        </li>
+<li>
+         Presione
+         <strong>
+          Agregar Ítem
+         </strong>
+         .
+        </li>
+<li>
+         Complete los campos obligatorios
+         <strong>
+          Nombre
+         </strong>
+         y
+         <strong>
+          Unidad
+         </strong>
+         .
+        </li>
+<li>
+         Seleccione si desea dejar el ítem sin vincular, enlazarlo a un producto del menú o crear uno nuevo ya enlazado.
+        </li>
+<li>
+         Presione
+         <strong>
+          Guardar
+         </strong>
+         y consulte
+         <strong>
+          Movimientos Recientes
+         </strong>
+         para revisar entradas, salidas y ajustes.
+        </li>
+</ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module" data-search="configuraciones en este módulo global se administran los parámetros generales, operativos y técnicos del sistema, permitiendo personalizar el comportamiento de la plataforma, gestionar la identidad del negocio y ajustar las integraciones. descripción general de los módulos de configuración: configuración del restaurante: permite establecer y modificar los datos generales del establecimiento, tales como nombre, teléfono, correo electrónico y dirección física. configuración de la app: define las opciones operativas y de funcionamiento para la aplicación móvil o interfaz del sistema. configuración de sucursales: administra las distintas sedes o ubicaciones del restaurante registradas en la plataforma. monedas: ajusta el tipo de divisa oficial y los formatos de moneda utilizados para el cobro y reporte de ventas. configuración de correo electrónico: gestiona los parámetros de servidor e plantillas para el envío de notificaciones automáticas por correo. impuestos: configura las cargas impositivas o tasas de impuestos aplicables a los productos e indica si se muestran en las órdenes. pasarelas de pago: integra y administra los métodos de pago digitales y proveedores de procesamiento de tarjetas. configuración del tema: personaliza los colores, logotipos y la apariencia visual de la plataforma y del sitio del cliente. roles del personal: define los perfiles de acceso, permisos y niveles de seguridad asignados a cada empleado. facturación: gestiona los datos fiscales y la configuración para la emisión de comprobantes y facturas electrónicas. quickbooks: configura la integración con el software contable quickbooks para la sincronización automática de datos financieros. configuración de reservaciones: establece las reglas, horarios y capacidad disponible para la gestión de reservas de mesas. acerca de nosotros: muestra la información institucional, versión del sistema y detalles del proveedor de la plataforma. sitio del cliente: ajusta los parámetros de la página pública desde donde los clientes realizan pedidos o consultan el menú. configuración de recibos: personaliza el diseño, encabezado, pie de página y datos visuales impresos en las tirillas de pago." id="mod-configuraciones">
+<div class="module-header">
+<div>
+<div class="eyebrow">MÓDULO 15 / 15</div>
+<h2>
+        Configuraciones
+       </h2>
+<p>
+        Personalice los datos y ajustes generales del restaurante.
+       </p>
+</div>
+
+</div>
+<div class="task-grid">
+<article class="task" id="configuraciones-t1">
+<div class="task-head">
+<span class="task-number">15.01</span>
+<h3>
+         Configuraciones
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos">
+<li>
+         En
+         <strong>
+          Configuraciones
+         </strong>
+         , seleccione el apartado que necesita administrar.
+        </li>
+<li>
+         En
+         <strong>
+          Restaurante, App y Sucursales
+         </strong>
+         , ajuste los datos del establecimiento y las opciones generales.
+        </li>
+<li>
+         En
+         <strong>
+          Monedas, Impuestos, Pasarelas de Pago y Facturación
+         </strong>
+         , revise los ajustes de cobro y comprobantes.
+        </li>
+<li>
+         En
+         <strong>
+          Correo Electrónico, Reservaciones y Sitio del cliente
+         </strong>
+         , configure notificaciones y opciones de atención.
+        </li>
+<li>
+         En
+         <strong>
+          Tema, Recibos y Roles del Personal
+         </strong>
+         , ajuste la apariencia, la impresión y los permisos.
+        </li>
+<li>
+         Consulte
+         <strong>
+          QuickBooks
+         </strong>
+         para la integración contable o
+         <strong>
+          Acerca de nosotros
+         </strong>
+         para la información del sistema.
+        </li>
+</ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="welcome function-section" data-search="sitio del cliente esta opción redirecciona al portal público del restaurante orientada al consumidor final, permitiendo a los comensales explorar el menú interactivo, realizar pedidos en línea, reservar mesas y solicitar atención de un mesero. componentes del portal del cliente navegación superior: selección de sucursal: permite elegir la sede del restaurante (ej. principal). menú de enlaces: accesos directos a secciones clave como inicio, reservar una mesa, acerca de y contacto. botón llamar mesero: enlace directo para enviar una solicitud de asistencia en mesa en tiempo real. iconos de funcionalidad: selector de tema (modo oscuro/claro) y el carrito de compras." id="mod-sitio-del-cliente">
+<div class="module-header">
+<div>
+<div class="eyebrow">FUNCIÓN ADICIONAL</div>
+<h2>
+        Sitio del Cliente
+       </h2>
+<p>
+        Acceda al portal para consultar el menú y realizar solicitudes.
+       </p>
+</div>
+<button class="video-btn" data-title="Sitio del Cliente" data-video="assets/videos-restaurante/sitio-del-cliente.mp4" style="margin-left: auto; align-self: flex-start;" type="button">▶ Ver video tutorial</button>
+</div>
+<div class="task-grid">
+<article class="task" id="sitio-del-cliente-t1">
+<div class="task-head">
+<span class="task-number">F.03</span>
+<h3>
+         Sitio del Cliente
+        </h3>
+</div>
+<p class="instruccion">
+        Siga estas indicaciones:
+       </p>
+<ol class="pasos"><li>Para abrir el <strong>sitio del cliente</strong>, utilice el enlace del menú digital proporcionado por el restaurante o escanee el <strong>código QR</strong> de una mesa. También puede escribir la dirección facilitada por el establecimiento en la barra de direcciones del navegador.</li>
+<li>
+         En el
+         <strong>
+          Sitio del Cliente
+         </strong>
+         , seleccione la sucursal que desea consultar.
+        </li>
+<li>
+         Utilice el menú superior para acceder a
+         <strong>
+          Inicio
+         </strong>
+         ,
+         <strong>
+          Reservar
+         </strong>
+         u otras secciones disponibles.
+        </li>
+<li>
+         Consulte los productos del menú y sus detalles.
+        </li>
+<li>
+         Utilice las opciones de reservación o solicitud de mesero cuando estén disponibles.
+        </li>
+</ol>
+</article>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module appendix" id="problemas">
+<div class="eyebrow">
+      AYUDA Y CONSULTAS
+     </div>
+<h2>
+      Solución de problemas
+     </h2>
+<div class="faq-grid">
+<p class="section-lead">En esta sección se describen los inconvenientes operacionales y técnicos más comunes
+                            que pueden presentarse durante el uso diario del sistema FLK POS, junto con sus
+                            correspondientes procedimientos de verificación y solución.</p>
+<details>
+<summary>
+        El usuario olvidó su contraseña de acceso
+       </summary>
+<p>
+        En la pantalla principal de inicio de sesión, presione el enlace ¿Olvidó su contraseña? (o
+                            solicite a un usuario con rol de Administrador que restablezca sus credenciales). Introduzca
+                            el correo electrónico registrado asociado a la cuenta de usuario. Revise la bandeja de
+                            entrada para abrir el enlace de restablecimiento de contraseña e ingrese la nueva clave de
+                            acceso. Confirmación: Ingrese nuevamente al sistema con la contraseña actualizada para
+                            validar que el inicio de sesión sea exitoso.
+       </p>
+</details>
+<details>
+<summary>
+        Se ingresó un dato incorrecto al registrar un ítem, usuario o cliente
+       </summary>
+<p>
+        Diríjase al módulo correspondiente donde se encuentra el registro con el error (ej.
+                            Inventario, Personal, Clientes o Menú). Ubique el elemento en la tabla de datos y haga clic
+                            en la opción Actualizar o en el icono de edición correspondiente. Corrija el campo que
+                            contiene la información errónea (como el nombre, unidad de medida, teléfono o dirección) y
+                            presione el botón Guardar. Confirmación: Verifique en la tabla principal que la información
+                            editada muestre los datos corregidos de forma actualizada.
+       </p>
+</details>
+<details>
+<summary>
+        Error al vincular un ítem de inventario con el menú
+       </summary>
+<p>
+        Ingrese a la sección Inventario y busque el ítem que presenta el fallo. Seleccione la opción
+                            de edición y revise el apartado Producto del menú. Cambie la relación seleccionando la
+                            opción correcta: No enlazar, Enlazar a un producto ya existente o Crear también un producto
+                            de menú. Confirmación: Al guardar los cambios, compruebe que los consumos o descuentos de
+                            stock se reflejen correctamente al realizar una orden en el POS.
+       </p>
+</details>
+<details>
+<summary>
+        Las comandas no se imprimen en la cocina o barra
+       </summary>
+<p>
+        Verifique que la impresora de cocina esté encendida y conectada a la misma red local (Wi-Fi o
+                            cable Ethernet) que el dispositivo del POS. Compruebe que el papel térmico esté colocado
+                            correctamente y no haya atascos en el alimentador. Ingrese a la configuración del sistema
+                            para realizar una prueba de impresión e identificar si el puerto IP asignado a la impresora
+                            sufrió algún cambio. Confirmación: Realice un envío de comanda de prueba desde el POS; si el
+                            tiquete se imprime correctamente, el servicio habrá quedado restablecido.
+       </p>
+</details>
+<details>
+<summary>
+        El POS indica "Sin conexión a Internet"
+       </summary>
+<p>
+        Verifique si el dispositivo tiene activada la conexión Wi-Fi o el cable de red desconectado.
+                            Reinicie el router principal del restaurante si el problema persiste en varios dispositivos
+                            de forma simultánea. Continúe tomando pedidos si la función de modo fuera de línea está
+                            activa, asegurándose de sincronizar los datos una vez restablecida la red. Confirmación:
+                            Compruebe que el indicador de estado de red en la barra superior del sistema cambie a estado
+                            activo.
+       </p>
+</details>
+<details>
+<summary>
+        Error al intentar realizar el "Cierre de Caja"
+       </summary>
+<p>
+        Asegúrese de que no existan cobros pendientes o pedidos en proceso dentro de la sección Pagos
+                            Pendientes. Procese o cancele todas las cuentas abiertas antes de iniciar el arqueo de
+                            cierre. Confirmación: Al presionar el botón Cierre de Caja, el sistema le permitira ingresar
+                            los montos finales y generar el Informe Z sin mostrar alertas de bloqueo.
+       </p>
+</details>
+<details>
+<summary>
+        Las transacciones con tarjeta o SINPE no concuerdan en el resumen
+       </summary>
+<p>
+        Diríjase al módulo de Pagos y filtre las transacciones por método de pago para identificar
+                            discrepancias en los registros individuales. Verifique en el terminal de datáfono o en el
+                            comprobante de transferencia la hora y el ID de transacción para compararlos con la orden
+                            correspondiente. Confirmación: Los totales del reporte en pantalla deben coincidir
+                            exactamente con el cierre físico de la datáfono o el reporte bancario.
+       </p>
+</details>
+<details>
+<summary>
+        El empleado no puede acceder a ciertos módulos o botones
+       </summary>
+<p>
+        Acceda al módulo de Personal con una cuenta de usuario con rol de Administrador. Ubique al
+                            colaborador en la lista y presione Actualizar para revisar el rol asignado (ej. Mesero,
+                            Chef, Jefe de sucursal). Si requiere modificar los accesos globales del rol, diríjase a
+                            Configuraciones y seleccione Roles del Personal para ajustar los permisos correspondientes.
+                            Confirmación: Solicite al empleado cerrar sesión y volver a ingresar con sus credenciales
+                            para verificar que las funciones deseadas estén visibles.
+       </p>
+</details>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module appendix" id="faq">
+<div class="eyebrow">
+      AYUDA Y CONSULTAS
+     </div>
+<h2>
+      Preguntas frecuentes
+     </h2>
+<div class="faq-grid">
+<details>
+<summary>
+        ¿Cómo agrego notas o modificaciones especiales a un platillo en la comanda?
+       </summary>
+<p>
+        Al seleccionar un ítem dentro del POS, se despliega el panel de detalles donde puede ingresar
+                            especificaciones (como "sin cebolla", "término medio" o "salsa aparte"). Estas notas se
+                            reflejarán directamente en la tirilla impresa de la cocina o barra.
+       </p>
+</details>
+<details>
+<summary>
+        ¿Cómo aplico un descuento a un producto o a la cuenta completa?
+       </summary>
+<p>
+        Dentro de la pantalla del POS, seleccione la orden activa y presione el botón de descuento.
+                            Puede aplicar un porcentaje o un monto fijo sobre un ítem específico o sobre el subtotal de
+                            la cuenta, siempre que su usuario cuente con los permisos requeridos.
+       </p>
+</details>
+<details>
+<summary>
+        ¿Es posible cambiar de mesa una orden que ya fue tomada?
+       </summary>
+<p>
+        Sí. Desde el esquema de Mesas o en el panel de la orden en el POS, seleccione la opción de
+                            reubicar o transferir mesa, elija la mesa de destino disponible y confirme el traslado. Los
+                            productos y consumos acumulados se migrarán automáticamente a la nueva ubicación.
+       </p>
+</details>
+<details>
+<summary>
+        ¿Qué debo hacer si una comanda no se imprime en la cocina?
+       </summary>
+<p>
+        Verifique que la impresora esté encendida, con papel térmico y conectada a la misma red local
+                            que el punto de venta. Puede revisar su estado en Configuraciones o reimprimir el
+                            comprobante desde el módulo de Ordenes.
+       </p>
+</details>
+<details>
+<summary>
+        ¿Qué sucede si se interrumpe la conexión a Internet durante el servicio?
+       </summary>
+<p>
+        El sistema cuenta con un modo de contingencia que permite seguir registrando órdenes locales.
+                            Una vez restablecida la red, los datos se sincronizan automáticamente con el servidor.
+       </p>
+</details>
+<details>
+<summary>
+        ¿Por qué el sistema no me permite realizar el "Cierre de Caja"?
+       </summary>
+<p>
+        El cierre se bloquea si existen cuentas abiertas o cobros sin liquidar. Ingrese a la sección
+                            Pagos Pendientes (dentro del módulo Pagos) para procesar o anular los cobros pendientes
+                            antes de realizar el arqueo final.
+       </p>
+</details>
+<details>
+<summary>
+        ¿Es obligatorio declarar el Monto de Apertura al iniciar turno?
+       </summary>
+<p>
+        Sí. Para registrar ventas en efectivo y procesar cobros en el POS, el sistema requiere
+                            declarar el fondo base inicial en el módulo de Caja.
+       </p>
+</details>
+<details>
+<summary>
+        ¿Cómo conciliar las transacciones de tarjeta o SINPE si no coinciden en el reporte?
+       </summary>
+<p>
+        Ingrese a Informes de Ventas o al módulo de Pagos, filtre por método de pago (TARJETA o
+                            SINPE) y compare la hora e ID de transacción contra los vauchers del datáfono o los
+                            comprobantes bancarios.
+       </p>
+</details>
+<details>
+<summary>
+        ¿Cómo vincular un ítem del inventario con un producto de la carta del restaurante?
+       </summary>
+<p>
+        Al crear o actualizar un producto en Inventario, use la sección Producto del menú para elegir
+                            entre: No enlazar, Enlazar a un producto ya existente o Crear también un producto de menú,
+                            ya enlazado.
+       </p>
+</details>
+<details>
+<summary>
+        ¿Cómo modifico el rol o los permisos de un empleado en el sistema?
+       </summary>
+<p>
+        Para cambiar los datos o la función de un colaborador, ingrese a Personal (o Ejecutivo de
+                            Entregas) y presione Actualizar. Si requiere editar los accesos globales asignados a un
+                            perfil, diríjase a Configuraciones &gt; Roles del Personal.
+       </p>
+</details>
+<details>
+<summary>
+        ¿Qué hago si se ingresó un dato erróneo al registrar un producto, cliente o usuario?
+       </summary>
+<p>
+        Diríjase al módulo donde se encuentra el registro (Inventario, Clientes, Personal o Menú),
+                            ubique el elemento en la tabla, haga clic en Actualizar, corrija la información y presione
+                            Guardar.
+       </p>
+</details>
+<details>
+<summary>
+        ¿Cómo reajusto los datos fiscales o el diseño de las tirillas de pago?
+       </summary>
+<p>
+        Acceda a Configuraciones y seleccione Facturación para parámetros fiscales, o Configuración
+                            de recibos para modificar los encabezados, logos y textos del tiquete impreso.
+       </p>
+</details>
+</div>
+<a class="back-link" href="#contenido">
+      ↑ Ir al índice
+     </a>
+</section>
+<section class="module appendix" id="glosario">
+<div class="eyebrow">
+      REFERENCIA
+     </div>
+<h2>
+      Glosario
+     </h2>
+<p class="section-lead">
+      Términos del POS explicados con palabras sencillas.
+     </p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>
+          Término
+         </th>
+<th>
+          Definición
+         </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">
+          Área
+         </th>
+<td>
+          Espacio o zona del restaurante donde se encuentran ubicadas las mesas, por ejemplo,
+                                    salón, terraza o azotea.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Artículo
+         </th>
+<td>
+          Producto que puede ser ofrecido o vendido dentro del restaurante, como una comida,
+                                    bebida, aperitivo o postre.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Barra de navegación
+         </th>
+<td>
+          Sección de la pantalla que permite acceder a las diferentes funciones y módulos del
+                                    sistema.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Caja
+         </th>
+<td>
+          Módulo utilizado para gestionar la apertura, movimientos y cierre de la caja del
+                                    restaurante.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Cierre de caja
+         </th>
+<td>
+          Proceso mediante el cual se finaliza la operación de la caja y se revisan los
+                                    movimientos realizados durante el período.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Cliente
+         </th>
+<td>
+          Persona que realiza una compra, reserva o pedido en el restaurante.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Código QR
+         </th>
+<td>
+          Código que puede ser escaneado con un dispositivo móvil para acceder a información o
+                                    funciones del sistema, como el menú digital.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Comanda
+         </th>
+<td>
+          Registro de los productos solicitados en una orden que se utiliza para comunicar el
+                                    pedido a las estaciones correspondientes, como cocina o barra.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Configuraciones
+         </th>
+<td>
+          Sección donde se pueden administrar diferentes opciones y parámetros del sistema.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Dashboard / Panel de control
+         </th>
+<td>
+          Pantalla principal que muestra información y estadísticas generales del
+                                    funcionamiento del restaurante.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Ejecutivo de entregas
+         </th>
+<td>
+          Persona encargada de realizar o gestionar las entregas de los pedidos a los
+                                    clientes.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Estación
+         </th>
+<td>
+          Área o punto de preparación donde se procesa un tipo de producto, por ejemplo,
+                                    cocina o barra.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Factura
+         </th>
+<td>
+          Documento que registra la compra realizada por el cliente y muestra la información
+                                    correspondiente a los productos y el pago.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Ganancias
+         </th>
+<td>
+          Información relacionada con los ingresos obtenidos por las ventas realizadas.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Grupo de modificaciones
+         </th>
+<td>
+          Conjunto de opciones que permite definir cambios o elecciones disponibles para un
+                                    producto.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Informe
+         </th>
+<td>
+          Sección que presenta información organizada sobre diferentes aspectos de la
+                                    operación del restaurante.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Informe de artículos
+         </th>
+<td>
+          Informe que muestra información relacionada con los artículos o productos
+                                    registrados en el sistema.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Informe de categorías
+         </th>
+<td>
+          Informe que presenta información relacionada con las categorías de artículos.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Informe de ventas
+         </th>
+<td>
+          Informe que muestra información relacionada con las ventas realizadas durante un
+                                    período determinado.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Inventario
+         </th>
+<td>
+          Registro de los productos y existencias disponibles, así como de los movimientos
+                                    relacionados con ellos.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Menú
+         </th>
+<td>
+          Conjunto de productos que el restaurante ofrece a sus clientes.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Menú digital
+         </th>
+<td>
+          Versión del menú disponible mediante medios digitales, que permite al cliente
+                                    consultar los productos ofrecidos.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Método de pago
+         </th>
+<td>
+          Forma utilizada por el cliente para realizar el pago de una compra, como efectivo u
+                                    otros medios disponibles en el sistema.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Modificación
+         </th>
+<td>
+          Cambio u opción adicional que puede aplicarse a un producto según las opciones
+                                    disponibles.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Modificador
+         </th>
+<td>
+          Opción que permite agregar, quitar o cambiar características de un producto al
+                                    realizar una orden.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Orden
+         </th>
+<td>
+          Registro de los productos solicitados por un cliente.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          POS (Punto de Venta)
+         </th>
+<td>
+          Módulo donde se registran las ventas, órdenes y pagos.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Personal
+         </th>
+<td>
+          Personas registradas que trabajan en el restaurante.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Permiso
+         </th>
+<td>
+          Autorización que determina qué funciones puede utilizar un usuario.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Reservación
+         </th>
+<td>
+          Registro de una mesa solicitada por un cliente para una fecha y hora determinadas.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Rol
+         </th>
+<td>
+          Perfil que determina las funciones que puede realizar un usuario.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Solicitud de mesero
+         </th>
+<td>
+          Solicitud realizada por un cliente para llamar a un mesero.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Sucursal
+         </th>
+<td>
+          Establecimiento o ubicación del restaurante.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Stock
+         </th>
+<td>
+          Cantidad disponible de un producto o insumo.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Variación
+         </th>
+<td>
+          Diferente opción de un mismo producto, como tamaño o presentación.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Voucher
+         </th>
+<td>
+          Comprobante generado por una transacción de pago.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Paginación
+         </th>
+<td>
+          Función que permite navegar entre varias páginas de resultados.
+         </td>
+</tr>
+<tr>
+<th scope="row">
+          Portal del cliente
+         </th>
+<td>
+          Página donde los clientes pueden consultar el menú, realizar pedidos y reservar
+                                    mesas.
+         </td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</main>
+</div>
+<!-- EDITAR CONTACTO: cambie nombre, teléfono y correo en el footer siguiente. -->
+<footer class="footer">
+<div class="footer-inner">
+<div>
+<strong id="nombre-empresa">
+      FLK Developments
+     </strong>
+<p>
+      Soporte del sistema POS para Restaurantes
+     </p>
+</div>
+<div>
+<span>
+      Teléfono
+     </span>
+<a href="tel:+50600000000" id="telefono-empresa">
+      +506 7262 7896
+     </a>
+</div>
+<div>
+<span>
+      Correo
+     </span>
+<a href="mailto:contacto@tuempresa.com" id="correo-empresa">
+      info@flkdevelopment.com
+     </a>
+</div>
+<div>
+<span>
+      Redes sociales
+     </span>
+<div>
+<a href="https://www.facebook.com/flkcrc">
+<svg class="bi bi-facebook" fill="currentColor" height="25" viewbox="0 0 16 16" width="25" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951">
+</path>
+</svg>
+</a>
+<!-- Instagram con enlace funcional -->
+<a href="https://www.instagram.com/flkdevelopment" rel="noopener noreferrer" style="color: inherit;" target="_blank">
+<svg class="bi bi-instagram" fill="currentColor" height="25" viewbox="0 0 16 16" width="25" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334">
+</path>
+</svg>
+</a>
+<a href="https://api.whatsapp.com/send/?phone=50672627896">
+<svg class="bi bi-whatsapp" fill="currentColor" height="25" viewbox="0 0 16 16" width="25" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232">
+</path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<button aria-label="Volver arriba" class="floating-top" id="subir" type="button">
+   ↑
+  </button>
+<dialog aria-labelledby="titulo-video" class="modal-video" id="modal-video">
+<div class="modal-head">
+<div>
+<small>
+      VIDEO TUTORIAL · UN VIDEO POR MÓDULO
+     </small>
+<h2 id="titulo-video">
+      Video del módulo
+     </h2>
+</div>
+<button aria-label="Cerrar" class="close-video" type="button">
+     ✕
+    </button>
+</div>
+<video controls="" id="reproductor-video" playsinline="" preload="metadata">
+</video>
+<div class="missing-video" hidden="" id="missing-video">
+<b>
+     Video pendiente
+    </b>
+<p>
+     Guarde el video de este módulo con esta ruta:
+    </p>
+<code id="ruta-video">
+</code>
+<p>
+     El botón funcionará automáticamente al agregar el archivo.
+    </p>
+</div>
+</dialog>
+<script src="scripts/app.js?v=1.0.1">
+</script>
+</body>
+</html>
